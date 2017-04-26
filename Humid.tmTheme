@@ -197,7 +197,7 @@
         <!-- Intentionally unstyled. -->
         <!-- Rationale: Already distinct because other scopes are styled. -->
 
-        <!-- Support for GitGutter 3rd-party plugin -------------------------->
+        <!-- Support for GitGutter 3rd-party plugin -->
 
         <dict>
             <key>name</key>
@@ -259,7 +259,7 @@
             </dict>
         </dict>
 
-        <!-------------------------------------------------------------------->
+        <!-- End -->
 
     </array>
 </dict>
