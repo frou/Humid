@@ -32,8 +32,10 @@
                 <key>selection</key>
                 <string>#3f3938</string>
 
+                <!--
                 <key>selectionBorder</key>
-                <string>#3f3938</string>
+                <string>#eed600</string>
+                -->
 
                 <key>findHighlight</key>
                 <string>#eed600</string>
