@@ -145,10 +145,8 @@
             <string>markup</string>
             <key>settings</key>
             <dict>
-                <!-- Same as Storage. -->
-                <!-- Rationale: Markup is "type"-like information. -->
                 <key>foreground</key>
-                <string>#ad9361</string>
+                <string>#8c8c83</string>
             </dict>
         </dict>
 
