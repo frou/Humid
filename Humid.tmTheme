@@ -129,7 +129,7 @@
             <key>name</key>
             <string>Keyword</string>
             <key>scope</key>
-            <string>keyword</string>
+            <string>keyword - source.go keyword.operator, source.go storage.type.keyword</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -159,7 +159,7 @@
             <key>name</key>
             <string>Storage</string>
             <key>scope</key>
-            <string>storage</string>
+            <string>storage - source.go storage.type.keyword</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -185,7 +185,7 @@
             <key>name</key>
             <string>Support</string>
             <key>scope</key>
-            <string>support</string>
+            <string>support - source.go support.type.builtin, source.go variable.function</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
