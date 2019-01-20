@@ -129,7 +129,7 @@
             <key>name</key>
             <string>Keyword</string>
             <key>scope</key>
-            <string>keyword - source.go keyword.operator, source.go storage.type.keyword</string>
+            <string>keyword - (source.go keyword.operator, source.shell.bash keyword.operator), source.go storage.type.keyword</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
