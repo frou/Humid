@@ -90,7 +90,7 @@
             <key>name</key>
             <string>Constant</string>
             <key>scope</key>
-            <string>constant</string>
+            <string>constant - constant.numeric.line-number.match.find-in-files</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -103,7 +103,7 @@
             <key>name</key>
             <string>Entity</string>
             <key>scope</key>
-            <string>entity</string>
+            <string>entity - entity.name.filename.find-in-files</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -142,7 +142,7 @@
             <key>name</key>
             <string>Markup</string>
             <key>scope</key>
-            <string>markup</string>
+            <string>markup, constant.numeric.line-number.match.find-in-files, entity.name.filename.find-in-files</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
