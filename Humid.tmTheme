@@ -8,6 +8,11 @@
     <key>author</key>
     <string>https://github.com/frou</string>
 
+    <!--
+    TODO(DH): Update based on this? https://forum.sublimetext.com/t/dev-build-3190/41921
+    Make the added/removed/modified diff colours in the gutter more muted
+    -->
+
     <key>settings</key>
     <array>
         <dict>
@@ -129,7 +134,7 @@
             <key>name</key>
             <string>Keyword</string>
             <key>scope</key>
-            <string>keyword - (source.go keyword.operator, source.shell.bash keyword.operator, source.js keyword.operator, source.js keyword.generator), source.go storage.type.keyword, source.js variable.language.this, source.js variable.language.super</string>
+            <string>keyword - (source.go keyword.operator, source.shell.bash keyword.operator, source.js keyword.operator - keyword.operator.word, source.js keyword.generator), source.go storage.type.keyword, source.js variable.language.this, source.js variable.language.super</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
