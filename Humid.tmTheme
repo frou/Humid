@@ -147,7 +147,7 @@
             <key>name</key>
             <string>Markup</string>
             <key>scope</key>
-            <string>markup</string>
+            <string>markup, source.js meta.template.expression</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
