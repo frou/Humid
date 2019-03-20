@@ -134,7 +134,7 @@
             <key>name</key>
             <string>Keyword</string>
             <key>scope</key>
-            <string>keyword - (source.go keyword.operator, source.shell.bash keyword.operator, source.js keyword.operator - keyword.operator.word, source.js keyword.generator, source.python keyword.operator), source.go storage.type.keyword, source.js variable.language.this, source.js variable.language.super</string>
+            <string>keyword - (source.go keyword.operator, source.shell.bash keyword.operator, source.js keyword.operator - keyword.operator.word, source.js keyword.generator, source.python keyword.operator - keyword.operator.logical), source.go storage.type.keyword, source.js variable.language.this, source.js variable.language.super</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
