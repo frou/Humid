@@ -108,7 +108,7 @@
             <key>name</key>
             <string>Entity</string>
             <key>scope</key>
-            <string>entity - (entity.name.filename.find-in-files, source.ts meta.function-call entity.name.function, source.ts meta.type.annotation entity.name.type)</string>
+            <string>entity - (entity.name.filename.find-in-files, source.ts meta.function-call entity.name.function, source.ts entity.name.type)</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -164,7 +164,7 @@
             <key>name</key>
             <string>Storage</string>
             <key>scope</key>
-            <string>storage - (source.go storage.type.keyword, source.ts meta.var.expr storage.type, source.ts storage.type.function), source.ts support.type, source.ts meta.type.annotation entity.name.type</string>
+            <string>storage - (source.go storage.type.keyword, source.ts meta.var.expr storage.type, source.ts storage.type.function), source.ts support.type, source.ts entity.name.type</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
