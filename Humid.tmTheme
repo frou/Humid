@@ -190,7 +190,7 @@
             <key>name</key>
             <string>Support</string>
             <key>scope</key>
-            <string>support - (source.go support.type.builtin, source.js support.class, source.js support.constant, source.js support.module, source.js support.type, source.ts support.type, source.ts support.constant, source.ts support.variable.property.dom), source.go variable.function, source.js variable.function, source.ts meta.function-call entity.name.function</string>
+            <string>support - (source.go support.type.builtin, source.js support.class, source.js support.constant, source.js support.module, source.js support.type, source.ts support.type, source.ts support.constant, source.ts support.variable.property.dom, source.ts support.class), source.go variable.function, source.js variable.function, source.ts meta.function-call entity.name.function</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
