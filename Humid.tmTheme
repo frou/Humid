@@ -15,6 +15,9 @@
 
     <!-- TODO: Backport the new/updated customisations from my vscode-humid-theme -->
 
+    <!-- TODO: For the customisations, why am I bothering to negate an existing scope before adding that scope elsewhere? -->
+
+
     <key>settings</key>
     <array>
         <dict>
