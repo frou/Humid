@@ -113,7 +113,7 @@
             <key>name</key>
             <string>Entity</string>
             <key>scope</key>
-            <string>entity - (entity.name.filename.find-in-files, source.ts meta.function-call entity.name.function, source.ts entity.name.type), source.ts entity.name.type.class</string>
+            <string>entity - (entity.name.filename.find-in-files, source.ts meta.function-call entity.name.function, source.ts entity.name.type, source.go meta.type entity.name), source.ts entity.name.type.class</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -195,7 +195,7 @@
             <key>name</key>
             <string>Support</string>
             <key>scope</key>
-            <string>support - (source.go support.type.builtin, source.js support.class, source.js support.constant, source.js support.module, source.js support.type, source.ts support.type, source.ts support.constant, source.ts support.variable.property.dom, source.ts support.class), source.go variable.function, source.js variable.function, source.ts meta.function-call entity.name.function, source.json meta.mapping.key string.quoted</string>
+            <string>support - (source.go support.type.builtin, source.js support.class, source.js support.constant, source.js support.module, source.js support.type, source.ts support.type, source.ts support.constant, source.ts support.variable.property.dom, source.ts support.class), source.go variable.function, source.go meta.type entity.other.inherited-class, source.js variable.function, source.ts meta.function-call entity.name.function, source.json meta.mapping.key string.quoted</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
