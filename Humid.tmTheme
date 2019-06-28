@@ -8,16 +8,6 @@
     <key>author</key>
     <string>https://github.com/frou</string>
 
-    <!--
-    TODO(DH): Update based on this? https://forum.sublimetext.com/t/dev-build-3190/41921
-    Make the added/removed/modified diff colours in the gutter more muted
-    -->
-
-    <!-- TODO: Backport the new/updated customisations from my vscode-humid-theme -->
-
-    <!-- TODO: For the customisations, why am I bothering to negate an existing scope before adding that scope elsewhere? -->
-
-
     <key>settings</key>
     <array>
         <dict>
