@@ -283,7 +283,9 @@
             <key>name</key>
             <string>Diff insertion</string>
             <key>scope</key>
-            <string>markup.inserted.diff</string>
+            <string>
+                markup.inserted.diff
+            </string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -295,7 +297,9 @@
             <key>name</key>
             <string>Diff deletion</string>
             <key>scope</key>
-            <string>markup.deleted.diff</string>
+            <string>
+                markup.deleted.diff
+            </string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -307,7 +311,9 @@
             <key>name</key>
             <string>Diff metadata</string>
             <key>scope</key>
-            <string>meta.diff</string>
+            <string>
+                meta.diff
+            </string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -319,7 +325,9 @@
             <key>name</key>
             <string>Diff filename</string>
             <key>scope</key>
-            <string>meta.diff.header.to-file</string>
+            <string>
+                meta.diff.header.to-file
+            </string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
