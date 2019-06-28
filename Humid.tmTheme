@@ -32,11 +32,6 @@
                 <key>selection</key>
                 <string>#3f3938</string>
 
-                <!--
-                <key>selectionBorder</key>
-                <string>#eed600</string>
-                -->
-
                 <key>findHighlight</key>
                 <string>#eed600</string>
 
@@ -69,6 +64,9 @@
 
                 <key>tagsForeground</key>
                 <string>#ff8000</string>
+
+                <key>line_diff_width</key>
+                <string>2</string>
             </dict>
         </dict>
 
