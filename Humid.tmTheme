@@ -115,10 +115,8 @@
                 entity -
                     ( entity.name.filename.find-in-files
                     , source.ts meta.function-call entity.name.function
-                    , source.ts entity.name.type
                     , source.go meta.type entity.name
                     )
-                , source.ts entity.name.type.class
             </string>
             <key>settings</key>
             <dict>
@@ -154,7 +152,10 @@
                     , source.js keyword.operator - keyword.operator.word
                     , source.python keyword.operator - keyword.operator.logical
                     , source.shell.bash keyword.operator
-                    , source.ts keyword.operator
+                    , source.ts keyword.operator -
+                        ( keyword.operator.expression
+                        , keyword.operator.new
+                        )
                     )
                 , source.go storage.type.keyword
                 , source.js variable.language.super
@@ -165,7 +166,10 @@
                 , source.ts storage.modifier
                 , source.ts storage.type.class
                 , source.ts storage.type.function
-                , source.ts variable.language
+                , source.ts storage.type.interface
+                , source.ts storage.type.enum
+                , source.ts variable.language.super
+                , source.ts variable.language.this
             </string>
             <key>settings</key>
             <dict>
@@ -204,12 +208,16 @@
                 storage -
                     ( source.go storage.type.keyword
                     , source.ts meta.var.expr storage.type
-                    , source.ts storage.type.function
+                    , source.ts storage.type.function.arrow
                     , source.ts storage.type.class
                     , source.ts storage.modifier
                     )
                 , source.ts support.type
-                , source.ts entity.name.type
+                , source.ts entity.name.type -
+                    ( entity.name.type.class
+                    , entity.name.type.interface
+                    , entity.name.type.enum
+                    )
             </string>
             <key>settings</key>
             <dict>
@@ -247,7 +255,7 @@
                     , source.js support.type
                     , source.ts support.type
                     , source.ts support.constant
-                    , source.ts support.variable.property.dom
+                    , source.ts support.variable.property
                     , source.ts support.class
                     )
                 , source.go variable.function
