@@ -114,8 +114,8 @@
             <string>
                 entity -
                     ( entity.name.filename.find-in-files
-                    , source.ts meta.function-call entity.name.function
                     , source.go meta.type entity.name
+                    , source.ts meta.function-call entity.name.function
                     )
             </string>
             <key>settings</key>
@@ -165,9 +165,9 @@
                 , source.ts meta.var.expr storage.type
                 , source.ts storage.modifier
                 , source.ts storage.type.class
+                , source.ts storage.type.enum
                 , source.ts storage.type.function
                 , source.ts storage.type.interface
-                , source.ts storage.type.enum
                 , source.ts variable.language.super
                 , source.ts variable.language.this
             </string>
@@ -208,16 +208,16 @@
                 storage -
                     ( source.go storage.type.keyword
                     , source.ts meta.var.expr storage.type
-                    , source.ts storage.type.function.arrow
-                    , source.ts storage.type.class
                     , source.ts storage.modifier
+                    , source.ts storage.type.class
+                    , source.ts storage.type.function.arrow
                     )
-                , source.ts support.type
                 , source.ts entity.name.type -
                     ( entity.name.type.class
-                    , entity.name.type.interface
                     , entity.name.type.enum
+                    , entity.name.type.interface
                     )
+                , source.ts support.type
             </string>
             <key>settings</key>
             <dict>
@@ -253,16 +253,16 @@
                     , source.js support.constant
                     , source.js support.module
                     , source.js support.type
-                    , source.ts support.type
-                    , source.ts support.constant
-                    , source.ts support.variable.property
                     , source.ts support.class
+                    , source.ts support.constant
+                    , source.ts support.type
+                    , source.ts support.variable.property
                     )
-                , source.go variable.function
                 , source.go meta.type entity.other.inherited-class
+                , source.go variable.function
                 , source.js variable.function
-                , source.ts meta.function-call entity.name.function
                 , source.json meta.mapping.key string.quoted
+                , source.ts meta.function-call entity.name.function
             </string>
             <key>settings</key>
             <dict>
