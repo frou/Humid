@@ -139,7 +139,8 @@
             <key>scope</key>
             <string>
                 keyword -
-                    ( source.go keyword.operator
+                    ( source.glsl keyword.operator
+                    , source.go keyword.operator
                     , source.js keyword.generator
                     , source.js keyword.operator -
                         ( keyword.operator.word
