@@ -64,9 +64,6 @@
 
                 <key>tagsForeground</key>
                 <string>#ff8000</string>
-
-                <key>line_diff_width</key>
-                <string>2</string>
             </dict>
         </dict>
 
