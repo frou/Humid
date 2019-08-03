@@ -164,6 +164,8 @@
                 , source.ts storage.type.interface
                 , source.ts variable.language.super
                 , source.ts variable.language.this
+                , source.clojure storage.modifier
+                , source.clojure storage.type
             </string>
             <key>settings</key>
             <dict>
@@ -252,6 +254,7 @@
                 , source.js variable.function
                 , source.json meta.mapping.key string.quoted
                 , source.ts meta.function-call entity.name.function
+                , source.clojure variable.function
             </string>
             <key>settings</key>
             <dict>
