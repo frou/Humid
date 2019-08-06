@@ -183,6 +183,7 @@
                 markup
                 , source.js meta.template.expression
                 , source.ts string.template meta.embedded
+                , source.clojure constant.other.keyword
             </string>
             <key>settings</key>
             <dict>
