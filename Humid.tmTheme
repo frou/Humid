@@ -154,8 +154,6 @@
                 , source.go storage.type.keyword
                 , source.js variable.language.super
                 , source.js variable.language.this
-                , source.ts keyword.operator.expression
-                , source.ts keyword.operator.new
                 , source.ts meta.var.expr storage.type
                 , source.ts storage.modifier
                 , source.ts storage.type.class
