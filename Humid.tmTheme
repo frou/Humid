@@ -73,7 +73,9 @@
             <string>Comment</string>
             <key>scope</key>
             <string>
-                  comment
+                  comment -
+                    ( source.clojure comment.punctuation
+                    )
                 , constant.numeric.line-number.match.find-in-files
                 , entity.name.filename.find-in-files
             </string>
