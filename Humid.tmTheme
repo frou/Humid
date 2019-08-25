@@ -156,6 +156,11 @@
                     , source.clojure keyword.operator.macro
                     )
                 , source.go storage.type.keyword
+                , source.java storage.modifier -
+                    ( source.java storage.modifier.array
+                    )
+                , source.java storage.type.var
+                , source.java meta.class.identifier storage.type
                 , source.js variable.language.super
                 , source.js variable.language.this
                 , source.ts meta.var.expr storage.type
@@ -207,6 +212,8 @@
                 storage -
                     ( source.ts storage.type.function.arrow
                     )
+                , source.java meta.instantiation support.class
+                , source.java meta.method.parameters support.class
                 , source.ts entity.name.type -
                     ( entity.name.type.class
                     , entity.name.type.enum
@@ -244,6 +251,7 @@
             <string>
                 support -
                     ( source.go support.type.builtin
+                    , source.java support.class
                     , source.js support.class
                     , source.js support.constant
                     , source.js support.module
@@ -254,6 +262,7 @@
                     )
                 , source.go meta.type entity.other.inherited-class
                 , source.go variable.function
+                , source.java variable.function
                 , source.js variable.function
                 , source.json meta.mapping.key string.quoted
                 , source.ts meta.function-call entity.name.function
