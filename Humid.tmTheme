@@ -92,7 +92,9 @@
             <string>Constant</string>
             <key>scope</key>
             <string>
-                constant
+                constant -
+                    ( source.java constant.other
+                    )
             </string>
             <key>settings</key>
             <dict>
