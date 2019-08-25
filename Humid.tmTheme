@@ -138,8 +138,10 @@
             <key>scope</key>
             <string>
                 keyword -
-                    ( source.glsl keyword.operator
+                    ( source.clojure keyword.operator.macro
+                    , source.glsl keyword.operator
                     , source.go keyword.operator
+                    , source.java keyword.operator
                     , source.js keyword.generator
                     , source.js keyword.operator -
                         ( keyword.operator.word
@@ -152,9 +154,9 @@
                         ( keyword.operator.expression
                         , keyword.operator.new
                         )
-                    , source.java keyword.operator
-                    , source.clojure keyword.operator.macro
                     )
+                , source.clojure storage.modifier
+                , source.clojure storage.type
                 , source.go storage.type.keyword
                 , source.java storage.modifier -
                     ( source.java storage.modifier.array
@@ -171,8 +173,6 @@
                 , source.ts storage.type.interface
                 , source.ts variable.language.super
                 , source.ts variable.language.this
-                , source.clojure storage.modifier
-                , source.clojure storage.type
             </string>
             <key>settings</key>
             <dict>
@@ -188,9 +188,9 @@
             <key>scope</key>
             <string>
                 markup
+                , source.clojure constant.other.keyword
                 , source.js meta.template.expression
                 , source.ts string.template meta.embedded
-                , source.clojure constant.other.keyword
             </string>
             <key>settings</key>
             <dict>
@@ -260,13 +260,13 @@
                     , source.ts support.constant
                     , source.ts support.variable.property
                     )
+                , source.clojure variable.function
                 , source.go meta.type entity.other.inherited-class
                 , source.go variable.function
                 , source.java variable.function
                 , source.js variable.function
                 , source.json meta.mapping.key string.quoted
                 , source.ts meta.function-call entity.name.function
-                , source.clojure variable.function
             </string>
             <key>settings</key>
             <dict>
