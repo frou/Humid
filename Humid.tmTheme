@@ -152,6 +152,7 @@
                         ( keyword.operator.expression
                         , keyword.operator.new
                         )
+                    , source.java keyword.operator
                     , source.clojure keyword.operator.macro
                     )
                 , source.go storage.type.keyword
