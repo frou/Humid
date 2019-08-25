@@ -217,6 +217,7 @@
                     )
                 , source.java meta.instantiation support.class
                 , source.java meta.method.parameters support.class
+                , source.java meta.catch.parameters support.class
                 , source.java support.class.import
                 , source.ts entity.name.type -
                     ( entity.name.type.class
