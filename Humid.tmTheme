@@ -272,6 +272,7 @@
                 , source.java variable.function
                 , source.js variable.function
                 , source.json meta.mapping.key string.quoted
+                , source.shell.bash variable.function
                 , source.ts meta.function-call entity.name.function
             </string>
             <key>settings</key>
