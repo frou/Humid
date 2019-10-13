@@ -89,13 +89,13 @@
 	<key>DVTSourceTextBlockDimBackgroundColor</key>
 	<string>0.5 0.5 0.5 1</string>
 	<key>DVTSourceTextCurrentLineHighlightColor</key>
-	<string>0.247059 0.223529 0.219608 0.25</string>
+	<string>0.247059 0.223529 0.219608 0.195205</string>
 	<key>DVTSourceTextInsertionPointColor</key>
 	<string>1 1 1 1</string>
 	<key>DVTSourceTextInvisiblesColor</key>
 	<string>0.309804 0.301961 0.301961 1</string>
 	<key>DVTSourceTextSelectionColor</key>
-	<string>0.247059 0.223529 0.219608 1</string>
+	<string>0.247059 0.223529 0.219608 0.59589</string>
 	<key>DVTSourceTextSyntaxColors</key>
 	<dict>
 		<key>xcode.syntax.attribute</key>
