@@ -2,7 +2,7 @@
 
 # Description
 
-[Humid] is a colour scheme for [Sublime Text].
+[Humid] is a syntax colour scheme for [Sublime Text] and [Xcode].
 
 [![PDD status](http://www.0pdd.com/svg?name=frou/Humid)](http://www.0pdd.com/p?name=frou/Humid)
 
@@ -34,4 +34,5 @@ SOFTWARE.
 
 [humid]: https://github.com/frou/Humid
 [sublime text]: https://www.sublimetext.com/
+[xcode]: https://developer.apple.com/xcode/
 [shot]: https://raw.githubusercontent.com/frou/Humid/master/screenshot.png
