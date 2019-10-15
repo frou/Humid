@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-set -eu # safer defaults
-
-THEME_NAME="Humid.xccolortheme"
-THEME_PATH="$(pwd)/${THEME_NAME}"
-
-ln -f -s \
-	"${THEME_PATH}" \
-	"${HOME}/Library/Developer/Xcode/UserData/FontAndColorThemes"
