@@ -152,6 +152,7 @@
                         ( keyword.operator.logical
                         )
                     , source.shell.bash keyword.operator
+                    , source.swift keyword.operator
                     , source.ts keyword.operator -
                         ( keyword.operator.expression
                         , keyword.operator.new
@@ -219,6 +220,7 @@
                 , source.java meta.method.parameters support.class
                 , source.java meta.catch.parameters support.class
                 , source.java support.class.import
+                , source.swift support.class
                 , source.ts entity.name.type -
                     ( entity.name.type.class
                     , entity.name.type.enum
@@ -262,6 +264,7 @@
                     , source.js support.constant
                     , source.js support.module
                     , source.js support.type
+                    , source.swift entity.name.type
                     , source.ts support.class
                     , source.ts support.constant
                     , source.ts support.variable.property
