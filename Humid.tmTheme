@@ -270,6 +270,7 @@
                     , source.ts support.variable.property
                     )
                 , source.clojure variable.function
+                , source.python variable.function
                 , source.go meta.type entity.other.inherited-class
                 , source.go variable.function
                 , source.java variable.function
