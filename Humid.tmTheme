@@ -264,6 +264,7 @@
                     , source.js support.constant
                     , source.js support.module
                     , source.js support.type
+                    , source.python entity.name.function
                     , source.swift entity.name.type
                     , source.ts support.class
                     , source.ts support.constant
