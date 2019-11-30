@@ -298,7 +298,7 @@
             <string>Diff insertion</string>
             <key>scope</key>
             <string>
-                markup.inserted.diff
+                markup.inserted
             </string>
             <key>settings</key>
             <dict>
@@ -312,7 +312,7 @@
             <string>Diff deletion</string>
             <key>scope</key>
             <string>
-                markup.deleted.diff
+                markup.deleted
             </string>
             <key>settings</key>
             <dict>
