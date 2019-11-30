@@ -291,7 +291,7 @@
         <!-- Intentionally unstyled. -->
         <!-- Rationale: Already distinct because other scopes are styled. -->
 
-        <!-- Suport for stock Diff syntax -->
+        <!-- Support for stock Diff syntax -->
 
         <dict>
             <key>name</key>
