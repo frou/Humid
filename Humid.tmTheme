@@ -259,7 +259,8 @@
             <key>scope</key>
             <string>
                 support -
-                    ( source.go support.type.builtin
+                    ( source.erlang support.namespace
+                    , source.go support.type.builtin
                     , source.java support.class
                     , source.java support.type.package
                     , source.js support.class
