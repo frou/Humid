@@ -142,7 +142,12 @@
             <key>scope</key>
             <string>
                 keyword -
-                    ( source.c keyword.operator
+                    ( source.c keyword.operator -
+                        ( keyword.operator.word
+                        )
+                    , source.c++ keyword.operator -
+                        ( keyword.operator.word
+                        )
                     , source.clojure keyword.operator.macro
                     , source.erlang keyword.operator -
                         ( keyword.operator.word
