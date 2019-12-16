@@ -140,7 +140,8 @@
             <key>scope</key>
             <string>
                 keyword -
-                    ( source.clojure keyword.operator.macro
+                    ( source.c keyword.operator
+                    , source.clojure keyword.operator.macro
                     , source.erlang keyword.operator -
                         ( keyword.operator.word
                         )
