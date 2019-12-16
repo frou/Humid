@@ -141,6 +141,9 @@
             <string>
                 keyword -
                     ( source.clojure keyword.operator.macro
+                    , source.erlang keyword.operator -
+                        ( keyword.operator.word
+                        )
                     , source.glsl keyword.operator
                     , source.go keyword.operator
                     , source.java keyword.operator
