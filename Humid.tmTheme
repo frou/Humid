@@ -109,7 +109,9 @@
             <string>Entity</string>
             <key>scope</key>
             <string>
-                entity
+                entity -
+                    ( source.c++ entity.name.function punctuation.accessor
+                    )
             </string>
             <key>settings</key>
             <dict>
