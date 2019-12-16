@@ -195,6 +195,7 @@
             <key>scope</key>
             <string>
                 markup
+                , string constant.other.placeholder
                 , source.clojure constant.other.keyword
                 , source.erlang constant.other.symbol
                 , source.erlang constant.language.exception.type
