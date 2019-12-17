@@ -82,7 +82,12 @@
     },
     {
       "name": "Support",
-      "scope": "support - ( source.erlang support.namespace, source.go support.type.builtin, source.java support.class, source.java support.type.package, source.js support.class, source.js support.constant, source.js support.module, source.js support.type, source.python entity.name.function, source.swift entity.name.type, source.ts support.class, source.ts support.constant, source.ts support.variable.property ), source.c variable.function, source.c++ variable.function, source.clojure variable.function, source.erlang variable.function, source.python variable.function, source.go meta.type entity.other.inherited-class, source.go variable.function, source.java variable.function, source.js variable.function, source.json meta.mapping.key string.quoted, source.shell.bash variable.function, source.ts meta.function-call entity.name.function",
+      "scope": "support - ( source.erlang support.namespace, source.go support.type.builtin, source.java support.class, source.java support.type.package, source.js support.class, source.js support.constant, source.js support.module, source.js support.type, source.python entity.name.function, source.swift entity.name.type, source.ts support.class, source.ts support.constant, source.ts support.variable.property ), source.go meta.type entity.other.inherited-class, source.json meta.mapping.key string.quoted, source.ts meta.function-call entity.name.function",
+      "foreground": "var(red3)"
+    },
+    {
+      "name": "Variable (Function)",
+      "scope": "variable.function",
       "foreground": "var(red3)"
     },
     {
