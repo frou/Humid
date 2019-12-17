@@ -111,17 +111,17 @@
       "foreground": "var(orange)"
     },
     {
-      "name": "Build Output Error Prefix",
+      "name": "Build Results Error Prefix",
       "scope": "message.error",
       "foreground": "var(red)"
     },
     {
-      "name": "Build Output Warning Prefix",
+      "name": "Build Results Warning Prefix",
       "scope": "message.warning",
       "foreground": "var(gold)"
     },
     {
-      "name": "Build Output Note Prefix",
+      "name": "Build Results Note Prefix",
       "scope": "message.note",
       "foreground": "var(purple)"
     }
