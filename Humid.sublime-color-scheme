@@ -1,0 +1,109 @@
+{
+  "name": "Humid",
+  "author": "https://github.com/frou",
+  "variables": {
+    "black": "#000000",
+    "black2": "#211e1e",
+    "blue": "#5a70a9",
+    "green": "#6a8856",
+    "grey": "#8c8c99",
+    "grey2": "#60605a",
+    "grey3": "#3f3938",
+    "grey4": "#4f4d4d",
+    "orange": "#ae7337",
+    "orange2": "#ff8000",
+    "orange3": "#ad9361",
+    "red": "#bb0000",
+    "red2": "#b75b4e",
+    "red3": "#995a64",
+    "white": "#ffffff",
+    "white2": "#dadada",
+    "yellow": "#eed600"
+  },
+  "globals": {
+    "foreground": "var(white2)",
+    "background": "var(black2)",
+    "caret": "var(white)",
+    "invisibles": "var(grey4)",
+    "line_highlight": "var(grey3)",
+    "selection": "var(grey3)",
+    "gutter": "var(black2)",
+    "gutter_foreground": "var(grey2)",
+    "active_guide": "var(orange3)",
+    "find_highlight_foreground": "var(black)",
+    "find_highlight": "var(yellow)",
+    "brackets_options": "underline",
+    "brackets_foreground": "var(orange2)",
+    "bracket_contents_options": "underline",
+    "bracket_contents_foreground": "var(orange2)",
+    "tags_options": "underline",
+    "tags_foreground": "var(orange2)"
+  },
+  "rules": [
+    {
+      "name": "Comment",
+      "scope": "comment - ( source.clojure comment.punctuation ), constant.numeric.line-number.match.find-in-files, entity.name.filename.find-in-files",
+      "foreground": "var(grey2)"
+    },
+    {
+      "name": "Constant",
+      "scope": "constant - ( source.java constant.other )",
+      "foreground": "var(red2)"
+    },
+    {
+      "name": "Entity",
+      "scope": "entity - ( source.c++ entity.name.function punctuation.accessor )",
+      "foreground": "var(orange)"
+    },
+    {
+      "name": "Invalid",
+      "scope": "invalid",
+      "background": "var(red)"
+    },
+    {
+      "name": "Keyword",
+      "scope": "keyword - ( source.c keyword.operator - ( keyword.operator.word ), source.c++ keyword.operator - ( keyword.operator.word ), source.clojure keyword.operator.macro, source.erlang keyword.operator - ( keyword.operator.word ), source.glsl keyword.operator, source.go keyword.operator, source.java keyword.operator, source.js keyword.generator, source.js keyword.operator - ( keyword.operator.word ), source.python keyword.operator - ( keyword.operator.logical ), source.shell.bash keyword.operator, source.swift keyword.operator, source.ts keyword.operator - ( keyword.operator.expression, keyword.operator.new ) ), source.clojure storage.modifier, source.clojure storage.type, source.go storage.type.keyword, source.java storage.modifier - ( source.java storage.modifier.array ), source.java storage.type.var, source.java meta.class.identifier storage.type, source.js variable.language.super, source.js variable.language.this, source.ts meta.var.expr storage.type, source.ts storage.modifier, source.ts storage.type.class, source.ts storage.type.enum, source.ts storage.type.function, source.ts storage.type.interface, source.ts variable.language.super, source.ts variable.language.this",
+      "foreground": "var(green)"
+    },
+    {
+      "name": "Markup",
+      "scope": "markup, string constant.other.placeholder, source.clojure constant.other.keyword, source.erlang constant.other.symbol, source.erlang constant.language.exception.type, source.java meta.annotation, source.js meta.template.expression, source.ts string.template meta.embedded",
+      "foreground": "var(grey)"
+    },
+    {
+      "name": "Storage",
+      "scope": "storage - ( source.ts storage.type.function.arrow ), source.java meta.instantiation support.class, source.java meta.method.parameters support.class, source.java meta.catch.parameters support.class, source.java support.class.import, source.swift support.class, source.ts entity.name.type - ( entity.name.type.class, entity.name.type.enum, entity.name.type.interface ), source.ts support.type",
+      "foreground": "var(orange3)"
+    },
+    {
+      "name": "String",
+      "scope": "string",
+      "foreground": "var(blue)"
+    },
+    {
+      "name": "Support",
+      "scope": "support - ( source.erlang support.namespace, source.go support.type.builtin, source.java support.class, source.java support.type.package, source.js support.class, source.js support.constant, source.js support.module, source.js support.type, source.python entity.name.function, source.swift entity.name.type, source.ts support.class, source.ts support.constant, source.ts support.variable.property ), source.c variable.function, source.c++ variable.function, source.clojure variable.function, source.erlang variable.function, source.python variable.function, source.go meta.type entity.other.inherited-class, source.go variable.function, source.java variable.function, source.js variable.function, source.json meta.mapping.key string.quoted, source.shell.bash variable.function, source.ts meta.function-call entity.name.function",
+      "foreground": "var(red3)"
+    },
+    {
+      "name": "Diff insertion",
+      "scope": "markup.inserted",
+      "foreground": "var(green)"
+    },
+    {
+      "name": "Diff deletion",
+      "scope": "markup.deleted",
+      "foreground": "var(red2)"
+    },
+    {
+      "name": "Diff metadata",
+      "scope": "meta.diff",
+      "foreground": "var(grey2)"
+    },
+    {
+      "name": "Diff filename",
+      "scope": "meta.diff.header.to-file",
+      "foreground": "var(orange)"
+    }
+  ]
+}
