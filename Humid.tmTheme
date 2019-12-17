@@ -285,6 +285,8 @@
                     , source.ts support.constant
                     , source.ts support.variable.property
                     )
+                , source.c variable.function
+                , source.c++ variable.function
                 , source.clojure variable.function
                 , source.erlang variable.function
                 , source.python variable.function
