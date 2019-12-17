@@ -104,6 +104,21 @@
       "name": "Diff filename",
       "scope": "meta.diff.header.to-file",
       "foreground": "var(orange)"
+    },
+    {
+      "name": "Build Output Error Prefix",
+      "scope": "message.error",
+      "foreground": "var(red2)"
+    },
+    {
+      "name": "Build Output Warning Prefix",
+      "scope": "message.warning",
+      "foreground": "var(orange3)"
+    },
+    {
+      "name": "Build Output Note Prefix",
+      "scope": "message.note",
+      "foreground": "var(red3)"
     }
   ]
 }
