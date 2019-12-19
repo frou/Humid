@@ -42,7 +42,7 @@
   "rules": [
     {
       "name": "Comment",
-      "scope": "comment - ( source.clojure comment.punctuation )",
+      "scope": "comment - (source.clojure comment.punctuation)",
       "foreground": "var(slate_light)"
     },
     {
@@ -52,12 +52,12 @@
     },
     {
       "name": "Constant",
-      "scope": "constant - ( source.java constant.other )",
+      "scope": "constant - (source.java constant.other)",
       "foreground": "var(red)"
     },
     {
       "name": "Entity",
-      "scope": "entity - ( source.c++ entity.name.function punctuation.accessor )",
+      "scope": "entity - (source.c++ entity.name.function punctuation.accessor)",
       "foreground": "var(orange)"
     },
     {
@@ -67,7 +67,7 @@
     },
     {
       "name": "Keyword",
-      "scope": "keyword - keyword.operator | keyword.operator.word | source.python keyword.operator.logical | source.ts & ( keyword.operator.expression | keyword.operator.new )",
+      "scope": "keyword - keyword.operator | keyword.operator.word | source.python keyword.operator.logical | source.ts & (keyword.operator.expression | keyword.operator.new)",
       "foreground": "var(green)"
     },
     {
@@ -87,12 +87,12 @@
     },
     {
       "name": "Storage",
-      "scope": "storage - ( source.ts storage.type.function.arrow )",
+      "scope": "storage - (source.ts storage.type.function.arrow)",
       "foreground": "var(gold)"
     },
     {
       "name": "Storage [reclassification]",
-      "scope": "source.java meta.instantiation support.class, source.java meta.method.parameters support.class, source.java meta.catch.parameters support.class, source.java support.class.import, source.swift support.class, source.ts entity.name.type - ( entity.name.type.class, entity.name.type.enum, entity.name.type.interface ), source.ts support.type",
+      "scope": "source.java meta.instantiation support.class, source.java meta.method.parameters support.class, source.java meta.catch.parameters support.class, source.java support.class.import, source.swift support.class, source.ts entity.name.type - (entity.name.type.class, entity.name.type.enum, entity.name.type.interface), source.ts support.type",
       "foreground": "var(gold)"
     },
     {
@@ -102,7 +102,7 @@
     },
     {
       "name": "Support",
-      "scope": "support - ( source.erlang support.namespace, source.go support.type.builtin, source.java support.class, source.java support.type.package, source.js support.class, source.js support.constant, source.js support.module, source.js support.type, source.python entity.name.function, source.swift entity.name.type, source.ts support.class, source.ts support.constant, source.ts support.variable.property )",
+      "scope": "support - (source.erlang support.namespace, source.go support.type.builtin, source.java support.class, source.java support.type.package, source.js support.class, source.js support.constant, source.js support.module, source.js support.type, source.python entity.name.function, source.swift entity.name.type, source.ts support.class, source.ts support.constant, source.ts support.variable.property)",
       "foreground": "var(purple)"
     },
     {
