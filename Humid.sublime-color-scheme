@@ -42,7 +42,12 @@
   "rules": [
     {
       "name": "Comment",
-      "scope": "comment - ( source.clojure comment.punctuation ), constant.numeric.line-number.match.find-in-files, entity.name.filename.find-in-files",
+      "scope": "comment - ( source.clojure comment.punctuation )",
+      "foreground": "var(slate_light)"
+    },
+    {
+      "name": "Comment (reclassification)",
+      "scope": "text.find-in-files constant.numeric.line-number.match",
       "foreground": "var(slate_light)"
     },
     {
@@ -68,6 +73,11 @@
     {
       "name": "Markup",
       "scope": "markup, string constant.other.placeholder, source.clojure constant.other.keyword, source.erlang constant.other.symbol, source.erlang constant.language.exception.type, source.java meta.annotation, source.js meta.template.expression, source.ts string.template meta.embedded",
+      "foreground": "var(metal)"
+    },
+    {
+      "name": "Markup (reclassification)",
+      "scope": "text.find-in-files entity.name.filename",
       "foreground": "var(metal)"
     },
     {
