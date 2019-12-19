@@ -8,7 +8,6 @@
     "green": "#6a8856",
     "grey": "#3f3938",
     "grey_light": "#4f4d4d",
-    "metal": "#8c8c99",
     "orange": "#ae7337",
     "orange_punchy": "#ff8000",
     "purple": "#995a64",
@@ -16,6 +15,7 @@
     "red_punchy": "#bb0000",
     "slate": "#211e1e",
     "slate_light": "#60605a",
+    "steel": "#8c8c99",
     "white": "#ffffff",
     "white_faded": "#dadada",
     "yellow_punchy": "#eed600"
@@ -73,12 +73,12 @@
     {
       "name": "Markup",
       "scope": "markup, string constant.other.placeholder, source.clojure constant.other.keyword, source.erlang constant.other.symbol, source.erlang constant.language.exception.type, source.java meta.annotation, source.js meta.template.expression, source.ts string.template meta.embedded",
-      "foreground": "var(metal)"
+      "foreground": "var(steel)"
     },
     {
       "name": "Markup (reclassification)",
       "scope": "text.find-in-files entity.name.filename",
-      "foreground": "var(metal)"
+      "foreground": "var(steel)"
     },
     {
       "name": "Storage",
