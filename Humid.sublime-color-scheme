@@ -46,11 +46,6 @@
       "foreground": "var(slate_light)"
     },
     {
-      "name": "Comment [reclassification]",
-      "scope": "text.find-in-files constant.numeric.line-number.match",
-      "foreground": "var(slate_light)"
-    },
-    {
       "name": "Constant",
       "scope": "constant - (source.java constant.other)",
       "foreground": "var(red)"
@@ -82,7 +77,7 @@
     },
     {
       "name": "Markup [reclassification]",
-      "scope": "text.find-in-files entity.name.filename | string constant.other.placeholder | source.clojure constant.other.keyword | source.erlang & (constant.other.symbol | constant.language.exception.type) | source.java meta.annotation | source.js meta.template.expression | source.ts meta.embedded string.template  | meta.scope-selector.sublime & (keyword.operator | punctuation.section.group)",
+      "scope": "string constant.other.placeholder | source.clojure constant.other.keyword | source.erlang & (constant.other.symbol | constant.language.exception.type) | source.java meta.annotation | source.js meta.template.expression | source.ts meta.embedded string.template  | meta.scope-selector.sublime & (keyword.operator | punctuation.section.group)",
       "foreground": "var(steel)"
     },
     {
@@ -131,17 +126,27 @@
       "foreground": "var(orange)"
     },
     {
-      "name": "Build Results Error Prefix",
+      "name": "Find Results, Path/LineNo of Matching Lines",
+      "scope": "text.find-in-files & (entity.name.filename | constant.numeric.line-number.match)",
+      "foreground": "var(steel)"
+    },
+    {
+      "name": "Find Results, LineNo of Surrounding Lines",
+      "scope": "text.find-in-files constant.numeric.line-number",
+      "foreground": "var(slate_light)"
+    },
+    {
+      "name": "Build Results, Error Prefix",
       "scope": "message.error",
       "foreground": "var(red)"
     },
     {
-      "name": "Build Results Warning Prefix",
+      "name": "Build Results, Warning Prefix",
       "scope": "message.warning",
       "foreground": "var(gold)"
     },
     {
-      "name": "Build Results Note Prefix",
+      "name": "Build Results, Note Prefix",
       "scope": "message.note",
       "foreground": "var(blue)"
     }
