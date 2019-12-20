@@ -148,7 +148,7 @@
     {
       "name": "Build Results Note Prefix",
       "scope": "message.note",
-      "foreground": "var(purple)"
+      "foreground": "var(blue)"
     }
   ]
 }
