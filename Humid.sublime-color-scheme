@@ -32,11 +32,11 @@
     "active_guide": "var(gold)",
     "find_highlight_foreground": "var(black)",
     "find_highlight": "var(yellow_punchy)",
-    "brackets_options": "underline",
+    "brackets_options": "foreground",
     "brackets_foreground": "var(orange_punchy)",
-    "bracket_contents_options": "underline",
+    "bracket_contents_options": "foreground",
     "bracket_contents_foreground": "var(orange_punchy)",
-    "tags_options": "underline",
+    "tags_options": "foreground",
     "tags_foreground": "var(orange_punchy)"
   },
   "rules": [
