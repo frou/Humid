@@ -107,12 +107,7 @@
     },
     {
       "name": "Support [reclassification]",
-      "scope": "source.go meta.type entity.other.inherited-class, source.json meta.mapping.key string.quoted, source.ts meta.function-call entity.name.function",
-      "foreground": "var(purple)"
-    },
-    {
-      "name": "Function Reference",
-      "scope": "variable.function",
+      "scope": "variable.function, source.go meta.type entity.other.inherited-class, source.json meta.mapping.key string.quoted, source.ts meta.function-call entity.name.function",
       "foreground": "var(purple)"
     },
     {
