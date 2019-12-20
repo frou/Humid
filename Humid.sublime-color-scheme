@@ -72,7 +72,7 @@
     },
     {
       "name": "Keyword [reclassification]",
-      "scope": "(source.clojure & (storage.modifier | storage.type)) | (source.go storage.type.keyword) | (source.java & ((storage.modifier - storage.modifier.array) | storage.type.var | meta.class.identifier storage.type)) | (source.js & (variable.language.super | variable.language.this)) | (source.ts & (meta.var.expr storage.type | storage.modifier | storage.type.class | storage.type.enum | storage.type.function | storage.type.interface | variable.language.super | variable.language.this))",
+      "scope": "source.clojure & (storage.modifier | storage.type) | source.go storage.type.keyword | source.java & ((storage.modifier - storage.modifier.array) | storage.type.var | meta.class.identifier storage.type) | source.js & (variable.language.super | variable.language.this) | source.ts & (meta.var.expr storage.type | storage.modifier | storage.type.class | storage.type.enum | storage.type.function | storage.type.interface | variable.language.super | variable.language.this)",
       "foreground": "var(green)"
     },
     {
@@ -82,7 +82,7 @@
     },
     {
       "name": "Markup [reclassification]",
-      "scope": "text.find-in-files entity.name.filename | string constant.other.placeholder | source.clojure constant.other.keyword | source.erlang constant.other.symbol | source.erlang constant.language.exception.type | source.java meta.annotation | source.js meta.template.expression | source.ts string.template meta.embedded | meta.scope-selector.sublime & (keyword.operator | punctuation.section.group)",
+      "scope": "text.find-in-files entity.name.filename | string constant.other.placeholder | source.clojure constant.other.keyword | source.erlang & (constant.other.symbol | constant.language.exception.type) | source.java meta.annotation | source.js meta.template.expression | source.ts meta.embedded string.template  | meta.scope-selector.sublime & (keyword.operator | punctuation.section.group)",
       "foreground": "var(steel)"
     },
     {
@@ -92,7 +92,7 @@
     },
     {
       "name": "Storage [reclassification]",
-      "scope": "source.java meta.instantiation support.class, source.java meta.method.parameters support.class, source.java meta.catch.parameters support.class, source.java support.class.import, source.swift support.class, source.ts entity.name.type - (entity.name.type.class, entity.name.type.enum, entity.name.type.interface), source.ts support.type",
+      "scope": "source.java & (support.class.import | (support.class & (meta.instantiation | meta.method.parameters | meta.catch.parameters))) | source.swift support.class | source.ts & (support.type | entity.name.type - (entity.name.type.class | entity.name.type.enum | entity.name.type.interface))",
       "foreground": "var(gold)"
     },
     {
@@ -102,12 +102,12 @@
     },
     {
       "name": "Support",
-      "scope": "support - (source.erlang support.namespace, source.go support.type.builtin, source.java support.class, source.java support.type.package, source.js support.class, source.js support.constant, source.js support.module, source.js support.type, source.python entity.name.function, source.swift entity.name.type, source.ts support.class, source.ts support.constant, source.ts support.variable.property)",
+      "scope": "support - (source.erlang support.namespace | source.go support.type.builtin | source.java & (support.class | support.type.package) | source.js & (support.class | support.constant | support.module | support.type) | source.python entity.name.function | source.swift entity.name.type | source.ts & (support.class | support.constant | support.variable.property))",
       "foreground": "var(purple)"
     },
     {
       "name": "Support [reclassification]",
-      "scope": "variable.function, source.go meta.type entity.other.inherited-class, source.json meta.mapping.key string.quoted, source.ts meta.function-call entity.name.function",
+      "scope": "variable.function | source.go meta.type entity.other.inherited-class | source.json meta.mapping.key string.quoted | source.ts meta.function-call entity.name.function",
       "foreground": "var(purple)"
     },
     {
