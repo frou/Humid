@@ -77,7 +77,7 @@
     },
     {
       "name": "Markup [reclassification]",
-      "scope": "string constant.other.placeholder | source.clojure constant.other.keyword | source.erlang & (constant.other.symbol | constant.language.exception.type) | source.java meta.annotation | source.js meta.template.expression | source.ts meta.embedded string.template  | meta.scope-selector.sublime & (keyword.operator | punctuation.section.group)",
+      "scope": "string constant.other.placeholder | source.clojure constant.other.keyword | source.erlang & (constant.other.symbol | constant.language.exception.type) | source.java meta.annotation | source.js meta.template.expression | source.ts meta.embedded string.template | source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group)",
       "foreground": "var(steel)"
     },
     {
