@@ -106,47 +106,47 @@
       "foreground": "var(purple)"
     },
     {
-      "name": "Diff insertion",
+      "name": "DIFF: Insertion",
       "scope": "markup.inserted",
       "foreground": "var(green)"
     },
     {
-      "name": "Diff deletion",
+      "name": "DIFF: Deletion",
       "scope": "markup.deleted",
       "foreground": "var(red)"
     },
     {
-      "name": "Diff metadata",
+      "name": "DIFF: Metadata",
       "scope": "meta.diff",
       "foreground": "var(slate_light)"
     },
     {
-      "name": "Diff filename",
+      "name": "DIFF: Filename",
       "scope": "meta.diff.header.to-file",
       "foreground": "var(orange)"
     },
     {
-      "name": "Find Results, Path/LineNo of Matching Lines",
+      "name": "FIND RESULTS: Path/LineNo of Matching Lines",
       "scope": "text.find-in-files & (entity.name.filename | constant.numeric.line-number.match)",
       "foreground": "var(steel)"
     },
     {
-      "name": "Find Results, LineNo of Surrounding Lines",
+      "name": "FIND RESULTS: LineNo of Surrounding Lines",
       "scope": "text.find-in-files constant.numeric.line-number",
       "foreground": "var(slate_light)"
     },
     {
-      "name": "Build Results, Error Prefix",
+      "name": "BUILD RESULTS: Error Prefix",
       "scope": "message.error",
       "foreground": "var(red)"
     },
     {
-      "name": "Build Results, Warning Prefix",
+      "name": "BUILD RESULTS: Warning Prefix",
       "scope": "message.warning",
       "foreground": "var(gold)"
     },
     {
-      "name": "Build Results, Note Prefix",
+      "name": "BUILD RESULTS: Note Prefix",
       "scope": "message.note",
       "foreground": "var(blue)"
     }
