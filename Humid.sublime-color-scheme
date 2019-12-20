@@ -137,17 +137,17 @@
     },
     {
       "name": "BUILD RESULTS: Error Prefix",
-      "scope": "message.error",
+      "scope": "text.build-results message.error",
       "foreground": "var(red)"
     },
     {
       "name": "BUILD RESULTS: Warning Prefix",
-      "scope": "message.warning",
+      "scope": "text.build-results message.warning",
       "foreground": "var(gold)"
     },
     {
       "name": "BUILD RESULTS: Note Prefix",
-      "scope": "message.note",
+      "scope": "text.build-results message.note",
       "foreground": "var(blue)"
     }
   ]
