@@ -83,7 +83,7 @@
     {
       "name": "Storage",
       "scope": "storage - (source.ts storage.type.function.arrow)",
-      "foreground": "var(gold)"
+      "foreground"  : "var(gold)"
     },
     {
       "name": "Storage [reclassification]",
@@ -107,23 +107,18 @@
     },
     {
       "name": "DIFF: Insertion",
-      "scope": "markup.inserted",
+      "scope": "source.diff markup.inserted",
       "foreground": "var(green)"
     },
     {
       "name": "DIFF: Deletion",
-      "scope": "markup.deleted",
+      "scope": "source.diff markup.deleted",
       "foreground": "var(red)"
     },
     {
       "name": "DIFF: Metadata",
-      "scope": "meta.diff",
-      "foreground": "var(slate_light)"
-    },
-    {
-      "name": "DIFF: Filename",
-      "scope": "meta.diff.header.to-file",
-      "foreground": "var(orange)"
+      "scope": "source.diff meta",
+      "foreground": "var(steel)"
     },
     {
       "name": "FIND RESULTS: Path/LineNo of Matching Lines",
