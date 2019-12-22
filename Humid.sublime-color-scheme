@@ -128,7 +128,7 @@
     {
       "name": "FIND RESULTS: LineNo of Surrounding Lines",
       "scope": "text.find-in-files constant.numeric.line-number",
-      "foreground": "var(slate_light)"
+      "foreground": "var(grey)"
     },
     {
       "name": "BUILD RESULTS: Error Prefix",
