@@ -52,7 +52,7 @@
     },
     {
       "name": "Entity",
-      "scope": "entity - (source.c++ entity.name.function punctuation.accessor)",
+      "scope": "entity - (source.c++ entity.name.function punctuation.accessor | source.python meta.class.inheritance)",
       "foreground": "var(orange)"
     },
     {
