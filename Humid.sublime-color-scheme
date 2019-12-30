@@ -38,6 +38,16 @@
     "bracket_contents_foreground": "var(orange_punchy)",
     "tags_options": "foreground",
     "tags_foreground": "var(orange_punchy)"
+
+    // @todo #0 Use glow for brackets/tags once on ST4
+
+    // "brackets_options": "glow",
+    // "brackets_foreground": "var(yellow_punchy)",
+    // "bracket_contents_options": "glow",
+    // "bracket_contents_foreground": "var(yellow_punchy)",
+    // "tags_options": "glow",
+    // "tags_foreground": "var(orange_punchy)"
+
   },
   "rules": [
     {
