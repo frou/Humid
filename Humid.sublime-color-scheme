@@ -97,7 +97,7 @@
     },
     {
       "name": "Storage [reclassification]",
-      "scope": "source.java & (support.class.import | (support.class & (meta.instantiation | meta.method.parameters | meta.catch.parameters))) | source.swift support.class | source.ts & (support.type | entity.name.type - (entity.name.type.class | entity.name.type.enum | entity.name.type.interface))",
+      "scope": "source.java & (support.class.import | (support.class & (meta.instantiation | meta.method.parameters | meta.catch.parameters))) | source.swift support.class | source.ts & (support.type | entity.name.type - (entity.name.type.class | entity.name.type.enum | entity.name.type.interface)) | source.python meta.function.parameters.annotation meta.generic-name",
       "foreground": "var(gold)"
     },
     {
