@@ -132,7 +132,7 @@
     },
     {
       "name": "FIND RESULTS: Path/LineNo of Matching Lines",
-      "scope": "text.find-in-files & (entity.name.filename | constant.numeric.line-number.match) | output.lsp.references & (entity.name.file | constant.numeric.integer.decimal)",
+      "scope": "text.find-in-files & (entity.name.filename | constant.numeric.line-number.match)",
       "foreground": "var(steel)"
     },
     {
@@ -154,6 +154,11 @@
       "name": "BUILD RESULTS: Note Prefix",
       "scope": "text.build-results message.note",
       "foreground": "var(blue)"
+    },
+    {
+      "name": "LSP SYMBOL REFERENCES: Path/LineNo of Matching Lines",
+      "scope": "output.lsp.references & (entity.name.file | constant.numeric.integer.decimal)",
+      "foreground": "var(steel)"
     }
   ]
 }
