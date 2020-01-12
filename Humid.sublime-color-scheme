@@ -131,33 +131,33 @@
       "foreground": "var(steel)"
     },
     {
-      "name": "FIND RESULTS / LSP DIAGNOSTICS / LSP SYMBOL REFERENCES: File paths and line numbers",
+      "name": "FIND RESULTS / LSP DIAGNOSTICS PANEL / LSP REFERENCES PANEL: File paths and line numbers",
       "scope": "text.find-in-files & (entity.name.filename | constant.numeric.line-number.match) | output.lsp.diagnostics & (meta.diagnostic.preamble string | constant.numeric.integer.decimal) | output.lsp.references & (entity.name.file | constant.numeric.integer.decimal)",
       "foreground": "var(steel)"
     },
     {
-      "name": "FIND RESULTS: LineNo of Surrounding Lines",
+      "name": "FIND RESULTS: Line numbers of surrounding lines",
       "scope": "text.find-in-files constant.numeric.line-number",
       "foreground": "var(grey)"
     },
     {
-      "name": "LSP DIAGNOSTICS: Linter name",
+      "name": "LSP DIAGNOSTICS PANEL: Linter name",
       "scope": "output.lsp.diagnostics comment.line",
       "foreground": "var(purple)"
     },
     {
-      "name": "BUILD RESULTS / LSP DIAGNOSTICS: Error Prefix",
-      "scope": "text.build-results message.error | output.lsp.diagnostics markup.error",
+      "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL / LSP DIAGNOSTICS SQUIGGLIES: Error",
+      "scope": "text.build-results message.error | output.lsp.diagnostics markup.error | markup.deleted.lsp",
       "foreground": "var(red)"
     },
     {
-      "name": "BUILD RESULTS / LSP DIAGNOSTICS: Warning Prefix",
-      "scope": "text.build-results message.warning | output.lsp.diagnostics markup.warning",
+      "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL / LSP DIAGNOSTICS SQUIGGLIES: Warning",
+      "scope": "text.build-results message.warning | output.lsp.diagnostics markup.warning | markup.changed.lsp",
       "foreground": "var(gold)"
     },
     {
-      "name": "BUILD RESULTS / LSP DIAGNOSTICS: Note Prefix",
-      "scope": "text.build-results message.note | output.lsp.diagnostics markup.info",
+      "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL / LSP DIAGNOSTICS SQUIGGLIES: Note",
+      "scope": "text.build-results message.note | output.lsp.diagnostics markup.info | markup.inserted.lsp",
       "foreground": "var(blue)"
     }
   ]
