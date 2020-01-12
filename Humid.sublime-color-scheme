@@ -131,8 +131,8 @@
       "foreground": "var(steel)"
     },
     {
-      "name": "FIND RESULTS: Path/LineNo of Matching Lines",
-      "scope": "text.find-in-files & (entity.name.filename | constant.numeric.line-number.match)",
+      "name": "FIND RESULTS / LSP DIAGNOSTICS / LSP SYMBOL REFERENCES: File paths and line numbers",
+      "scope": "text.find-in-files & (entity.name.filename | constant.numeric.line-number.match) | output.lsp.diagnostics & (meta.diagnostic.preamble string | constant.numeric.integer.decimal) | output.lsp.references & (entity.name.file | constant.numeric.integer.decimal)",
       "foreground": "var(steel)"
     },
     {
@@ -141,24 +141,24 @@
       "foreground": "var(grey)"
     },
     {
-      "name": "BUILD RESULTS: Error Prefix",
-      "scope": "text.build-results message.error",
+      "name": "LSP DIAGNOSTICS: Linter name",
+      "scope": "output.lsp.diagnostics comment.line",
+      "foreground": "var(purple)"
+    },
+    {
+      "name": "BUILD RESULTS / LSP DIAGNOSTICS: Error Prefix",
+      "scope": "text.build-results message.error | output.lsp.diagnostics markup.error",
       "foreground": "var(red)"
     },
     {
-      "name": "BUILD RESULTS: Warning Prefix",
-      "scope": "text.build-results message.warning",
+      "name": "BUILD RESULTS / LSP DIAGNOSTICS: Warning Prefix",
+      "scope": "text.build-results message.warning | output.lsp.diagnostics markup.warning",
       "foreground": "var(gold)"
     },
     {
-      "name": "BUILD RESULTS: Note Prefix",
-      "scope": "text.build-results message.note",
+      "name": "BUILD RESULTS / LSP DIAGNOSTICS: Note Prefix",
+      "scope": "text.build-results message.note | output.lsp.diagnostics markup.info",
       "foreground": "var(blue)"
-    },
-    {
-      "name": "LSP SYMBOL REFERENCES: Path/LineNo of Matching Lines",
-      "scope": "output.lsp.references & (entity.name.file | constant.numeric.integer.decimal)",
-      "foreground": "var(steel)"
     }
   ]
 }
