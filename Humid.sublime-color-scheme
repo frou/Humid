@@ -141,6 +141,12 @@
       "foreground": "var(grey)"
     },
     {
+      "name": "FIND RESULTS / BUILD RESULTS: Stuff automatically selected when using prev_result/next_result keybindings",
+      "scope": "constant.numeric.line-number.match.find-in-files | markup.location.build-results",
+      // @todo #0 Use font_style:glow for selected error location once on ST4?
+      "selection_foreground": "var(yellow_punchy)",
+    },
+    {
       "name": "LSP DIAGNOSTICS PANEL: Linter name",
       "scope": "output.lsp.diagnostics comment.line",
       "foreground": "var(purple)"
@@ -159,12 +165,6 @@
       "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL / LSP DIAGNOSTICS SQUIGGLIES: Note",
       "scope": "text.build-results message.note | output.lsp.diagnostics markup.info | markup.inserted.lsp",
       "foreground": "var(blue)"
-    },
-    {
-      "name": "BUILD RESULTS: Path/line-number of error currently selected using prev_result/next_result keybindings",
-      "scope": "markup.location.build-results",
-      // @todo #0 Use font_style:glow for selected error location once on ST4?
-      "selection_foreground": "var(yellow_punchy)",
     },
     {
       "name": "BUILD RESULTS: Error Header",
