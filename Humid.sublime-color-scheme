@@ -159,6 +159,17 @@
       "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL / LSP DIAGNOSTICS SQUIGGLIES: Note",
       "scope": "text.build-results message.note | output.lsp.diagnostics markup.info | markup.inserted.lsp",
       "foreground": "var(blue)"
+    },
+    {
+      "name": "BUILD RESULTS: Path/line-number of error currently selected using prev_result/next_result keybindings",
+      "scope": "markup.location.build-results",
+      // @todo #0 Use font_style:glow for selected error location once on ST4?
+      "selection_foreground": "var(yellow_punchy)",
+    },
+    {
+      "name": "BUILD RESULTS: Error Header",
+      "scope": "meta.error-header.build-results",
+      "background": "var(black)",
     }
   ]
 }
