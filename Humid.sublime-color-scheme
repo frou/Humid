@@ -72,7 +72,7 @@
     },
     {
       "name": "Keyword",
-      "scope": "keyword",
+      "scope": "keyword - keyword.operator | keyword.operator.word | source.python keyword.operator.logical | source.ts & (keyword.operator.expression | keyword.operator.new)",
       "foreground": "var(green)"
     },
     {
@@ -87,7 +87,7 @@
     },
     {
       "name": "Markup [reclassification]",
-      "scope": "keyword.operator - (keyword.operator.word | source.python keyword.operator.logical | source.ts & (keyword.operator.expression | keyword.operator.new)) | source string constant.other.placeholder | source.clojure constant.other.keyword | source.erlang & (constant.other.symbol | constant.language.exception.type) | source.java meta.annotation | source.js meta.template.expression | source.ts meta.embedded string.template | source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group)",
+      "scope": "source string constant.other.placeholder | source.clojure constant.other.keyword | source.erlang & (constant.other.symbol | constant.language.exception.type) | source.java meta.annotation | source.js meta.template.expression | source.ts meta.embedded string.template | source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group)",
       "foreground": "var(steel)"
     },
     {
