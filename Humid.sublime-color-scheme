@@ -50,71 +50,116 @@
 
   },
   "rules": [
+    // ~~~~~~~
+    // Comment
+    // ~~~~~~~
     {
       "name": "Comment",
       "scope": "comment - (source.clojure comment.punctuation)",
       "foreground": "var(slate_light)"
     },
+    // ~~~~~~~~
+    // Constant
+    // ~~~~~~~~
     {
       "name": "Constant",
       "scope": "constant - (source.java constant.other)",
       "foreground": "var(red)"
     },
+    // ~~~~~~
+    // Entity
+    // ~~~~~~
     {
       "name": "Entity",
       "scope": "entity - (source.c++ entity.name.function punctuation.accessor | source.python meta.class.inheritance)",
       "foreground": "var(orange)"
     },
+    // ~~~~~~~
+    // Invalid
+    // ~~~~~~~
     {
       "name": "Invalid",
       "scope": "invalid",
       "background": "var(red_punchy)"
     },
+    // ~~~~~~~
+    // Keyword
+    // ~~~~~~~
     {
       "name": "Keyword",
       "scope": "keyword - keyword.operator | keyword.operator.word | source.python keyword.operator.logical | source.ts & (keyword.operator.expression | keyword.operator.new)",
       "foreground": "var(green)"
     },
     {
-      "name": "Keyword [reclassification]",
+      "name": "Keyword [reclassification of syntax definitions I don't control]",
       "scope": "source.clojure & (storage.modifier | storage.type) | source.go storage.type.keyword | source.java & ((storage.modifier - storage.modifier.array) | storage.type.var | meta.class.identifier storage.type) | source.js & (variable.language.super | variable.language.this) | source.ts & (meta.var.expr storage.type | storage.modifier | storage.type.class | storage.type.enum | storage.type.function | storage.type.interface | variable.language.super | variable.language.this) | source.python & (storage.type.function | storage.type.class) | source.python storage.modifier - storage.modifier.conversion | source.shell.bash & (storage.modifier | support.function.double-brace)",
       "foreground": "var(green)"
     },
+    // ~~~~~~
+    // Markup
+    // ~~~~~~
     {
       "name": "Markup",
       "scope": "markup",
       "foreground": "var(steel)"
     },
     {
-      "name": "Markup [reclassification]",
-      "scope": "source string constant.other.placeholder | source.clojure constant.other.keyword | source.erlang & (constant.other.symbol | constant.language.exception.type) | source.java meta.annotation | source.js meta.template.expression | source.ts meta.embedded string.template | source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group)",
+      "name": "Markup [reclassification of syntax definitions I don't control]",
+      "scope": "source string constant.other.placeholder | source.java meta.annotation | source.js meta.template.expression | source.ts meta.embedded string.template",
       "foreground": "var(steel)"
     },
+    {
+      "name": "Stuff I want to be this colour, just because!",
+      "scope": "source.clojure constant.other.keyword | source.erlang & (constant.other.symbol | constant.language.exception.type) | source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) | source.ocaml & (storage.type.parameter | variable.parameter.label)",
+      "foreground": "var(steel)"
+    },
+    // ~~~~~~~
+    // Storage
+    // ~~~~~~~
     {
       "name": "Storage",
       "scope": "storage - (source.ts storage.type.function.arrow)",
       "foreground"  : "var(gold)"
     },
     {
-      "name": "Storage [reclassification]",
-      "scope": "source.java & (support.class.import | (support.class & (meta.instantiation | meta.method.parameters | meta.catch.parameters))) | source.swift support.class | source.ts & (support.type | entity.name.type - (entity.name.type.class | entity.name.type.enum | entity.name.type.interface)) | source.python & (meta.function.parameters.annotation | meta.function.annotation.return) & (meta.generic-name | support.type) | source.c support.type",
+      "name": "Storage [reclassification of syntax definitions I don't control]",
+      "scope": "source.java & (support.class.import | (support.class & (meta.instantiation | meta.method.parameters | meta.catch.parameters))) | source.swift support.class | source.ts & (support.type | entity.name.type - (entity.name.type.class | entity.name.type.enum | entity.name.type.interface)) | source.python & (meta.function.parameters.annotation | meta.function.annotation.return) & (meta.generic-name | support.type) | source.c support.type | source.go meta.type entity.other.inherited-class",
       "foreground": "var(gold)"
     },
+  {
+      "name": "Stuff I want to be this colour, just because!",
+      "scope": "source.ocaml keyword.operator",
+      "foreground": "var(gold)"
+    },
+    // ~~~~~~
+    // String
+    // ~~~~~~
     {
       "name": "String",
       "scope": "string",
       "foreground": "var(blue)"
     },
+    // ~~~~~~~
+    // Support
+    // ~~~~~~~
     {
       "name": "Support",
       "scope": "support - (source.erlang support.namespace | source.go support.type.builtin | source.java & (support.class | support.type.package) | source.js & (support.class | support.constant | support.module | support.type) | source.python entity.name.function | source.swift entity.name.type | source.ts & (support.class | support.constant | support.variable.property))",
       "foreground": "var(purple)"
     },
     {
-      "name": "Support [reclassification]",
-      "scope": "source variable.function | source.go meta.type entity.other.inherited-class | source.json meta.mapping.key string.quoted | source.ts meta.function-call entity.name.function",
+      "name": "Support [reclassification of syntax definitions I don't control]",
+      "scope": "source variable.function | source.ts meta.function-call entity.name.function",
       "foreground": "var(purple)"
     },
+    {
+      "name": "Stuff I want to be this colour, just because!",
+      "scope": "source.json meta.mapping.key string.quoted",
+      "foreground": "var(purple)"
+    },
+    // ~~~~~~~~~~~~~
+    // Miscellaneous
+    // ~~~~~~~~~~~~~
     {
       "name": "DIFF: Insertion",
       "scope": "source.diff markup.inserted",
