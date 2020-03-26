@@ -1,6 +1,7 @@
 {
   "name": "Humid",
   "author": "https://github.com/frou",
+
   "variables": {
     "black": "#000000",
     "blue": "#5a70a9",
@@ -20,6 +21,7 @@
     "white_faded": "#dadada",
     "yellow_punchy": "#eed600"
   },
+
   "globals": {
     "foreground": "var(white_faded)",
     "background": "var(slate)",
@@ -49,6 +51,7 @@
     // "tags_foreground": "var(orange_punchy)"
 
   },
+
   "rules": [
     // ~~~~~~~
     // Comment
@@ -197,17 +200,17 @@
       "foreground": "var(purple)"
     },
     {
-      "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL / LSP DIAGNOSTICS SQUIGGLIES: Error",
+      "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL / LSP DIAGNOSTICS SQUIGGLIES AND GUTTER MARKER: Error",
       "scope": "text.build-results message.error | output.lsp.diagnostics markup.error | markup.deleted.lsp",
       "foreground": "var(red)"
     },
     {
-      "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL / LSP DIAGNOSTICS SQUIGGLIES: Warning",
+      "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL / LSP DIAGNOSTICS SQUIGGLIES AND GUTTER MARKER: Warning",
       "scope": "text.build-results message.warning | output.lsp.diagnostics markup.warning | markup.changed.lsp",
       "foreground": "var(gold)"
     },
     {
-      "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL / LSP DIAGNOSTICS SQUIGGLIES: Note",
+      "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL / LSP DIAGNOSTICS SQUIGGLIES AND GUTTER MARKER: Note",
       "scope": "text.build-results message.note | output.lsp.diagnostics markup.info | markup.inserted.lsp",
       "foreground": "var(blue)"
     },
