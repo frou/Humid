@@ -82,6 +82,11 @@
       "scope": "entity - (source.c++ entity.name.function punctuation.accessor | source.python meta.class.inheritance)",
       "foreground": "var(orange)"
     },
+    {
+      "name": "Stuff I want to be this colour, just because!",
+      "scope": "source.ocaml variable.parameter.label",
+      "foreground": "var(orange)"
+    },
     // ~~~~~~~
     // Invalid
     // ~~~~~~~
@@ -95,7 +100,7 @@
     // ~~~~~~~
     {
       "name": "Keyword",
-      "scope": "keyword - keyword.operator | keyword.operator.word | source.python keyword.operator.logical | source.ts & (keyword.operator.expression | keyword.operator.new)",
+      "scope": "keyword | keyword.operator.word | source.python keyword.operator.logical | source.ts & (keyword.operator.expression | keyword.operator.new)",
       "foreground": "var(green)"
     },
     {
@@ -118,7 +123,7 @@
     },
     {
       "name": "Stuff I want to be this colour, just because!",
-      "scope": "source.clojure constant.other.keyword | source.erlang & (constant.other.symbol | constant.language.exception.type) | source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) | source.ocaml & (storage.type.parameter | variable.parameter.label)",
+      "scope": "keyword.operator | source.clojure constant.other.keyword | source.erlang & (constant.other.symbol | constant.language.exception.type) | source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group)",
       "foreground": "var(steel)"
     },
     // ~~~~~~~
@@ -132,11 +137,6 @@
     {
       "name": "Storage [reclassification of syntax definitions I don't control]",
       "scope": "source.java & (support.class.import | (support.class & (meta.instantiation | meta.method.parameters | meta.catch.parameters))) | source.swift support.class | source.ts & (support.type | entity.name.type - (entity.name.type.class | entity.name.type.enum | entity.name.type.interface)) | source.python & (meta.function.parameters.annotation | meta.function.annotation.return) & (meta.generic-name | support.type) | source.c support.type | source.go meta.type entity.other.inherited-class",
-      "foreground": "var(gold)"
-    },
-  {
-      "name": "Stuff I want to be this colour, just because!",
-      "scope": "source.ocaml keyword.operator",
       "foreground": "var(gold)"
     },
     // ~~~~~~
