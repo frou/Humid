@@ -61,6 +61,11 @@
       "scope": "comment - (source.clojure comment.punctuation)",
       "foreground": "var(slate_light)"
     },
+    {
+      "name": "Comment (Directive)",
+      "scope": "comment.directive",
+      "background": "var(black)"
+    },
     // ~~~~~~~~
     // Constant
     // ~~~~~~~~
