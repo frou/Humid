@@ -62,8 +62,9 @@
       "foreground": "var(slate_light)"
     },
     {
-      "name": "Comment (Directive)",
-      "scope": "comment.directive",
+      "name": "Preprocessor Directives / Equivalent Comments",
+      "scope": "meta.preprocessor | source.go comment.line meta.annotation",
+      "foreground": "var(slate_light)",
       "background": "var(black)"
     },
     // ~~~~~~~~
