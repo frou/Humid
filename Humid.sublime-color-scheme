@@ -86,7 +86,7 @@
     {
       "name": "Stuff I want to be this colour, just because!",
       "scope": "source.ocaml variable.parameter.label",
-      "foreground": "var(orange)"
+      "foreground": "var(steel)"
     },
     // ~~~~~~~
     // Invalid
