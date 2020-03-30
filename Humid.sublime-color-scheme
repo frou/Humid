@@ -170,11 +170,6 @@
     // Miscellaneous
     // ~~~~~~~~~~~~~
     {
-      "name": "Stuff I want to be bold, just because",
-      "scope": "source.ocaml meta.enum.constructor.polymorphic keyword.operator",
-      "font_style": "bold"
-    },
-    {
       "name": "DIFF: Insertion",
       "scope": "source.diff markup.inserted",
       "foreground": "var(green)"
@@ -229,6 +224,14 @@
       "name": "BUILD RESULTS: Error Header",
       "scope": "meta.error-header.build-results",
       "background": "var(black)",
+    },
+    // ~~~~~~~~~~~~~~~~~~~~~~~~
+    // "font_style"-only Tweaks
+    // ~~~~~~~~~~~~~~~~~~~~~~~~
+    {
+      "name": "Stuff I want to be bold, just because",
+      "scope": "source.ocaml meta.enum.constructor.polymorphic keyword.operator",
+      "font_style": "bold"
     }
   ]
 }
