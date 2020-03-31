@@ -133,7 +133,7 @@
     {
       "name": "Storage",
       "scope": "storage - (source.ts storage.type.function.arrow)",
-      "foreground"  : "var(gold)"
+      "foreground": "var(gold)"
     },
     {
       "name": "Storage [reclassification of syntax definitions I don't control]",
