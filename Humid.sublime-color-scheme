@@ -85,7 +85,7 @@
     },
     {
       "name": "Stuff I want to be this colour, just because",
-      "scope": "source.ocaml variable.parameter.label",
+      "scope": "source.ocaml-humps variable.parameter.label",
       "foreground": "var(steel)"
     },
     // ~~~~~~~
@@ -163,7 +163,7 @@
     },
     {
       "name": "Stuff I want to be this colour, just because",
-      "scope": "source.json meta.mapping.key string.quoted | source.ocaml punctuation.accessor.module",
+      "scope": "source.json meta.mapping.key string.quoted",
       "foreground": "var(purple)"
     },
     // ~~~~~~~~~~~~~
@@ -230,7 +230,7 @@
     // ~~~~~~~~~~~~~~~~~~~~~~~~
     {
       "name": "Stuff I want to be bold, just because",
-      "scope": "source.ocaml meta.enum.constructor.polymorphic keyword.operator",
+      "scope": "source.ocaml-humps meta.enum.constructor.polymorphic keyword.operator",
       "font_style": "bold"
     }
   ]
