@@ -202,17 +202,17 @@
     },
     {
       "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL / LSP DIAGNOSTICS SQUIGGLIES AND GUTTER MARKER: Error",
-      "scope": "text.build-results message.error | output.lsp.diagnostics markup.error | markup.deleted.lsp",
+      "scope": "text.build-results markup.error | output.lsp.diagnostics markup.error | markup.deleted.lsp",
       "foreground": "var(red)"
     },
     {
       "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL / LSP DIAGNOSTICS SQUIGGLIES AND GUTTER MARKER: Warning",
-      "scope": "text.build-results message.warning | output.lsp.diagnostics markup.warning | markup.changed.lsp",
+      "scope": "text.build-results markup.warning | output.lsp.diagnostics markup.warning | markup.changed.lsp",
       "foreground": "var(gold)"
     },
     {
       "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL / LSP DIAGNOSTICS SQUIGGLIES AND GUTTER MARKER: Note",
-      "scope": "text.build-results message.note | output.lsp.diagnostics markup.info | markup.inserted.lsp",
+      "scope": "text.build-results markup.note | output.lsp.diagnostics markup.info | markup.inserted.lsp",
       "foreground": "var(blue)"
     },
     {
