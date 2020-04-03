@@ -119,7 +119,7 @@
     },
     {
       "name": "Stuff I want to be this colour, just because",
-      "scope": "keyword.operator - (keyword.operator.word | source.python keyword.operator.logical | source.ts & (keyword.operator.expression | keyword.operator.new)) | source.clojure constant.other.keyword | source.erlang & (constant.other.symbol | constant.language.exception.type) | source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) | source.ocaml-humps variable.parameter.label",
+      "scope": "keyword.operator - (keyword.operator.word | source.python keyword.operator.logical | source.ts & (keyword.operator.expression | keyword.operator.new)) | source.clojure constant.other.keyword | source.erlang & (constant.other.symbol | constant.language.exception.type) | source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) | source.ocaml variable.parameter.label",
       "foreground": "var(steel)"
     },
     // ~~~~~~~
@@ -225,7 +225,7 @@
     // ~~~~~~~~~~~~~~~~~~~~~~~~
     {
       "name": "Stuff I want to be bold, just because",
-      "scope": "source.ocaml-humps meta.enum.constructor.polymorphic keyword.operator",
+      "scope": "source.ocaml meta.enum.constructor.polymorphic keyword.operator",
       "font_style": "bold"
     }
   ]
