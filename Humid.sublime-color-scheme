@@ -75,6 +75,11 @@
       "scope": "constant - (source.java constant.other)",
       "foreground": "var(red)"
     },
+    {
+      "name": "Stuff I want to be this colour, just because",
+      "scope": "text.build-results markup.pointing-carets",
+      "foreground": "var(red)"
+    },
     // ~~~~~~
     // Entity
     // ~~~~~~
