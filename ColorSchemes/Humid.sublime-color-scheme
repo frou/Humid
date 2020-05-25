@@ -39,7 +39,11 @@
     "bracket_contents_options": "foreground",
     "bracket_contents_foreground": "var(orange_punchy)",
     "tags_options": "foreground",
-    "tags_foreground": "var(orange_punchy)"
+    "tags_foreground": "var(orange_punchy)",
+
+    "line_diff_added": "var(green)",
+    "line_diff_modified": "var(orange)",
+    "line_diff_deleted": "var(red)",
 
     // @todo #0 Use glow for brackets/tags once on ST4
 
