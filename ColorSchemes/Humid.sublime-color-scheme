@@ -200,24 +200,29 @@
       "foreground": "var(purple)"
     },
     {
-      "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL / LSP DIAGNOSTICS SQUIGGLIES AND GUTTER MARKER: Error",
-      "scope": "text.build-results markup.error | output.lsp.diagnostics markup.error | markup.deleted.lsp",
+      "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL: Error",
+      "scope": "text.build-results markup.error | output.lsp.diagnostics markup.error",
       "foreground": "var(red)"
     },
     {
-      "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL / LSP DIAGNOSTICS SQUIGGLIES AND GUTTER MARKER: Warning",
-      "scope": "text.build-results markup.warning | output.lsp.diagnostics markup.warning | markup.changed.lsp",
+      "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL: Warning",
+      "scope": "text.build-results markup.warning | output.lsp.diagnostics markup.warning",
       "foreground": "var(gold)"
     },
     {
-      "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL / LSP DIAGNOSTICS SQUIGGLIES AND GUTTER MARKER: Note",
-      "scope": "text.build-results markup.note | output.lsp.diagnostics markup.info | markup.inserted.lsp",
+      "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL: Note",
+      "scope": "text.build-results markup.note | output.lsp.diagnostics markup.info",
       "foreground": "var(blue)"
     },
     {
       "name": "BUILD RESULTS: Error Header",
       "scope": "meta.error-header.build-results",
       "background": "var(black)",
+    },
+    {
+      "name": "LSP INLINE DIAGNOSTICS SQUIGGLIES AND GUTTER MARKERS",
+      "scope": "markup.deleted.lsp | markup.changed.lsp | markup.inserted.lsp",
+      "foreground": "var(yellow_punchy)"
     },
     // ~~~~~~~~~~~~~~~~~~~~~~~~
     // "font_style"-only Tweaks
