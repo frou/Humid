@@ -12,6 +12,7 @@
     "orange": "#ae7337",
     "orange_punchy": "#ff8000",
     "purple": "#995a64",
+    "purple_punchy": "#fe3bff",
     "red": "#b75b4e",
     "red_punchy": "#bb0000",
     "slate": "#211e1e",
@@ -19,8 +20,7 @@
     "steel": "#8c8c99",
     "white": "#ffffff",
     "white_faded": "#dadada",
-    "yellow_punchy": "#eed600",
-    "magenta": "#fe3bff"
+    "yellow_punchy": "#eed600"
   },
 
   "globals": {
@@ -227,7 +227,7 @@
     {
       "name": "LSP INLINE DIAGNOSTICS SQUIGGLIES AND GUTTER MARKERS",
       "scope": "markup.deleted.lsp | markup.changed.lsp | markup.inserted.lsp",
-      "foreground": "var(magenta)"
+      "foreground": "var(purple_punchy)"
     },
     // ~~~~~~~~~~~~~~~~~~~~~~~~
     // "font_style"-only Tweaks
