@@ -19,7 +19,8 @@
     "steel": "#8c8c99",
     "white": "#ffffff",
     "white_faded": "#dadada",
-    "yellow_punchy": "#eed600"
+    "yellow_punchy": "#eed600",
+    "magenta": "#fe3bff"
   },
 
   "globals": {
@@ -226,7 +227,7 @@
     {
       "name": "LSP INLINE DIAGNOSTICS SQUIGGLIES AND GUTTER MARKERS",
       "scope": "markup.deleted.lsp | markup.changed.lsp | markup.inserted.lsp",
-      "foreground": "var(yellow_punchy)"
+      "foreground": "var(magenta)"
     },
     // ~~~~~~~~~~~~~~~~~~~~~~~~
     // "font_style"-only Tweaks
