@@ -105,7 +105,7 @@
     },
     {
       "name": "Keyword [reclassification of syntax definitions I don't control]",
-      "scope": "source.clojure & (storage.modifier | storage.type) | source.go storage.type.keyword | source.java & ((storage.modifier - storage.modifier.array) | storage.type.var | meta.class.identifier storage.type) | source.js & (variable.language.super | variable.language.this) | source.ts & (meta.var.expr storage.type | storage.modifier | storage.type.class | storage.type.enum | storage.type.function | storage.type.interface | variable.language.super | variable.language.this) | source.python & (storage.type.function | storage.type.class) | source.python storage.modifier - storage.modifier.conversion | source.shell.bash & (storage.modifier | support.function.double-brace)",
+      "scope": "source.clojure & (storage.modifier | storage.type) | source.go storage.type.keyword | source.java & ((storage.modifier - storage.modifier.array) | storage.type.var | meta.class.identifier storage.type) | source.js & (storage.type | variable.language.super | variable.language.this) | source.ts & (meta.var.expr storage.type | storage.modifier | storage.type.class | storage.type.enum | storage.type.function | storage.type.interface | variable.language.super | variable.language.this) | source.python & (storage.type.function | storage.type.class) | source.python storage.modifier - storage.modifier.conversion | source.shell.bash & (storage.modifier | support.function.double-brace)",
       "foreground": "var(green)"
     },
     // ~~~~~~
@@ -136,7 +136,7 @@
     },
     {
       "name": "Storage [reclassification of syntax definitions I don't control]",
-      "scope": "source.java & (support.class.import | (support.class & (meta.instantiation | meta.method.parameters | meta.catch.parameters))) | source.swift support.class | source.ts & (support.type | entity.name.type - (entity.name.type.class | entity.name.type.enum | entity.name.type.interface)) | source.python & (meta.function.parameters.annotation | meta.function.annotation.return) & (meta.generic-name | support.type) | source.python meta.statement.except support.type.exception | source.python meta.function.annotation.return constant.language | source.c support.type | source.go meta.type entity.other.inherited-class",
+      "scope": "source.java & (support.class.import | (support.class & (meta.instantiation | meta.method.parameters | meta.catch.parameters))) | source.swift support.class | source.ts & (support.type | entity.name.type - (entity.name.type.class | entity.name.type.enum | entity.name.type.interface)) | source.python & (meta.function.parameters.annotation | meta.function.annotation.return) & (meta.generic-name | support.type) | source.python meta.statement.except support.type.exception | source.python meta.function.annotation.return constant.language | source.c support.type | source.go meta.type entity.other.inherited-class | source.js & (support.class | variable.type)",
       "foreground": "var(gold)"
     },
     // ~~~~~~
@@ -152,7 +152,7 @@
     // ~~~~~~~
     {
       "name": "Support",
-      "scope": "support - (source.erlang support.namespace | source.go support.type.builtin | source.java & (support.class | support.type.package) | source.js & (support.class | support.constant | support.module | support.type) | source.python entity.name.function | source.swift entity.name.type | source.ts & (support.class | support.constant | support.variable.property))",
+      "scope": "support - (source.erlang support.namespace | source.go support.type.builtin | source.java & (support.class | support.type.package) | source.js & (support.constant | support.module | support.type) | source.python entity.name.function | source.swift entity.name.type | source.ts & (support.class | support.constant | support.variable.property))",
       "foreground": "var(purple)"
     },
     {
