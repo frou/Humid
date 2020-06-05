@@ -57,6 +57,9 @@
 
   },
 
+  // @todo #0 Use comma operator as well as pipe, to emphasise language splits in long selector
+  //  expressions. Comma has lower precedence than pipe:
+  //  https://stackoverflow.com/questions/33562253/sublime-text-scope-selector-operators
   "rules": [
     // ~~~~~~~
     // Comment
