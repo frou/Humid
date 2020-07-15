@@ -4,8 +4,6 @@
 
 [Humid] is a colour scheme for [Sublime Text].
 
-[![PDD status](http://www.0pdd.com/svg?name=frou/Humid)](http://www.0pdd.com/p?name=frou/Humid)
-
 # License
 
 ```text
