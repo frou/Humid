@@ -1,0 +1,124 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: HumidTest
+file_extensions: ["humidtest"]
+hidden: true
+scope: source.humidtest
+
+contexts:
+  main:
+    - match: '^.?\sblack\b'
+      scope: colour.black
+    - match: '^.?\sblue\b'
+      scope: colour.blue
+    - match: '^.?\sgold\b'
+      scope: colour.gold
+    - match: '^.?\sgreen\b'
+      scope: colour.green
+    - match: '^.?\sgrey\b'
+      scope: colour.grey
+    - match: '^.?\sgrey_light\b'
+      scope: colour.grey_light
+    - match: '^.?\sorange\b'
+      scope: colour.orange
+    - match: '^.?\sorange_punchy\b'
+      scope: colour.orange_punchy
+    - match: '^.?\spurple\b'
+      scope: colour.purple
+    - match: '^.?\spurple_punchy\b'
+      scope: colour.purple_punchy
+    - match: '^.?\sred\b'
+      scope: colour.red
+    - match: '^.?\sred_punchy\b'
+      scope: colour.red_punchy
+    - match: '^.?\sslate\b'
+      scope: colour.slate
+    - match: '^.?\sslate_light\b'
+      scope: colour.slate_light
+    - match: '^.?\ssteel\b'
+      scope: colour.steel
+    - match: '^.?\swhite\b'
+      scope: colour.white
+    - match: '^.?\swhite_faded\b'
+      scope: colour.white_faded
+    - match: '^.?\syellow_punchy\b'
+      scope: colour.yellow_punchy
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~
+# .sublime-colour-scheme "rules" additions
+# ~~~~~~~~~~~~~~~~~~~~~~~
+
+# {
+#   "scope": "colour.black",
+#   "foreground": "var(black)"
+# },
+# {
+#   "scope": "colour.blue",
+#   "foreground": "var(blue)"
+# },
+# {
+#   "scope": "colour.gold",
+#   "foreground": "var(gold)"
+# },
+# {
+#   "scope": "colour.green",
+#   "foreground": "var(green)"
+# },
+# {
+#   "scope": "colour.grey",
+#   "foreground": "var(grey)"
+# },
+# {
+#   "scope": "colour.grey_light",
+#   "foreground": "var(grey_light)"
+# },
+# {
+#   "scope": "colour.orange",
+#   "foreground": "var(orange)"
+# },
+# {
+#   "scope": "colour.orange_punchy",
+#   "foreground": "var(orange_punchy)"
+# },
+# {
+#   "scope": "colour.purple",
+#   "foreground": "var(purple)"
+# },
+# {
+#   "scope": "colour.purple_punchy",
+#   "foreground": "var(purple_punchy)"
+# },
+# {
+#   "scope": "colour.red",
+#   "foreground": "var(red)"
+# },
+# {
+#   "scope": "colour.red_punchy",
+#   "foreground": "var(red_punchy)"
+# },
+# {
+#   "scope": "colour.slate",
+#   "foreground": "var(slate)"
+# },
+# {
+#   "scope": "colour.slate_light",
+#   "foreground": "var(slate_light)"
+# },
+# {
+#   "scope": "colour.steel",
+#   "foreground": "var(steel)"
+# },
+# {
+#   "scope": "colour.white",
+#   "foreground": "var(white)"
+# },
+# {
+#   "scope": "colour.white_faded",
+#   "foreground": "var(white_faded)"
+# },
+# {
+#   "scope": "colour.yellow_punchy",
+#   "foreground": "var(yellow_punchy)"
+# },
