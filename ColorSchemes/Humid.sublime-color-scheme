@@ -71,7 +71,7 @@
     },
     {
       "name": "Preprocessor Directives / Equivalent Comments",
-      "scope": "meta.preprocessor | source.go comment.line meta.annotation",
+      "scope": "source.ocaml meta.preprocessor | source.go comment.line meta.annotation",
       "foreground": "var(slate_light)",
       "background": "var(black)"
     },
