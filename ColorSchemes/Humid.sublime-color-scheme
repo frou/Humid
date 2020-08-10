@@ -32,7 +32,6 @@
     "selection": "var(grey)",
     "gutter": "var(slate)",
     "gutter_foreground": "var(slate_light)",
-    "active_guide": "var(gold)",
     "find_highlight_foreground": "var(black)",
     "find_highlight": "var(yellow_punchy)",
     "brackets_options": "foreground",
