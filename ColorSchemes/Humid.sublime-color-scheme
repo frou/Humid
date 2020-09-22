@@ -116,6 +116,11 @@
       "scope": "source.clojure & (storage.modifier | storage.type) | source.go storage.type.keyword | source.java & ((storage.modifier - storage.modifier.array) | storage.type.var | meta.class.identifier storage.type) | source.js & (storage.type | variable.language.super | variable.language.this) | source.ts & (meta.var.expr storage.type | storage.modifier | storage.type.class | storage.type.enum | storage.type.function | storage.type.interface | variable.language.super | variable.language.this) | source.python & (storage.type.function | storage.type.class) | source.python storage.modifier - storage.modifier.conversion | source.shell.bash storage.modifier",
       "foreground": "var(green)"
     },
+    {
+      "name": "Stuff I want to be this colour, just because",
+      "scope": "source.css support.constant",
+      "foreground": "var(green)"
+    },
     // ~~~~~~
     // Markup
     // ~~~~~~
@@ -131,7 +136,7 @@
     },
     {
       "name": "Stuff I want to be this colour, just because",
-      "scope": "source.ocaml & (keyword.operator | variable.parameter.label) | source.clojure constant.other.keyword | source.erlang & (constant.other.symbol | constant.language.exception.type) | source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) | source.elm meta.type-annotation | source.python meta.annotation",
+      "scope": "source.ocaml & (keyword.operator | variable.parameter.label) | source.clojure constant.other.keyword | source.erlang & (constant.other.symbol | constant.language.exception.type) | source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) | source.elm meta.type-annotation | source.python meta.annotation | source.css meta.selector & (entity.other.attribute-name.class | entity.other.pseudo-class)",
       "foreground": "var(steel)"
     },
     // ~~~~~~~
@@ -145,6 +150,11 @@
     {
       "name": "Storage [reclassification of syntax definitions I don't control]",
       "scope": "source.java & (support.class.import | (support.class & (meta.instantiation | meta.method.parameters | meta.catch.parameters))) | source.swift support.class | source.ts & (support.type | entity.name.type - (entity.name.type.class | entity.name.type.enum | entity.name.type.interface)) | source.python & (meta.function.parameters.annotation | meta.function.annotation.return) & (meta.generic-name | support.type) | source.python meta.statement.except & (meta.generic-name | support.type.exception) | source.python meta.function.annotation.return constant.language | source.c support.type | source.go meta.type entity.other.inherited-class | source.js & (support.class | variable.type)",
+      "foreground": "var(gold)"
+    },
+    {
+      "name": "Stuff I want to be this colour, just because",
+      "scope": "source.css meta.selector & (entity.name.tag | entity.other.pseudo-element)",
       "foreground": "var(gold)"
     },
     // ~~~~~~
