@@ -170,7 +170,7 @@
     },
     {
       "name": "Stuff I want to be this colour, just because",
-      "scope": "source.json meta.mapping.key string.quoted",
+      "scope": "(source.json | source.ini) & meta.mapping.key string",
       "foreground": "var(purple)"
     },
     // ~~~~~~~~~~~~~
