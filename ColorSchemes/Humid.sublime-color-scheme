@@ -137,7 +137,7 @@
     },
     {
       "name": "Stuff I want to be this colour, just because",
-      "scope": "source.ocaml & (keyword.operator | variable.parameter.label) | source.clojure constant.other.keyword | source.erlang & (constant.other.symbol | constant.language.exception.type) | source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) | source.elm meta.type-annotation | source.python meta.annotation | source.css meta.selector & (entity.other.attribute-name.class | entity.other.pseudo-class)",
+      "scope": "source.ocaml & variable.parameter.label | source.clojure constant.other.keyword | source.erlang & (constant.other.symbol | constant.language.exception.type) | source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) | source.elm meta.type-annotation | source.python meta.annotation | source.css meta.selector & (entity.other.attribute-name.class | entity.other.pseudo-class)",
       "foreground": "var(steel)"
     },
     // ~~~~~~~
