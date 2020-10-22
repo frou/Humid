@@ -9,116 +9,38 @@ scope: source.humidtest
 contexts:
   main:
     - match: '^.?\sblack\b'
-      scope: colour.black
+      scope: black.humidtest
     - match: '^.?\sblue\b'
-      scope: colour.blue
+      scope: blue.humidtest
     - match: '^.?\sgold\b'
-      scope: colour.gold
+      scope: gold.humidtest
     - match: '^.?\sgreen\b'
-      scope: colour.green
+      scope: green.humidtest
     - match: '^.?\sgrey\b'
-      scope: colour.grey
+      scope: grey.humidtest
     - match: '^.?\sgrey_light\b'
-      scope: colour.grey_light
+      scope: grey_light.humidtest
     - match: '^.?\sorange\b'
-      scope: colour.orange
+      scope: orange.humidtest
     - match: '^.?\sorange_punchy\b'
-      scope: colour.orange_punchy
+      scope: orange_punchy.humidtest
     - match: '^.?\spurple\b'
-      scope: colour.purple
+      scope: purple.humidtest
     - match: '^.?\spurple_punchy\b'
-      scope: colour.purple_punchy
+      scope: purple_punchy.humidtest
     - match: '^.?\sred\b'
-      scope: colour.red
+      scope: red.humidtest
     - match: '^.?\sred_punchy\b'
-      scope: colour.red_punchy
+      scope: red_punchy.humidtest
     - match: '^.?\sslate\b'
-      scope: colour.slate
+      scope: slate.humidtest
     - match: '^.?\sslate_light\b'
-      scope: colour.slate_light
+      scope: slate_light.humidtest
     - match: '^.?\ssteel\b'
-      scope: colour.steel
+      scope: steel.humidtest
     - match: '^.?\swhite\b'
-      scope: colour.white
+      scope: white.humidtest
     - match: '^.?\swhite_faded\b'
-      scope: colour.white_faded
+      scope: white_faded.humidtest
     - match: '^.?\syellow_punchy\b'
-      scope: colour.yellow_punchy
-
-
-# ~~~~~~~~~~~~~~~~~~~~~~~
-# .sublime-colour-scheme "rules" additions
-# ~~~~~~~~~~~~~~~~~~~~~~~
-
-# {
-#   "scope": "colour.black",
-#   "foreground": "var(black)"
-# },
-# {
-#   "scope": "colour.blue",
-#   "foreground": "var(blue)"
-# },
-# {
-#   "scope": "colour.gold",
-#   "foreground": "var(gold)"
-# },
-# {
-#   "scope": "colour.green",
-#   "foreground": "var(green)"
-# },
-# {
-#   "scope": "colour.grey",
-#   "foreground": "var(grey)"
-# },
-# {
-#   "scope": "colour.grey_light",
-#   "foreground": "var(grey_light)"
-# },
-# {
-#   "scope": "colour.orange",
-#   "foreground": "var(orange)"
-# },
-# {
-#   "scope": "colour.orange_punchy",
-#   "foreground": "var(orange_punchy)"
-# },
-# {
-#   "scope": "colour.purple",
-#   "foreground": "var(purple)"
-# },
-# {
-#   "scope": "colour.purple_punchy",
-#   "foreground": "var(purple_punchy)"
-# },
-# {
-#   "scope": "colour.red",
-#   "foreground": "var(red)"
-# },
-# {
-#   "scope": "colour.red_punchy",
-#   "foreground": "var(red_punchy)"
-# },
-# {
-#   "scope": "colour.slate",
-#   "foreground": "var(slate)"
-# },
-# {
-#   "scope": "colour.slate_light",
-#   "foreground": "var(slate_light)"
-# },
-# {
-#   "scope": "colour.steel",
-#   "foreground": "var(steel)"
-# },
-# {
-#   "scope": "colour.white",
-#   "foreground": "var(white)"
-# },
-# {
-#   "scope": "colour.white_faded",
-#   "foreground": "var(white_faded)"
-# },
-# {
-#   "scope": "colour.yellow_punchy",
-#   "foreground": "var(yellow_punchy)"
-# },
+      scope: yellow_punchy.humidtest
