@@ -2,7 +2,7 @@
 ---
 # http://www.sublimetext.com/docs/3/syntax.html
 name: HumidTest
-file_extensions: ["humidtest"]
+first_line_match: "^HumidTest Marker$"
 hidden: true
 scope: source.humidtest
 

@@ -260,8 +260,8 @@
     // Empirically, ST3's rendering produces slightly different colours to the
     // #rrggbb values defined by this colour scheme. The combination of the
     // "HumidTest.sublime-syntax" file and the following allows us to easily use
-    // an eyedropper tool on the "untitled.humidtest" file, to find out the
-    // values of the *actual* colours that we're used to seeing.
+    // an eyedropper tool on the "HumidTest.txt" file, to find out the values of
+    // the *actual* colours that we're used to seeing.
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {"scope": "black.humidtest", "foreground": "var(black)"},
     {"scope": "blue.humidtest", "foreground": "var(blue)"},
