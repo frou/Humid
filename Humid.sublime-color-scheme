@@ -253,7 +253,7 @@
     // ~~~~~~~~~~~~~~~~~~~~~~~~
     {
       "name": "Stuff I want to be bold, just because",
-      "scope": "source.ocaml meta.enum.constructor.polymorphic keyword.operator | source.clojure keyword.other.special-form.member-access",
+      "scope": "source.ocaml meta.enum.constructor.polymorphic keyword.operator",
       "font_style": "bold"
     },
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
