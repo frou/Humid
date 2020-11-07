@@ -109,7 +109,7 @@
     // ~~~~~~~
     {
       "name": "Keyword",
-      "scope": "keyword - keyword.operator | keyword.operator.word | source.python keyword.operator.logical | source.ts & (keyword.operator.expression | keyword.operator.new) | source.clojure keyword.operator.macro",
+      "scope": "keyword - keyword.operator | keyword.operator.word | source.python keyword.operator.logical | source.ts & (keyword.operator.expression | keyword.operator.new) | source.clojure keyword.operator.macro.dispatch",
       "foreground": "var(green)"
     },
     {
