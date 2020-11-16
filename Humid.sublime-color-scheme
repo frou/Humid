@@ -23,13 +23,17 @@
     "yellow_punchy": "#eed600"
   },
 
+  // REF: https://www.sublimetext.com/docs/3/color_schemes.html#global_settings
   "globals": {
     "foreground": "var(white_faded)",
     "background": "var(slate)",
     "caret": "var(white)",
     "invisibles": "var(grey_light)",
     "line_highlight": "var(grey)",
-    "selection": "var(grey)",
+    "selection": "var(steel)",
+    "selection_foreground": "var(black)",
+    "selection_border_width": "0",
+    "selection_corner_style": "square",
     "gutter": "var(slate)",
     "gutter_foreground": "var(slate_light)",
     "find_highlight_foreground": "var(black)",
