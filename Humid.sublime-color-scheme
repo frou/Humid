@@ -158,7 +158,7 @@
     },
     {
       "name": "Stuff I want to be this colour, just because",
-      "scope": "source.css meta.selector & (entity.name.tag | entity.other.pseudo-element)",
+      "scope": "source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) | source.clojure meta.path.js",
       "foreground": "var(gold)"
     },
     // ~~~~~~
