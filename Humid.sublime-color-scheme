@@ -211,7 +211,7 @@
       "foreground": "var(steel)"
     },
     {
-      "name": "FIND RESULTS: Line numbers of surrounding lines",
+      "name": "FIND RESULTS: Line numbers of surrounding ('context') lines",
       "scope": "text.find-in-files constant.numeric.line-number",
       "foreground": "var(grey)"
     },
