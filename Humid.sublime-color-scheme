@@ -97,7 +97,6 @@
       "name": "Entity",
       "scope": "entity - (source.c++ entity.name.function punctuation.accessor | source.python meta.class.inheritance)",
       "foreground": "var(orange)"
-      // @todo #0 Use glow for entity once on ST4
     },
     // ~~~~~~~
     // Invalid
