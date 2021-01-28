@@ -27,20 +27,29 @@
   "globals": {
     "foreground": "var(white_faded)",
     "background": "var(slate)",
+
     "caret": "var(white)",
+
     "invisibles": "var(grey_light)",
+
     "line_highlight": "var(grey)",
+
     "selection": "var(grey)",
     "selection_border": "var(grey)",
     "selection_corner_style": "square",
+
     "gutter": "var(slate)",
     "gutter_foreground": "var(slate_light)",
+
     "find_highlight_foreground": "var(black)",
     "find_highlight": "var(yellow_punchy)",
+
     "brackets_options": "foreground",
     "brackets_foreground": "var(orange_punchy)",
+
     "bracket_contents_options": "foreground",
     "bracket_contents_foreground": "var(orange_punchy)",
+
     "tags_options": "foreground",
     "tags_foreground": "var(orange_punchy)",
 
