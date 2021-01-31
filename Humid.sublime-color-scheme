@@ -259,14 +259,6 @@
       "scope": "markup.deleted.lsp | markup.changed.lsp | markup.inserted.lsp",
       "foreground": "var(purple_punchy)"
     },
-    // ~~~~~~~~~~~~~~~~~~~~~~~~
-    // "font_style"-only Tweaks
-    // ~~~~~~~~~~~~~~~~~~~~~~~~
-    {
-      "name": "Stuff I want to be bold, just because",
-      "scope": "source.ocaml meta.enum.constructor.polymorphic keyword.operator",
-      "font_style": "bold"
-    },
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // Empirically, ST3's rendering produces slightly different colours to the
     // #rrggbb values defined by this colour scheme. The combination of the
