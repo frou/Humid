@@ -130,7 +130,7 @@
     },
     {
       "name": "Stuff I want to be this colour, just because",
-      "scope": "source.clojure support.function.def-like | source.css support.constant",
+      "scope": "source.clojure support.function.def-like | source.css support.constant | source.ocaml variable.language",
       "foreground": "var(green)"
     },
     // ~~~~~~
