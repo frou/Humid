@@ -203,12 +203,12 @@
     // ~~~~~~~~~~~~~
     {
       "name": "DIFF: Insertion",
-      "scope": "(source.diff | text.override-audit.diff) & markup.inserted",
+      "scope": "(source.diff | text.override-audit.diff | text.test-result) & markup.inserted",
       "foreground": "var(green)"
     },
     {
       "name": "DIFF: Deletion",
-      "scope": "(source.diff | text.override-audit.diff) & markup.deleted",
+      "scope": "(source.diff | text.override-audit.diff | text.test-result) & markup.deleted",
       "foreground": "var(red)"
     },
     {
