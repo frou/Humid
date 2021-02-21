@@ -260,7 +260,7 @@
     {
       "name": "LSP INLINE DIAGNOSTICS SQUIGGLIES AND GUTTER MARKERS",
       "scope": "markup.deleted.lsp | markup.changed.lsp | markup.inserted.lsp",
-      "foreground": "var(purple_punchy)"
+      "foreground": "var(yellow_punchy)"
     },
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // Empirically, ST3's rendering produces slightly different colours to the
