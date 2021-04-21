@@ -66,6 +66,9 @@
     // "tags_options": "glow",
     // "tags_foreground": "var(orange_punchy)"
 
+    // @todo Once on ST4, check for new (or existing that I've missed) global color scheme keys
+    // @body https://www.sublimetext.com/docs/color_schemes.html
+    // @body e.g. ST4's Mariana does a nice border on Find-in-Files matching substrings uses "highlight"
   },
 
   // @todo Once on ST4, customise LSP Signature Help colours specifically
