@@ -62,9 +62,6 @@
     // @body e.g. ST4's Mariana does a nice border on Find-in-Files matching substrings uses "highlight"
   },
 
-  // @todo Once on ST4, customise LSP Signature Help colours specifically
-  // @body https://github.com/sublimelsp/LSP/commit/edd0e1e67e4ec442de66f2dac95251789212ff92
-
   // @todo #0 Use comma operator as well as pipe, to emphasise language splits in long selector
   //  expressions. Comma has lower precedence than pipe:
   //  https://stackoverflow.com/questions/33562253/sublime-text-scope-selector-operators
@@ -256,6 +253,16 @@
       "name": "LSP INLINE DIAGNOSTICS SQUIGGLIES AND GUTTER MARKERS",
       "scope": "markup.deleted.lsp | markup.changed.lsp | markup.inserted.lsp",
       "foreground": "var(yellow_punchy)"
+    },
+    {
+      "name": "LSP SIGNATURE HELP: FUNCTION NAME & INACTIVE PARAMETERS",
+      "scope": "entity.name.function.sighelp.lsp",
+      "foreground": "var(white_faded)"
+    },
+    {
+      "name": "LSP SIGNATURE HELP: ACTIVE PARAMETER",
+      "scope": "variable.parameter.sighelp.lsp",
+      "foreground": "var(white)"
     },
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // Empirically, ST3's rendering produces slightly different colours to the
