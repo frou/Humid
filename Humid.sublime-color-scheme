@@ -44,27 +44,18 @@
     "find_highlight_foreground": "var(black)",
     "find_highlight": "var(yellow_punchy)",
 
-    "brackets_options": "foreground",
+    "brackets_options": "glow",
     "brackets_foreground": "var(orange_punchy)",
 
-    "bracket_contents_options": "foreground",
+    "bracket_contents_options": "glow",
     "bracket_contents_foreground": "var(orange_punchy)",
 
-    "tags_options": "foreground",
+    "tags_options": "glow",
     "tags_foreground": "var(orange_punchy)",
 
     "line_diff_added": "var(green)",
     "line_diff_modified": "var(orange)",
     "line_diff_deleted": "var(red)",
-
-    // @todo #0 Use glow for brackets/tags once on ST4
-
-    // "brackets_options": "glow",
-    // "brackets_foreground": "var(orange_punchy)",
-    // "bracket_contents_options": "glow",
-    // "bracket_contents_foreground": "var(orange_punchy)",
-    // "tags_options": "glow",
-    // "tags_foreground": "var(orange_punchy)"
 
     // @todo Once on ST4, check for new (or existing that I've missed) global color scheme keys
     // @body https://www.sublimetext.com/docs/color_schemes.html
