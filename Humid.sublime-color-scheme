@@ -226,7 +226,6 @@
     {
       "name": "Stuff automatically selected when using prev_result/next_result keybindings (FIND RESULTS / BUILD RESULTS / LSP DIAGNOSTICS PANEL / LSP REFERENCES PANEL)",
       "scope": "text.find-in-files constant.numeric.line-number.match | markup.location.build-results | (output.lsp.diagnostics meta.diagnostic.body | output.lsp.references meta.reference.body) & constant.numeric.integer.decimal",
-      // @todo #0 Use font_style:glow for selected error location once on ST4?
       "selection_foreground": "var(yellow_punchy)",
     },
     {
