@@ -2,7 +2,9 @@
 
 # Description
 
-[Humid] is a colour scheme for [Sublime Text].
+[Humid] is a colour scheme for [Sublime Text] 4+
+
+The version intended for use with Sublime Text 3 is now in the `st3` branch.
 
 # License
 

@@ -65,9 +65,6 @@
   // @todo Once on ST4, customise LSP Signature Help colours specifically
   // @body https://github.com/sublimelsp/LSP/commit/edd0e1e67e4ec442de66f2dac95251789212ff92
 
-  // @todo Once on ST4, delete any TypeScript (.ts) rules
-  // @body Because they were made based on a third party syntax definition, not the new stock one that comes with ST
-
   // @todo #0 Use comma operator as well as pipe, to emphasise language splits in long selector
   //  expressions. Comma has lower precedence than pipe:
   //  https://stackoverflow.com/questions/33562253/sublime-text-scope-selector-operators
@@ -120,12 +117,12 @@
     // ~~~~~~~
     {
       "name": "Keyword",
-      "scope": "keyword - keyword.operator | keyword.operator.word | source.python keyword.operator.logical | source.ts & (keyword.operator.expression | keyword.operator.new) | source.clojure keyword.operator.macro.dispatch",
+      "scope": "keyword - keyword.operator | keyword.operator.word | source.python keyword.operator.logical | source.clojure keyword.operator.macro.dispatch",
       "foreground": "var(green)"
     },
     {
       "name": "Keyword [reclassification of syntax definitions I don't control]",
-      "scope": "source.go storage.type.keyword | source.java & ((storage.modifier - storage.modifier.array) | storage.type.var | meta.class.identifier storage.type) | source.js & (storage.type | variable.language.super | variable.language.this) | source.ts & (meta.var.expr storage.type | storage.modifier | storage.type.class | storage.type.enum | storage.type.function | storage.type.interface | variable.language.super | variable.language.this) | source.python & (storage.type.function | storage.type.class) | source.python storage.modifier - storage.modifier.conversion | source.shell.bash storage.modifier",
+      "scope": "source.go storage.type.keyword | source.java & ((storage.modifier - storage.modifier.array) | storage.type.var | meta.class.identifier storage.type) | source.js & (storage.type | variable.language.super | variable.language.this) | source.python & (storage.type.function | storage.type.class) | source.python storage.modifier - storage.modifier.conversion | source.shell.bash storage.modifier",
       "foreground": "var(green)"
     },
     {
@@ -143,7 +140,7 @@
     },
     {
       "name": "Markup [reclassification of syntax definitions I don't control]",
-      "scope": "source string constant.other.placeholder | source.java meta.annotation | source.js meta.template.expression | source.ts meta.embedded string.template",
+      "scope": "source string constant.other.placeholder | source.java meta.annotation | source.js meta.template.expression",
       "foreground": "var(steel)"
     },
     {
@@ -156,12 +153,12 @@
     // ~~~~~~~
     {
       "name": "Storage",
-      "scope": "storage - (source.ts storage.type.function.arrow)",
+      "scope": "storage",
       "foreground": "var(gold)"
     },
     {
       "name": "Storage [reclassification of syntax definitions I don't control]",
-      "scope": "source.java & (support.class.import | (support.class & (meta.instantiation | meta.method.parameters | meta.catch.parameters))) | source.swift support.class | source.ts & (support.type | entity.name.type - (entity.name.type.class | entity.name.type.enum | entity.name.type.interface)) | source.python & (meta.function.parameters.annotation | meta.function.annotation.return) & (meta.generic-name | support.type) | source.python meta.statement.except & (support.type.exception) | source.python meta.function.annotation.return constant.language | source.python meta.class.inheritance entity.other.inherited-class | source.c support.type | source.go meta.type entity.other.inherited-class | source.js & (support.class | variable.type)",
+      "scope": "source.java & (support.class.import | (support.class & (meta.instantiation | meta.method.parameters | meta.catch.parameters))) | source.swift support.class | source.python & (meta.function.parameters.annotation | meta.function.annotation.return) & (meta.generic-name | support.type) | source.python meta.statement.except & (support.type.exception) | source.python meta.function.annotation.return constant.language | source.python meta.class.inheritance entity.other.inherited-class | source.c support.type | source.go meta.type entity.other.inherited-class | source.js & (support.class | variable.type)",
       "foreground": "var(gold)"
     },
     {
@@ -182,12 +179,12 @@
     // ~~~~~~~
     {
       "name": "Support",
-      "scope": "support - (source.erlang support.namespace | source.go support.type.builtin | source.java & (support.class | support.type.package) | source.js & (support.constant | support.module | support.type) | source.python entity.name.function | source.swift entity.name.type | source.ts & (support.class | support.constant | support.variable.property))",
+      "scope": "support - (source.erlang support.namespace | source.go support.type.builtin | source.java & (support.class | support.type.package) | source.js & (support.constant | support.module | support.type) | source.python entity.name.function | source.swift entity.name.type)",
       "foreground": "var(purple)"
     },
     {
       "name": "Support [reclassification of syntax definitions I don't control]",
-      "scope": "source variable.function | source.ts meta.function-call entity.name.function | source.python variable.annotation",
+      "scope": "source variable.function | source.python variable.annotation",
       "foreground": "var(purple)"
     },
     {
