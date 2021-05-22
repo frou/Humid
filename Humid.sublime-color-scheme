@@ -20,7 +20,23 @@
     "steel": "#8c8c99",
     "white": "#ffffff",
     "white_faded": "#dadada",
-    "yellow_punchy": "#eed600"
+    "yellow_punchy": "#eed600",
+
+    // Overrule ST where it picks what I feel is the wrong colour from the
+    // above to be a given `*ish` colour.
+    //
+    // REF: https://www.sublimetext.com/docs/minihtml.html#predefined_variables
+    "--redish": "var(red)",
+    //"--greenish": "var()",
+    //"--bluish": "var()",
+    "--yellowish": "var(gold)",
+    //"--pinkish": "var()",
+    "--cyanish": "var(steel)",
+    //"--orangish": "var()",
+    "--purplish": "var(purple)",
+    //"--foreground": "var()",
+    //"--background": "var()",
+    //"--accent": "var()",
   },
 
   // REF: https://www.sublimetext.com/docs/3/color_schemes.html#global_settings
