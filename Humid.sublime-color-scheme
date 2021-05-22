@@ -57,9 +57,9 @@
     "line_diff_modified": "var(orange)",
     "line_diff_deleted": "var(red)",
 
-    // @todo Once on ST4, check for new (or existing that I've missed) global color scheme keys
-    // @body https://www.sublimetext.com/docs/color_schemes.html
-    // @body e.g. ST4's Mariana does a nice border on Find-in-Files matching substrings uses "highlight"
+    "misspelling": "var(red_punchy)",
+    "fold_marker": "var(white)",
+    "accent": "var(blue)",
   },
 
   // @todo #0 Use comma operator as well as pipe, to emphasise language splits in long selector
@@ -250,6 +250,7 @@
     {
       // @todo Once on ST4, will the LSP plugin automatically choose diagnostic related colours?
       // @body e.g. a yellow for warnings and a red for errors?
+      // @body https://lsp.sublimetext.io/customization/
       "name": "LSP INLINE DIAGNOSTICS SQUIGGLIES AND GUTTER MARKERS",
       "scope": "markup.deleted.lsp | markup.changed.lsp | markup.inserted.lsp",
       "foreground": "var(yellow_punchy)"
