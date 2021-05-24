@@ -264,14 +264,6 @@
       "background": "var(black)",
     },
     {
-      // @todo Once on ST4, will the LSP plugin automatically choose diagnostic related colours?
-      // @body e.g. a yellow for warnings and a red for errors?
-      // @body https://lsp.sublimetext.io/customization/
-      "name": "LSP INLINE DIAGNOSTICS SQUIGGLIES AND GUTTER MARKERS",
-      "scope": "markup.deleted.lsp | markup.changed.lsp | markup.inserted.lsp",
-      "foreground": "var(yellow_punchy)"
-    },
-    {
       "name": "LSP SIGNATURE HELP: FUNCTION NAME & INACTIVE PARAMETERS",
       "scope": "entity.name.function.sighelp.lsp",
       "foreground": "var(white_faded)"
