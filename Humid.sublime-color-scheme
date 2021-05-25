@@ -210,6 +210,11 @@
     // Miscellaneous
     // ~~~~~~~~~~~~~
     {
+      "name": "BRACES DELIMITING EMBEDDED PYTHON EXPRESSIONS",
+      "scope": "(text.genshi-xml | source.python meta.string.interpolated) & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end)",
+      "foreground": "var(red)",
+    },
+    {
       "name": "DIFF: Insertion",
       "scope": "(source.diff | text.override-audit.diff | text.test-result) & markup.inserted",
       "foreground": "var(green)"
