@@ -231,7 +231,7 @@
     },
     {
       "name": "FIND RESULTS / LSP DIAGNOSTICS PANEL / LSP REFERENCES PANEL: File paths and line numbers",
-      "scope": "text.find-in-files & (entity.name.filename | constant.numeric.line-number.match) | output.lsp.diagnostics & (meta.diagnostic.preamble string | constant.numeric.integer.decimal) | output.lsp.references & (entity.name.file | constant.numeric.integer.decimal)",
+      "scope": "text.find-in-files & (entity.name.filename | constant.numeric.line-number.match) | (output.lsp.diagnostics | output.lsp.references) & (entity.name.filename | constant.numeric.line-number | constant.numeric.col-number)",
       "foreground": "var(steel)"
     },
     {
@@ -241,27 +241,22 @@
     },
     {
       "name": "Stuff automatically selected when using prev_result/next_result keybindings (FIND RESULTS / BUILD RESULTS / LSP DIAGNOSTICS PANEL / LSP REFERENCES PANEL)",
-      "scope": "text.find-in-files constant.numeric.line-number.match | markup.location.build-results | (output.lsp.diagnostics meta.diagnostic.body | output.lsp.references meta.reference.body) & constant.numeric.integer.decimal",
+      "scope": "text.find-in-files constant.numeric.line-number.match | markup.location.build-results | (output.lsp.diagnostics | output.lsp.references) & (constant.numeric.line-number | constant.numeric.col-number)",
       "selection_foreground": "var(yellow_punchy)",
     },
     {
-      "name": "LSP DIAGNOSTICS PANEL: Linter name",
-      "scope": "output.lsp.diagnostics comment.line",
-      "foreground": "var(purple)"
-    },
-    {
       "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL: Error",
-      "scope": "text.build-results markup.error | output.lsp.diagnostics markup.error",
+      "scope": "text.build-results markup.error | markup.error.lsp",
       "foreground": "var(red)"
     },
     {
       "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL: Warning",
-      "scope": "text.build-results markup.warning | output.lsp.diagnostics markup.warning",
+      "scope": "text.build-results markup.warning | markup.warning.lsp",
       "foreground": "var(gold)"
     },
     {
-      "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL: Note",
-      "scope": "text.build-results markup.note | output.lsp.diagnostics markup.info",
+      "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL: Note/Info/Hint",
+      "scope": "text.build-results markup.note | markup.info.lsp | markup.info.hint.lsp",
       "foreground": "var(blue)"
     },
     {
@@ -269,23 +264,31 @@
       "scope": "meta.error-header.build-results",
       "background": "var(black)",
     },
-    {
-      "name": "LSP SIGNATURE HELP: FUNCTION NAME & INACTIVE PARAMETERS",
-      "scope": "entity.name.function.sighelp.lsp",
-      "foreground": "var(white_faded)"
-    },
-    {
-      "name": "LSP SIGNATURE HELP: ACTIVE PARAMETER",
-      "scope": "variable.parameter.sighelp.lsp",
-      "foreground": "var(white)"
-    },
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // LSP: "Siganature Help" popup (distinct from AutoComplete)
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // REF: https://lsp.sublimetext.io/customization/#signature-help
+    //
+    {"scope": "entity.name.function.sighelp.lsp", "foreground": "var(white_faded)"}, // Function name & inactive parameters
+    {"scope": "variable.parameter.sighelp.lsp",   "foreground": "var(white)"}, // Active parameter
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // LSP: Other visible occurences of the thing at the caret
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // REF: https://lsp.sublimetext.io/customization/#document-highlights
+    //
+    {"scope": "markup.highlight.text.lsp",  "foreground": "var(white_faded)"},
+    {"scope": "markup.highlight.read.lsp",  "foreground": "var(green)"},
+    {"scope": "markup.highlight.write.lsp", "foreground": "var(orange)"},
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // Empirically, ST3's rendering produces slightly different colours to the
     // #rrggbb values defined by this colour scheme. The combination of the
     // "HumidTest.sublime-syntax" file and the following allows us to easily use
     // an eyedropper tool on the "HumidTest.txt" file, to find out the values of
     // the *actual* colours that we're used to seeing.
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {"scope": "black.humidtest", "foreground": "var(black)"},
     {"scope": "blue.humidtest", "foreground": "var(blue)"},
     {"scope": "gold.humidtest", "foreground": "var(gold)"},
