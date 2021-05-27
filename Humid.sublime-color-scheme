@@ -74,7 +74,7 @@
     "line_diff_deleted": "var(red)",
 
     "misspelling": "var(red_punchy)",
-    "fold_marker": "var(white)",
+    // "fold_marker": "var(white)",
     "accent": "var(blue)",
   },
 
