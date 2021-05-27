@@ -206,81 +206,60 @@
       "scope": "(source.json | source.ini) & meta.mapping.key string",
       "foreground": "var(purple)"
     },
-    // ~~~~~~~~~~~~~
-    // Miscellaneous
-    // ~~~~~~~~~~~~~
-    {
-      "name": "BRACES DELIMITING EMBEDDED PYTHON EXPRESSIONS",
-      "scope": "(text.genshi-xml | source.python meta.string.interpolated) & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end)",
-      "foreground": "var(red)",
-    },
-    {
-      "name": "DIFF: Insertion",
-      "scope": "(source.diff | text.override-audit.diff | text.test-result) & markup.inserted",
-      "foreground": "var(green)"
-    },
-    {
-      "name": "DIFF: Deletion",
-      "scope": "(source.diff | text.override-audit.diff | text.test-result) & markup.deleted",
-      "foreground": "var(red)"
-    },
-    {
-      "name": "DIFF: Metadata",
-      "scope": "(source.diff | text.override-audit.diff) & meta",
-      "foreground": "var(steel)"
-    },
-    {
-      "name": "FIND RESULTS / LSP DIAGNOSTICS PANEL / LSP REFERENCES PANEL: File paths and line numbers",
-      "scope": "text.find-in-files & (entity.name.filename | constant.numeric.line-number.match) | (output.lsp.diagnostics | output.lsp.references) & (entity.name.filename | constant.numeric.line-number | constant.numeric.col-number)",
-      "foreground": "var(steel)"
-    },
-    {
-      "name": "FIND RESULTS: Line numbers of surrounding ('context') lines",
-      "scope": "text.find-in-files constant.numeric.line-number",
-      "foreground": "var(grey)"
-    },
-    {
-      "name": "Stuff automatically selected when using prev_result/next_result keybindings (FIND RESULTS / BUILD RESULTS / LSP DIAGNOSTICS PANEL / LSP REFERENCES PANEL)",
-      "scope": "text.find-in-files constant.numeric.line-number.match | markup.location.build-results | (output.lsp.diagnostics | output.lsp.references) & (constant.numeric.line-number | constant.numeric.col-number)",
-      "selection_foreground": "var(yellow_punchy)",
-    },
-    {
-      "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL: Error",
-      "scope": "text.build-results markup.error | markup.error.lsp",
-      "foreground": "var(red)"
-    },
-    {
-      "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL: Warning",
-      "scope": "text.build-results markup.warning | markup.warning.lsp",
-      "foreground": "var(gold)"
-    },
-    {
-      "name": "BUILD RESULTS / LSP DIAGNOSTICS PANEL: Note/Info/Hint",
-      "scope": "text.build-results markup.note | markup.info.lsp | markup.info.hint.lsp",
-      "foreground": "var(blue)"
-    },
-    {
-      "name": "BUILD RESULTS: Error Header",
-      "scope": "meta.error-header.build-results",
-      "background": "var(black)",
-    },
 
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // LSP: "Siganature Help" popup (distinct from AutoComplete)
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // Delimiters of Interpolated Code
+    //   - Python f-strings
+    //   - Genshi ${} expressions
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    {"scope": "punctuation.section.interpolation.begin | punctuation.section.interpolation.end", "foreground": "var(red)"},
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // File Paths and Line Numbers
+    //   - Find Results panel
+    //   - LSP panels
+    //     - Diagnostics
+    //     - References
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    {"scope": "text.find-in-files & (entity.name.filename | constant.numeric.line-number.match) | output.lsp & (entity.name.filename | constant.numeric.line-number | constant.numeric.col-number)", "foreground": "var(steel)", "selection_foreground": "var(yellow_punchy)"},
+    {"scope": "text.find-in-files constant.numeric.line-number", "foreground": "var(grey)"}, // "Context" lines
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // Diffs
+    //   - Stock diffs
+    //   - Override Audit diffs
+    //   - https://github.com/SublimeText/UnitTesting results panel
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    {"scope": "markup.inserted", "foreground": "var(green)"},
+    {"scope": "markup.deleted",  "foreground": "var(red)"},
+    {"scope": "meta.diff",       "foreground": "var(steel)"},
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // Results / Diagnostics
+    // - Build Results panel
+    // - LSP Diagnostics
+    //   - REF: https://lsp.sublimetext.io/customization/#diagnostics
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    {"scope": "markup.error",                    "foreground": "var(red)"},
+    {"scope": "markup.warning",                  "foreground": "var(gold)"},
+    {"scope": "markup.note | markup.info",       "foreground": "var(purple)"},
+    {"scope": "markup.info.hint",                "foreground": "var(blue)"},
+    {"scope": "meta.error-header.build-results", "background": "var(black)"},
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // LSP: "Signature Help" popup (distinct from AutoComplete)
     // REF: https://lsp.sublimetext.io/customization/#signature-help
-    //
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {"scope": "entity.name.function.sighelp.lsp", "foreground": "var(white_faded)"}, // Function name & inactive parameters
     {"scope": "variable.parameter.sighelp.lsp",   "foreground": "var(white)"}, // Active parameter
 
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // LSP: Other visible occurences of the thing at the caret
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // REF: https://lsp.sublimetext.io/customization/#document-highlights
-    //
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {"scope": "markup.highlight.text.lsp",  "foreground": "var(white_faded)"},
-    {"scope": "markup.highlight.read.lsp",  "foreground": "var(green)"},
-    {"scope": "markup.highlight.write.lsp", "foreground": "var(orange)"},
+    {"scope": "markup.highlight.read.lsp",  "foreground": "var(white_faded)"},
+    {"scope": "markup.highlight.write.lsp", "foreground": "var(white_faded)"},
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // Empirically, ST3's rendering produces slightly different colours to the
