@@ -86,12 +86,11 @@
     // Comment
     // ~~~~~~~
     {
-      "name": "Comment",
       "scope": "comment - (source.clojure comment.punctuation)",
       "foreground": "var(slate_light)"
     },
     {
-      "name": "Preprocessor Directives / Equivalent Comments",
+      // Preprocessor Directives (or equivalent comment constructs)
       "scope": "source.ocaml meta.preprocessor | source.go comment.line meta.annotation",
       "foreground": "var(slate_light)",
       "background": "var(black)"
@@ -100,12 +99,11 @@
     // Constant
     // ~~~~~~~~
     {
-      "name": "Constant",
       "scope": "constant - (source.java constant.other)",
       "foreground": "var(red)"
     },
     {
-      "name": "Stuff I want to be this colour, just because",
+      // Stuff that isn't misclassified, but I want it to have the same colour as `constant`, just because.
       "scope": "text.build-results markup.pointing-carets",
       "foreground": "var(red)"
     },
@@ -113,7 +111,6 @@
     // Entity
     // ~~~~~~
     {
-      "name": "Entity",
       "scope": "entity - (source.c++ entity.name.function punctuation.accessor)",
       "foreground": "var(orange)"
     },
@@ -121,7 +118,6 @@
     // Invalid
     // ~~~~~~~
     {
-      "name": "Invalid",
       "scope": "invalid",
       "background": "var(red_punchy)",
       "foreground": "var(white_faded)"
@@ -130,17 +126,16 @@
     // Keyword
     // ~~~~~~~
     {
-      "name": "Keyword",
       "scope": "keyword - keyword.operator | keyword.operator.word | source.python keyword.operator.logical | source.clojure keyword.operator.macro.dispatch",
       "foreground": "var(green)"
     },
     {
-      "name": "Keyword [reclassification of syntax definitions I don't control]",
+      // Stuff I feel should be classified as `keyword` but I don't control the syntax definitions. Make them look like it at least.
       "scope": "source.go storage.type.keyword | source.java & ((storage.modifier - storage.modifier.array) | storage.type.var | meta.class.identifier storage.type) | source.js & (storage.type | variable.language.super | variable.language.this) | source.python & (storage.type.function | storage.type.class) | source.python storage.modifier - storage.modifier.conversion | source.shell.bash storage.modifier",
       "foreground": "var(green)"
     },
     {
-      "name": "Stuff I want to be this colour, just because",
+      // Stuff that isn't misclassified, but I want it to have the same colour as `keyword`, just because.
       "scope": "source.clojure support.function.def-like | source.css support.constant | source.ocaml variable.language | source.makefile variable.language.automatic",
       "foreground": "var(green)"
     },
@@ -148,17 +143,16 @@
     // Markup
     // ~~~~~~
     {
-      "name": "Markup",
       "scope": "markup",
       "foreground": "var(steel)"
     },
     {
-      "name": "Markup [reclassification of syntax definitions I don't control]",
+      // Stuff I feel should be classified as `markup` but I don't control the syntax definitions. Make them look like it at least.
       "scope": "source string constant.other.placeholder | source.java meta.annotation | source.js meta.template.expression",
       "foreground": "var(steel)"
     },
     {
-      "name": "Stuff I want to be this colour, just because",
+      // Stuff that isn't misclassified, but I want it to have the same colour as `markup`, just because.
       "scope": "source.ocaml & (keyword.operator | variable.parameter.label) | source.clojure constant.other.keyword | source.erlang & (constant.other.symbol | constant.language.exception.type) | source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) | source.elm meta.type-annotation | source.css meta.selector & (entity.other.attribute-name.class | entity.other.pseudo-class)",
       "foreground": "var(steel)"
     },
@@ -166,17 +160,16 @@
     // Storage
     // ~~~~~~~
     {
-      "name": "Storage",
       "scope": "storage",
       "foreground": "var(gold)"
     },
     {
-      "name": "Storage [reclassification of syntax definitions I don't control]",
+      // Stuff I feel should be classified as `storage` but I don't control the syntax definitions. Make them look like it at least.
       "scope": "source.java & (support.class.import | (support.class & (meta.instantiation | meta.method.parameters | meta.catch.parameters))) | source.swift support.class | source.python & (meta.function.parameters.annotation | meta.function.annotation.return) & (meta.generic-name | support.type) | source.python meta.statement.except & (support.type.exception) | source.python meta.function.annotation.return constant.language | source.python meta.class.inheritance entity.other.inherited-class | source.c support.type | source.go meta.type entity.other.inherited-class | source.js & (support.class | variable.type)",
       "foreground": "var(gold)"
     },
     {
-      "name": "Stuff I want to be this colour, just because",
+      // Stuff that isn't misclassified, but I want it to have the same colour as `storage`, just because.
       "scope": "source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) | source.clojure meta.path.js",
       "foreground": "var(gold)"
     },
@@ -184,7 +177,6 @@
     // String
     // ~~~~~~
     {
-      "name": "String",
       "scope": "string",
       "foreground": "var(blue)"
     },
@@ -192,17 +184,16 @@
     // Support
     // ~~~~~~~
     {
-      "name": "Support",
       "scope": "support - (source.erlang support.namespace | source.go support.type.builtin | source.java & (support.class | support.type.package) | source.js & (support.constant | support.module | support.type) | source.python entity.name.function | source.swift entity.name.type)",
       "foreground": "var(purple)"
     },
     {
-      "name": "Support [reclassification of syntax definitions I don't control]",
+      // Stuff I feel should be classified as `support` but I don't control the syntax definitions. Make them look like it at least.
       "scope": "source variable.function | source.python variable.annotation",
       "foreground": "var(purple)"
     },
     {
-      "name": "Stuff I want to be this colour, just because",
+      // Stuff that isn't misclassified, but I want it to have the same colour as `support`, just because.
       "scope": "(source.json | source.ini) & meta.mapping.key string",
       "foreground": "var(purple)"
     },
