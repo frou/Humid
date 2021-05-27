@@ -233,8 +233,8 @@
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {"scope": "markup.error",                    "foreground": "var(red)"},
     {"scope": "markup.warning",                  "foreground": "var(gold)"},
-    {"scope": "markup.note | markup.info",       "foreground": "var(purple)"},
-    {"scope": "markup.info.hint",                "foreground": "var(blue)"},
+    {"scope": "markup.note",                     "foreground": "var(blue)"},
+    {"scope": "markup.info | markup.info.hint",  "foreground": "var(white_faded)"},
     {"scope": "meta.error-header.build-results", "background": "var(black)"},
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
