@@ -153,7 +153,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `markup`, just because.
-      "scope": "source.ocaml & (keyword.operator | variable.parameter.label) | source.clojure constant.other.keyword | source.erlang & (constant.other.symbol | constant.language.exception.type) | source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) | source.elm meta.type-annotation | source.css meta.selector & (entity.other.attribute-name.class | entity.other.pseudo-class)",
+      "scope": "source.ocaml & (keyword.operator | variable.parameter.label) | source.clojure constant.other.keyword | source.erlang & (constant.other.symbol | constant.language.exception.type) | source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) | source.elm meta.type-annotation | source.css meta.selector & (entity.other.attribute-name.class | entity.other.pseudo-class) | meta.diff",
       "foreground": "var(steel)"
     },
     // ~~~~~~~
@@ -216,14 +216,13 @@
     {"scope": "text.find-in-files constant.numeric.line-number", "foreground": "var(grey)"}, // "Context" lines
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // Diffs
+    // Insertions and Deletions
     //   - Stock diffs
     //   - Override Audit diffs
     //   - https://github.com/SublimeText/UnitTesting results panel
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {"scope": "markup.inserted", "foreground": "var(green)"},
     {"scope": "markup.deleted",  "foreground": "var(red)"},
-    {"scope": "meta.diff",       "foreground": "var(steel)"},
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // Results / Diagnostics
@@ -241,8 +240,8 @@
     // LSP: "Signature Help" popup (distinct from AutoComplete)
     // REF: https://lsp.sublimetext.io/customization/#signature-help
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    {"scope": "entity.name.function.sighelp.lsp", "foreground": "var(white_faded)"}, // Function name & inactive parameters
-    {"scope": "variable.parameter.sighelp.lsp",   "foreground": "var(white)"}, // Active parameter
+    {"scope": "entity.name.function.sighelp.lsp", "foreground": "var(steel)"}, // Function name & inactive parameters
+    {"scope": "variable.parameter.sighelp.lsp",   "foreground": "var(white_faded)"}, // Active parameter(s)
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // LSP: Other visible occurences of the thing at the caret
