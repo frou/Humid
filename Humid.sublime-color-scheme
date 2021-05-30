@@ -104,7 +104,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `constant`, just because.
-      "scope": "text.build-results markup.pointing-carets",
+      "scope": "text.build-results markup.pointing-carets | text.genshi-xml & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end)",
       "foreground": "var(red)"
     },
     // ~~~~~~
@@ -202,13 +202,6 @@
       "scope": "(source.json | source.ini) & meta.mapping.key string",
       "foreground": "var(purple)"
     },
-
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // Delimiters of Interpolated Code
-    //   - Python f-strings
-    //   - Genshi ${} expressions
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    {"scope": "punctuation.section.interpolation.begin | punctuation.section.interpolation.end", "foreground": "var(red)"},
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // File Paths and Line Numbers
