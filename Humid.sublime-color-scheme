@@ -131,7 +131,7 @@
     },
     {
       // Stuff I feel should be classified as `keyword` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source.go storage.type.keyword | source.java & ((storage.modifier - storage.modifier.array) | storage.type.var | meta.class.identifier storage.type) | source.js & (storage.type | variable.language.super | variable.language.this) | source.python & (storage.type.function | storage.type.class) | source.python storage.modifier - storage.modifier.conversion | source.shell.bash storage.modifier",
+      "scope": "source.go storage.type.keyword | source.java & ((storage.modifier - storage.modifier.array) | storage.type.var | meta.class.identifier storage.type) | source.js & (storage.type | variable.language.super | variable.language.this) | source.python & (storage.type.function | storage.type.class) | source.python storage.modifier - storage.modifier.conversion",
       "foreground": "var(green)"
     },
     {
@@ -180,6 +180,11 @@
       "scope": "string",
       "foreground": "var(blue)"
     },
+    {
+      // Stuff I feel should be classified as `string` but I don't control the syntax definitions. Make them look like it at least.
+      "scope": "source.shell.bash meta.string meta.interpolation",
+      "foreground": "var(blue)"
+    },
     // ~~~~~~~
     // Support
     // ~~~~~~~
@@ -189,7 +194,7 @@
     },
     {
       // Stuff I feel should be classified as `support` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source variable.function | source.python variable.annotation",
+      "scope": "source variable.function | source.python variable.annotation | source.shell.bash constant.language.shebang",
       "foreground": "var(purple)"
     },
     {
