@@ -209,8 +209,9 @@
     //   - LSP panels
     //     - Diagnostics
     //     - References
+    //   - Build Results panel
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    {"scope": "text.find-in-files & (entity.name.filename | constant.numeric.line-number.match) | output.lsp & (entity.name.filename | constant.numeric.line-number | constant.numeric.col-number)", "foreground": "var(steel)", "selection_foreground": "var(yellow_punchy)"},
+    {"scope": "text.find-in-files & (entity.name.filename | constant.numeric.line-number.match) | output.lsp & (entity.name.filename | constant.numeric.line-number | constant.numeric.col-number) | text.build-results markup.location.build-results", "foreground": "var(steel)", "selection_foreground": "var(yellow_punchy)"},
     {"scope": "text.find-in-files constant.numeric.line-number", "foreground": "var(grey)"}, // "Context" lines
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
