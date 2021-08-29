@@ -111,7 +111,7 @@
     // Entity
     // ~~~~~~
     {
-      "scope": "entity - (source.c++ entity.name.function punctuation.accessor)",
+      "scope": "entity - (source.c++ entity.name.function punctuation.accessor | source.go entity.name.namespace)",
       "foreground": "var(orange)"
     },
     // ~~~~~~~
