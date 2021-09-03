@@ -131,7 +131,7 @@
     },
     {
       // Stuff I feel should be classified as `keyword` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source.go storage.type.keyword | source.python & (storage.type.function | storage.type.class) | source.python storage.modifier - storage.modifier.conversion",
+      "scope": "source.python storage.modifier - storage.modifier.conversion",
       "foreground": "var(green)"
     },
     {
