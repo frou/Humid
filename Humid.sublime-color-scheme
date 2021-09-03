@@ -99,7 +99,7 @@
     // Constant
     // ~~~~~~~~
     {
-      "scope": "constant - (source.java constant.other)",
+      "scope": "constant",
       "foreground": "var(red)"
     },
     {
@@ -131,7 +131,7 @@
     },
     {
       // Stuff I feel should be classified as `keyword` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source.go storage.type.keyword | source.java & ((storage.modifier - storage.modifier.array) | storage.type.var | meta.class.identifier storage.type) | source.python & (storage.type.function | storage.type.class) | source.python storage.modifier - storage.modifier.conversion",
+      "scope": "source.go storage.type.keyword | source.python & (storage.type.function | storage.type.class) | source.python storage.modifier - storage.modifier.conversion",
       "foreground": "var(green)"
     },
     {
@@ -148,7 +148,7 @@
     },
     {
       // Stuff I feel should be classified as `markup` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source string constant.other.placeholder | source.java meta.annotation",
+      "scope": "source string constant.other.placeholder",
       "foreground": "var(steel)"
     },
     {
@@ -165,7 +165,7 @@
     },
     {
       // Stuff I feel should be classified as `storage` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source.java & (support.class.import | (support.class & (meta.instantiation | meta.method.parameters | meta.catch.parameters))) | source.swift support.class | source.python & (meta.function.parameters.annotation | meta.function.annotation.return) & (meta.generic-name | support.type) | source.python meta.statement.except & (support.type.exception) | source.python meta.function.annotation.return constant.language | source.python meta.class.inheritance entity.other.inherited-class | source.c support.type | source.go meta.type entity.other.inherited-class | source.ts & (variable.type.js | support.class.js - meta.function-call.method.js)",
+      "scope": "source.swift support.class | source.python & (meta.function.parameters.annotation | meta.function.annotation.return) & (meta.generic-name | support.type) | source.python meta.statement.except & (support.type.exception) | source.python meta.function.annotation.return constant.language | source.python meta.class.inheritance entity.other.inherited-class | source.c support.type | source.go meta.type entity.other.inherited-class | source.ts & (variable.type.js | support.class.js - meta.function-call.method.js)",
       "foreground": "var(gold)"
     },
     {
@@ -189,7 +189,7 @@
     // Support
     // ~~~~~~~
     {
-      "scope": "support - (source.erlang support.namespace | source.go support.type.builtin | source.java & (support.class | support.type.package) | source.python entity.name.function | source.swift entity.name.type | source.ts & (support - support.function))",
+      "scope": "support - (source.erlang support.namespace | source.go support.type.builtin | source.python entity.name.function | source.swift entity.name.type | source.ts & (support - support.function))",
       "foreground": "var(purple)"
     },
     {
