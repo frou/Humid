@@ -141,7 +141,7 @@
     },
     {
       // Stuff I feel should be classified as `keyword` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source.python storage.modifier - storage.modifier.conversion",
+      "scope": "source.python storage.modifier - storage.modifier.conversion - source.sql",
       "foreground": "var(green)"
     },
     {
@@ -192,7 +192,7 @@
     },
     {
       // Stuff I feel should be classified as `string` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source.shell.bash meta.string meta.interpolation",
+      "scope": "source.shell.bash meta.string meta.interpolation , source.python string source.sql & (keyword | keyword.operator.logical.sql | entity | storage)",
       "foreground": "var(blue)"
     },
     // ~~~~~~~
