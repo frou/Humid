@@ -180,7 +180,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `storage`, just because.
-      "scope": "source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , source.clojure meta.path.js",
+      "scope": "source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , source.clojure meta.path.js , text.git.commit markup.heading.subject",
       "foreground": "var(gold)"
     },
     // ~~~~~~
