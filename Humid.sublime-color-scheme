@@ -114,7 +114,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `constant`, just because.
-      "scope": "text.build-results markup.pointing-carets , text.genshi-xml & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name, source.erlang & (variable.namespace | support.namespace | punctuation.accessor.double-colon)",
+      "scope": "text.build-results markup.pointing-carets , text.genshi-xml & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name",
       "foreground": "var(red)"
     },
     // ~~~~~~
@@ -209,7 +209,7 @@
     // Support
     // ~~~~~~~
     {
-      "scope": "support - (source.go support.type.builtin , source.python entity.name.function , source.ts & (support - support.function))",
+      "scope": "support - (source.go support.type.builtin , source.python entity.name.function , source.ts & (support - support.function) , source.erlang support.namespace)",
       "foreground": "var(purple)"
     },
     {
