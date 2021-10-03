@@ -114,7 +114,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `constant`, just because.
-      "scope": "text.build-results markup.pointing-carets , text.genshi-xml & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name",
+      "scope": "text.build-results markup.pointing-carets , text.genshi-xml & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name, source.erlang & (variable.namespace | punctuation.accessor.double-colon)",
       "foreground": "var(red)"
     },
     // ~~~~~~
@@ -136,7 +136,9 @@
     // Keyword
     // ~~~~~~~
     {
-      "scope": "keyword - keyword.operator , keyword.operator.word , source.python keyword.operator.logical , source.clojure keyword.operator.macro.dispatch",
+      "scope": "keyword - keyword.operator , keyword.operator.word , source.python keyword.operator.logical , source.clojure keyword.operator.macro.dispatch , source.erlang & (keyword.operator.logical | keyword.operator.bitwise)",
+      // NOTE: In Erlang, `div` and `rem` can't be spared because that would also
+      // spare - + * / (See https://github.com/sublimehq/Packages/pull/2231)
       "foreground": "var(green)"
     },
     {
@@ -163,7 +165,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `markup`, just because.
-      "scope": "source.ocaml & (keyword.operator | variable.parameter.label) , source.clojure constant.other.keyword , source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) , source.css meta.selector & (entity.other.attribute-name.class | entity.other.pseudo-class) , meta.diff",
+      "scope": "source.ocaml & (keyword.operator | variable.parameter.label) , source.clojure constant.other.keyword , source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) , source.css meta.selector & (entity.other.attribute-name.class | entity.other.pseudo-class) , meta.diff , source.erlang & (constant.other.symbol | constant.language.exception | constant.language.boolean)",
       "foreground": "var(steel)"
     },
     // ~~~~~~~
@@ -183,11 +185,19 @@
       "scope": "source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , source.clojure meta.path.js , text.git.commit markup.heading.subject",
       "foreground": "var(gold)"
     },
+    // Make Erlang function heads less noisey looking to help with readability of multi-headed functions.
+    // REF: https://twitter.com/dadgumjames/status/879696398840733697
+    // REF: https://twitter.com/dadgumjames/status/516975485650472960
+    // NOTE: The selector below alone is not sufficient. See also the tweaks to e.g. the String section which is needed to nullify a selector that scores higher?
+    {
+      "scope": "source.erlang & (meta.function.parameters | meta.function punctuation.separator.clause-head-body - (meta.if | meta.case | meta.receive | meta.fun | meta.exception.try | meta.exception.catch))",
+      "foreground": "var(gold)"
+    },
     // ~~~~~~
     // String
     // ~~~~~~
     {
-      "scope": "string",
+      "scope": "string - source.erlang meta.function.parameters",
       "foreground": "var(blue)"
     },
     {
