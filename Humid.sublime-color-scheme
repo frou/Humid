@@ -114,7 +114,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `constant`, just because.
-      "scope": "text.build-results markup.pointing-carets , text.genshi-xml & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name",
+      "scope": "text.build-results markup.pointing-carets , text.genshi-xml & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name , source.erlang punctuation.definition.sequence",
       "foreground": "var(red)"
     },
     // ~~~~~~
