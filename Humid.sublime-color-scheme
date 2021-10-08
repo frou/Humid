@@ -185,19 +185,11 @@
       "scope": "source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , source.clojure meta.path.js , text.git.commit markup.heading.subject",
       "foreground": "var(gold)"
     },
-    // Make Erlang function heads less noisey looking to help with readability of multi-headed functions.
-    // REF: https://twitter.com/dadgumjames/status/879696398840733697
-    // REF: https://twitter.com/dadgumjames/status/516975485650472960
-    // NOTE: The selector below alone is not sufficient. See also the tweaks to e.g. the String section which is needed to nullify a selector that scores higher?
-    {
-      "scope": "source.erlang & (meta.function.parameters | meta.function punctuation.separator.clause-head-body - (meta.if | meta.case | meta.receive | meta.fun | meta.exception.try | meta.exception.catch))",
-      "foreground": "var(gold)"
-    },
     // ~~~~~~
     // String
     // ~~~~~~
     {
-      "scope": "string - source.erlang meta.function.parameters",
+      "scope": "string",
       "foreground": "var(blue)"
     },
     {
