@@ -201,7 +201,7 @@
     // Support
     // ~~~~~~~
     {
-      "scope": "support - (source.go support.type.builtin , source.python entity.name.function , source.ts & (support - support.function) , source.erlang support.namespace)",
+      "scope": "support - (source.go support.type.builtin , source.python entity.name.function , source.ts & (support - support.function) , source.js support.type.object , source.erlang support.namespace)",
       "foreground": "var(purple)"
     },
     {
