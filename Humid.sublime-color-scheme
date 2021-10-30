@@ -177,7 +177,7 @@
     },
     {
       // Stuff I feel should be classified as `storage` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source.python & ((meta.function.parameters.annotation | meta.function.annotation.return) & (meta.generic-name | support.type) | meta.statement.exception.catch support.type.exception | meta.function.annotation.return constant.language | meta.class.inheritance entity.other.inherited-class) , source.c support.type , source.go meta.type entity.other.inherited-class , source.js & (variable.type.js | support.class.js - meta.function-call.method.js)",
+      "scope": "source.python & ((meta.function.parameters.annotation | meta.function.annotation.return) & (meta.generic-name | support.type) | meta.statement.exception.catch support.type.exception | meta.function.annotation.return constant.language | meta.class.inheritance entity.other.inherited-class) , source.c support.type , source.go meta.type entity.other.inherited-class , source.js & (variable.type.js | support.class)",
       "foreground": "var(gold)"
     },
     {
