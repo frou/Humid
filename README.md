@@ -1,7 +1,3 @@
-![shot]
-
-# Description
-
 [Humid] is a colour scheme for [Sublime Text].
 
 This package targets Sublime Text 4+ (a version compatible with Sublime Text 3 is in the `st3` branch).
@@ -35,4 +31,7 @@ SOFTWARE.
 
 [humid]: https://github.com/frou/Humid
 [sublime text]: https://www.sublimetext.com/
-[shot]: https://raw.githubusercontent.com/frou/Humid/master/screenshot.png
+
+<!--
+@todo Add updated screenshot(s) to README
+-->
