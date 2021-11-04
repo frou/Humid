@@ -143,7 +143,7 @@
     },
     {
       // Stuff I feel should be classified as `keyword` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source.python storage.modifier - storage.modifier.conversion - storage.modifier.debug",
+      "scope": "source.python storage.modifier - storage.modifier.conversion - storage.modifier.debug , (source.js | source.ts) & (variable.language.super | variable.language.this)",
       "foreground": "var(green)"
     },
     {
