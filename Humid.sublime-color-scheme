@@ -148,7 +148,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `keyword`, just because.
-      "scope": "source.clojure support.function.def-like , source.css support.constant , source.ocaml variable.language , source.makefile variable.language.automatic",
+      "scope": "source.clojure support.function.def-like , source.css support.constant , source.ocaml variable.language , source.makefile variable.language.automatic , (source.js | source.ts) & (variable.language.global | variable.language.arguments | entity.name.function.constructor)",
       "foreground": "var(green)"
     },
     // ~~~~~~
