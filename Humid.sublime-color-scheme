@@ -114,7 +114,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `constant`, just because.
-      "scope": "text.build-results markup.pointing-carets , text.genshi-xml & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name , source.erlang punctuation.definition.sequence",
+      "scope": "text.build-results markup.pointing-carets , text.genshi-xml & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name , source.erlang punctuation.definition.sequence , source.python support.variable.magic",
       "foreground": "var(red)"
     },
     // ~~~~~~
@@ -148,7 +148,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `keyword`, just because.
-      "scope": "source.clojure support.function.def-like , source.css support.constant , source.ocaml variable.language , source.makefile variable.language.automatic , (source.js | source.ts) & (variable.language.global | variable.language.arguments | entity.name.function.constructor)",
+      "scope": "source.clojure support.function.def-like , source.css support.constant , source.ocaml variable.language , source.makefile variable.language.automatic , (source.js | source.ts) & (variable.language.global | variable.language.arguments)",
       "foreground": "var(green)"
     },
     // ~~~~~~
@@ -165,7 +165,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `markup`, just because.
-      "scope": "source.ocaml & (keyword.operator | variable.parameter.label) , source.clojure constant.other.keyword , source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) , source.css meta.selector & (entity.other.attribute-name.class | entity.other.pseudo-class) , meta.diff , source.erlang & (constant.other.symbol | constant.language.exception | constant.language.boolean)",
+      "scope": "source.ocaml & (keyword.operator | variable.parameter.label) , source.clojure constant.other.keyword , source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) , source.css meta.selector & (entity.other.attribute-name.class | entity.other.pseudo-class) , meta.diff , source.erlang & (constant.other.symbol | constant.language.exception | constant.language.boolean) , (source.js | source.ts) & entity.other.attribute-name.documentation",
       "foreground": "var(steel)"
     },
     // ~~~~~~~
@@ -182,7 +182,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `storage`, just because.
-      "scope": "source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , source.clojure meta.path.js , text.git.commit markup.heading.subject",
+      "scope": "source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , source.clojure meta.path.js , text.git.commit markup.heading.subject , (source.js | source.ts) & entity.name.function.constructor",
       "foreground": "var(gold)"
     },
     // ~~~~~~
