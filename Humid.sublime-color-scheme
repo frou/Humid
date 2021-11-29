@@ -211,7 +211,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `support`, just because.
-      "scope": "(source.json | source.ini) & meta.mapping.key string",
+      "scope": "(source.json | source.ini) & meta.mapping.key string , source.toml entity.name.tag",
       "foreground": "var(purple)"
     },
 
