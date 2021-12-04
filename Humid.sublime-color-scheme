@@ -16,7 +16,7 @@
     "red": "#b75b4e",
     "red_punchy": "#bb0000",
     "slate": "#211e1e",
-    "slate_light": "#60605a",
+    "slate_light": "#60605a", // TWIN: "kind_namespace_color" in Adaptive theme customisation
     "steel": "#8c8c99",
     "white": "#ffffff",
     "white_faded": "#dadada",
