@@ -194,7 +194,7 @@
     },
     {
       // Stuff I feel should be classified as `string` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source.shell.bash meta.string meta.interpolation",
+      "scope": "source.shell.bash meta.string meta.interpolation , source.python comment.block.documentation",
       "foreground": "var(blue)"
     },
     // ~~~~~~~
