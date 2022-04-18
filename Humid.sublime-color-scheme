@@ -189,7 +189,7 @@
     // String
     // ~~~~~~
     {
-      "scope": "string",
+      "scope": "string - (source.shell.bash meta.function-call.arguments.shell string.unquoted.shell)",
       "foreground": "var(blue)"
     },
     {
