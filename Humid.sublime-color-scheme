@@ -165,7 +165,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `markup`, just because.
-      "scope": "source.ocaml & (keyword.operator | variable.parameter.label) , source.clojure constant.other.keyword , source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) , source.css meta.selector & (entity.other.attribute-name.class | entity.other.pseudo-class) , meta.diff , source.erlang & (constant.other.symbol | constant.language.exception | constant.language.boolean) , (source.js | source.ts) & entity.other.attribute-name.documentation",
+      "scope": "source.ocaml & (keyword.operator | variable.parameter.label) , source.clojure constant.other.keyword , source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) , source.css meta.selector & (entity.other.attribute-name.class | entity.other.pseudo-class) , meta.diff , source.erlang & (constant.other.symbol | constant.language.exception | constant.language.boolean) , (source.js | source.ts) & entity.other.attribute-name.documentation , source.shell.bash meta.string.shell meta.interpolation.parameter.shell",
       "foreground": "var(steel)"
     },
     // ~~~~~~~
@@ -194,7 +194,7 @@
     },
     {
       // Stuff I feel should be classified as `string` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source.shell.bash meta.string meta.interpolation , source.python comment.block.documentation",
+      "scope": "source.python comment.block.documentation",
       "foreground": "var(blue)"
     },
     // ~~~~~~~
