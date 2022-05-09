@@ -13,17 +13,15 @@ SMDIFF_CS_PATH="HumidSMDiff.sublime-color-scheme"
 
 # REF: https://unix.stackexchange.com/a/11306
 # REF: https://stackoverflow.com/a/32569573/82
-
-# @todo For stripping comments from the JSON, use something better than the fragile sed approach
-# @body Is there a commandline JSON5-to-JSON converter?
-# @body Or, use https://github.com/hauntsaninja/pyp instead of jello, and import the library https://github.com/spyoungtech/json-five ?
+# REF: https://github.com/spyoungtech/json-five
 
 cat <(sed -E '/^ +"rules":/q ; s/(^ +"name":).+/\1 "HumidSM",/' "${ST_CS_PATH}") \
 	<(sed -E '1,/^ +\/\/ HumidSM allowlist starts here/ d' "${ST_CS_PATH}") |
-	sed -E 's/ \/\/.*$//' |
-	jello '_.name = "HumidSM"; _' >"${SM_CS_PATH}"
+	pyp 'cs = json5.load(stdin); cs["name"] = "HumidSM"; json.dumps(cs, indent=True)' \
+		>"${SM_CS_PATH}"
 
-jello <"${SM_CS_PATH}" '
-_.name = "HumidSMDiff"
-_.globals.foreground = "color(var(white_faded) lightness(- 40%))"
-_' >"${SMDIFF_CS_PATH}"
+pyp <"${SM_CS_PATH}" '
+cs = json.load(stdin)
+cs["name"] = "HumidSMDiff"
+cs["globals"]["foreground"] = "color(var(white_faded) lightness(- 40%))"
+json.dumps(cs, indent=True)' >"${SMDIFF_CS_PATH}"
