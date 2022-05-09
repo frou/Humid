@@ -13,7 +13,9 @@ SMDIFF_CS_PATH="HumidSMDiff.sublime-color-scheme"
 
 # REF: https://unix.stackexchange.com/a/11306
 # REF: https://stackoverflow.com/a/32569573/82
+
 # REF: https://github.com/spyoungtech/json-five
+# REF: https://github.com/hauntsaninja/pyp
 
 cat <(sed -E '/^ +"rules":/q ; s/(^ +"name":).+/\1 "HumidSM",/' "${ST_CS_PATH}") \
 	<(sed -E '1,/^ +\/\/ HumidSM allowlist starts here/ d' "${ST_CS_PATH}") |
