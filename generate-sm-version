@@ -13,7 +13,7 @@ OUTPUT_CS_PATH="HumidSM.sublime-color-scheme"
 echo '// GENERATED FILE. DO NOT EDIT DIRECTLY.' >"${OUTPUT_CS_PATH}"
 
 # REF: https://unix.stackexchange.com/a/11306
-sed -E '/^ +"rules":/q ; s/"name": "Humid",/"name": "HumidSM",/ ; s/"foreground": "var\(white_faded\)",/"foreground": "color(var(white_faded) lightness(- 40%))",/' "${MAIN_CS_PATH}" >>"${OUTPUT_CS_PATH}"
+sed -E '/^ +"rules":/q ; s/(^ +"name":).+/\1 "HumidSM",/ ; s/(^ +"foreground":).+",/\1 "color(var(white_faded) lightness(- 40%))",/' "${MAIN_CS_PATH}" >>"${OUTPUT_CS_PATH}"
 
 # REF: https://stackoverflow.com/a/32569573/82
 #sed -E -n '/^ +\/\/ HumidSM allowlist starts here/,$ p' "${MAIN_CS_PATH}" >>"${OUTPUT_CS_PATH}"
