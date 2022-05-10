@@ -1,29 +1,52 @@
-#!/usr/bin/env bash
-set -ueo pipefail
+#!/usr/bin/env python3
 
-# This script generates a version of the colour scheme for use in Sublime Merge.
-# Why is this necessary when SM can use ST colour schemes as-is? Because I don't
-# want full-on programming language syntax highlighting when looking at diffs in
-# SM, and it's not currently possible to disable syntax highlighting in SM:
-# https://github.com/sublimehq/sublime_merge/issues/52
+# This script generates a version of the colour scheme intended for use in the diff pane
+# part of Sublime Merge. Why is this necessary when SM can use ST colour schemes as-is?
+# Because I don't want full-on programming language syntax highlighting when looking at
+# diffs in SM, and it's not currently possible to disable syntax highlighting in SM.
+#
+# REF: https://github.com/sublimehq/sublime_merge/issues/52
+# REF: https://github.com/sublimehq/sublime_merge/issues/198#issuecomment-471042729
 
-ST_CS_PATH="Humid.sublime-color-scheme"
-SM_CS_PATH="HumidSM.sublime-color-scheme"
-SMDIFF_CS_PATH="HumidSMDiff.sublime-color-scheme"
+import json
+from pathlib import Path
 
-# REF: https://unix.stackexchange.com/a/11306
-# REF: https://stackoverflow.com/a/32569573/82
+import json5  # REF: https://github.com/spyoungtech/json-five
 
-# REF: https://github.com/spyoungtech/json-five
-# REF: https://github.com/hauntsaninja/pyp
+SCHEME_PATH = Path("Humid.sublime-color-scheme")
+SMDIFF_SCHEME_PATH = Path("Humid for SM Diff.sublime-color-scheme")
 
-cat <(sed -E '/^ +"rules":/q ; s/(^ +"name":).+/\1 "HumidSM",/' "${ST_CS_PATH}") \
-	<(sed -E '1,/^ +\/\/ HumidSM allowlist starts here/ d' "${ST_CS_PATH}") |
-	pyp 'cs = json5.load(stdin); cs["name"] = "HumidSM"; json.dumps(cs, indent=True)' \
-		>"${SM_CS_PATH}"
+with open(SCHEME_PATH) as infile:
+    scheme = json5.load(infile)
 
-pyp <"${SM_CS_PATH}" '
-cs = json.load(stdin)
-cs["name"] = "HumidSMDiff"
-cs["globals"]["foreground"] = "color(var(white_faded) lightness(- 40%))"
-json.dumps(cs, indent=True)' >"${SMDIFF_CS_PATH}"
+scheme["name"] = f"{SMDIFF_SCHEME_PATH.stem} (GENERATED FILE - DO NOT EDIT DIRECTLY)"
+scheme["variables"].update(
+    {"kaleidoscope_bg_red": "#4b1512", "kaleidoscope_bg_green": "#2b4e20"}
+)
+existing_fg = scheme["globals"]["foreground"]
+scheme["globals"]["foreground"] = f"color({existing_fg} lightness(- 40%))"
+scheme["rules"] = [
+    {
+        "scope": "diff.deleted",
+        "background": "var(slate)",
+        "foreground": "color(var(white_faded) blend(var(kaleidoscope_bg_red) 60%))",
+    },
+    {
+        "scope": "diff.deleted.char",
+        "background": "var(kaleidoscope_bg_red)",
+        "foreground": "var(white_faded)",
+    },
+    {
+        "scope": "diff.inserted",
+        "background": "var(slate)",
+        "foreground": "color(var(white_faded) blend(var(kaleidoscope_bg_green) 60%))",
+    },
+    {
+        "scope": "diff.inserted.char",
+        "background": "var(kaleidoscope_bg_green)",
+        "foreground": "var(white_faded)",
+    },
+]
+
+with open(SMDIFF_SCHEME_PATH, "w") as outfile:
+    json.dump(scheme, outfile, indent=2)

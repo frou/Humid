@@ -300,32 +300,5 @@
     {"scope": "white.humidtest", "foreground": "var(white)"},
     {"scope": "white_faded.humidtest", "foreground": "var(white_faded)"},
     {"scope": "yellow_punchy.humidtest", "foreground": "var(yellow_punchy)"},
-
-    // HumidSM allowlist starts here
-    // REF ("Styling"): https://www.sublimetext.com/docs/incremental_diff.html#inline_diffs
-    {
-        "scope": "diff.deleted",
-        "background": "var(slate)",
-        "foreground": "var(white_faded)",
-    },
-    {
-        "scope": "diff.deleted.char",
-        // "background": "#5f0000", // Xterm256 color 52
-        "background": "#4b1512", // Kaleidoscope focused
-        // "foreground": "#ff3b1b", // PrettyVibrant brightred
-        "foreground": "var(white_faded)",
-    },
-    {
-        "scope": "diff.inserted",
-        "background": "var(slate)",
-        "foreground": "var(white_faded)",
-    },
-    {
-        "scope": "diff.inserted.char",
-        // "background": "#005f00", // Xterm256 color 22
-        "background": "#2b4e20", // Kaleidoscope focused
-        // "foreground": "#2de71f", // PrettyVibrant brightgreen
-        "foreground": "var(white_faded)",
-    },
   ]
 }
