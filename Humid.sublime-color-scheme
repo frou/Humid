@@ -27,7 +27,7 @@
     //
     // REF: https://www.sublimetext.com/docs/minihtml.html#predefined_variables
     "--redish": "var(red)",
-    "--greenish": "var(green)",
+    //"--greenish": "var(green)",
     //"--bluish": "var()",
     "--yellowish": "var(gold)",
     //"--pinkish": "var()",
