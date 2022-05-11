@@ -21,30 +21,42 @@ with open(SCHEME_PATH) as infile:
 
 scheme["name"] = f"{SMDIFF_SCHEME_PATH.stem} (GENERATED FILE - DO NOT EDIT DIRECTLY)"
 scheme["variables"].update(
-    {"kaleidoscope_bg_red": "#4b1512", "kaleidoscope_bg_green": "#2b4e20"}
+    {"kaleidoscope_red": "#4b1512", "kaleidoscope_green": "#2b4e20"}
 )
-existing_fg = scheme["globals"]["foreground"]
-scheme["globals"]["foreground"] = f"color({existing_fg} lightness(- 40%))"
+st_background = scheme["globals"]["background"]
+st_foreground = scheme["globals"]["foreground"]
+
+# Wholly unchanged lines.
+scheme["globals"]["foreground"] = f"color({st_foreground} lightness(- 40%))"
+
+# For the parts of changed lines that didn't change.
+def changed_line_foreground(blend_colour):
+    return f"color({st_foreground} blend({blend_colour} 40%) saturation(+ 5%))"
+
+
+# For the parts of changed lines that did change.
+changed_line_emphasised_foreground = st_foreground
+
 scheme["rules"] = [
     {
         "scope": "diff.deleted",
-        "background": "var(slate)",
-        "foreground": "color(var(white_faded) blend(var(kaleidoscope_bg_red) 60%))",
+        "background": st_background,
+        "foreground": changed_line_foreground("var(kaleidoscope_red)"),
     },
     {
         "scope": "diff.deleted.char",
-        "background": "var(kaleidoscope_bg_red)",
-        "foreground": "var(white_faded)",
+        "background": "var(kaleidoscope_red)",
+        "foreground": changed_line_emphasised_foreground,
     },
     {
         "scope": "diff.inserted",
-        "background": "var(slate)",
-        "foreground": "color(var(white_faded) blend(var(kaleidoscope_bg_green) 60%))",
+        "background": st_background,
+        "foreground": changed_line_foreground("var(kaleidoscope_green)"),
     },
     {
         "scope": "diff.inserted.char",
-        "background": "var(kaleidoscope_bg_green)",
-        "foreground": "var(white_faded)",
+        "background": "var(kaleidoscope_green)",
+        "foreground": changed_line_emphasised_foreground,
     },
 ]
 
