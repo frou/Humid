@@ -211,7 +211,7 @@
     },
     {
       // Stuff I feel should be classified as `support` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source variable.function , source.python variable.annotation , source.shell.bash constant.language.shebang",
+      "scope": "source variable.function , constant.language.shebang , source.python variable.annotation",
       "foreground": "var(purple)"
     },
     {
