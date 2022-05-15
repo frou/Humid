@@ -153,7 +153,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `keyword`, just because.
-      "scope": "source.clojure support.function.def-like , source.css support.constant , source.ocaml variable.language , source.makefile variable.language.automatic , (source.js | source.ts) & (variable.language.global | variable.language.arguments)",
+      "scope": "source.clojure support.function.def-like , source.css support.constant , source.makefile variable.language.automatic , (source.js | source.ts) & (variable.language.global | variable.language.arguments)",
       "foreground": "var(green)"
     },
     // ~~~~~~
@@ -170,7 +170,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `markup`, just because.
-      "scope": "source.ocaml & (keyword.operator | variable.parameter.label) , source.clojure constant.other.keyword , source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) , source.css meta.selector & (entity.other.attribute-name.class | entity.other.pseudo-class) , meta.diff , source.erlang & (constant.other.symbol | constant.language.exception | constant.language.boolean) , (source.js | source.ts) & entity.other.attribute-name.documentation , source.shell.bash meta.string meta.interpolation.parameter",
+      "scope": "source.ocaml & (variable.parameter.label) , source.clojure constant.other.keyword , source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) , source.css meta.selector & (entity.other.attribute-name.class | entity.other.pseudo-class) , meta.diff , source.erlang & (constant.other.symbol | constant.language.exception | constant.language.boolean) , (source.js | source.ts) & entity.other.attribute-name.documentation , source.shell.bash meta.string meta.interpolation.parameter",
       "foreground": "var(steel)"
     },
     // ~~~~~~~
