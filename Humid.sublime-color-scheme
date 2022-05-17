@@ -109,7 +109,7 @@
     // Constant
     // ~~~~~~~~
     {
-      "scope": "constant",
+      "scope": "constant - ((source.js | source.ts) & (meta.import | meta.export) & constant.other)",
       "foreground": "var(red)"
     },
     {
