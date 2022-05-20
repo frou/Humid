@@ -39,7 +39,7 @@
     //"--accent": "var()",
   },
 
-  // REF: https://www.sublimetext.com/docs/3/color_schemes.html#global_settings
+  // REF: https://www.sublimetext.com/docs/color_schemes.html#global_settings
   "globals": {
     "foreground": "var(white_faded)",
     "background": "var(slate)",
