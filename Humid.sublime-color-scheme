@@ -67,7 +67,7 @@
     "bracket_contents_foreground": "var(orange_punchy)",
 
     "tags_options": "glow",
-    "tags_foreground": "var(orange_punchy)",
+    "tags_foreground": "var(yellow_punchy)",
 
     "line_diff_added": "var(green)",
     "line_diff_modified": "var(orange)",
@@ -187,7 +187,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `storage`, just because.
-      "scope": "source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , source.clojure meta.path.js , text.git.commit markup.heading.subject , (source.js | source.ts) & entity.name.function.constructor",
+      "scope": "source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , source.clojure meta.path.js , text.git.commit markup.heading.subject , (source.js | source.ts) & entity.name.function.constructor , (text.xml | text.html) & entity.name.tag",
       "foreground": "var(gold)"
     },
     // ~~~~~~
@@ -216,7 +216,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `support`, just because.
-      "scope": "(source.json | source.ini) & meta.mapping.key string , source.toml entity.name.tag",
+      "scope": "(source.json | source.ini) & meta.mapping.key string , source.toml entity.name.tag , (text.xml | text.html) & entity.other.attribute-name",
       "foreground": "var(purple)"
     },
 
