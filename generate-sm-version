@@ -37,6 +37,7 @@ def changed_line_foreground(blend_colour):
 # For the parts of changed lines that did change.
 changed_line_emphasised_foreground = st_foreground
 
+# Replace the existing `rules` array wholesale (not merely adding to it).
 scheme["rules"] = [
     {
         "scope": "diff.deleted",

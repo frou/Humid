@@ -9,12 +9,12 @@ from pathlib import Path
 import json5  # REF: https://github.com/spyoungtech/json-five
 
 SCHEME_PATH = Path("Humid.sublime-color-scheme")
-SMDIFF_SCHEME_PATH = Path("Humid for REPL.sublime-color-scheme")
+REPL_SCHEME_PATH = Path("Humid for REPL.sublime-color-scheme")
 
 with open(SCHEME_PATH) as infile:
     scheme = json5.load(infile)
 
-scheme["name"] = f"{SMDIFF_SCHEME_PATH.stem} (GENERATED FILE - DO NOT EDIT DIRECTLY)"
+scheme["name"] = f"{REPL_SCHEME_PATH.stem} (GENERATED FILE - DO NOT EDIT DIRECTLY)"
 scheme["variables"].update(
     {"blue_slate": "color(var(slate) blend(var(blue) 85%) lightness(- 5%))"}
 )
@@ -45,5 +45,5 @@ scheme["rules"].extend(
 )
 
 
-with open(SMDIFF_SCHEME_PATH, "w") as outfile:
+with open(REPL_SCHEME_PATH, "w") as outfile:
     json.dump(scheme, outfile, indent=2)
