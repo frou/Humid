@@ -211,7 +211,7 @@
     },
     {
       // Stuff I feel should be classified as `support` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source variable.function - ((source.clojure | source.edn) & (meta.namespace | punctuation.accessor)) , constant.language.shebang , source.python variable.annotation",
+      "scope": "source variable.function - ((source.clojure | source.edn) & (meta.namespace | punctuation.accessor)) , constant.language.shebang , source.python variable.annotation , source.clojure keyword.declaration.namespace",
       "foreground": "var(purple)"
     },
     {
