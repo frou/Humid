@@ -16,30 +16,23 @@ with open(SCHEME_PATH) as infile:
 
 scheme["name"] = f"{REPL_SCHEME_PATH.stem} (GENERATED FILE - DO NOT EDIT DIRECTLY)"
 scheme["variables"].update(
-    {"blue_slate": "color(var(slate) blend(var(blue) 85%) lightness(- 5%))"}
+    {
+        "blue_slate": "color(var(slate) blend(var(blue) 85%) lightness(- 5%))",
+        "--redish": "var(red_punchy)",
+    }
 )
 
 scheme["globals"]["background"] = "var(blue_slate)"
 scheme["globals"]["gutter"] = "var(blue_slate)"
 
-RED = "var(red)"
-REDISH = "var(--redish)"
-
-# In the REPL, we are reserving the colour red for error messages, so remove any
-# existing rules that use it (e.g. constants like numeric literals).
-scheme["rules"] = [
-    rule
-    for rule in scheme["rules"]
-    if rule.get("foreground", None) not in [RED, REDISH]
-]
-
 scheme["rules"].extend(
     [
         {
-            "scope": "tutkain.repl.stderr",
+            "scope": "source.clojure.repl tutkain.repl.stderr",
+            "background": "var(black)",
             # NOTE: Tutkain already colours the corresponding chevron icon in the gutter
             # using `redish`, so use the exact same variable to guarantee they match.
-            "foreground": REDISH,
+            "foreground": "var(--redish)",
         },
     ]
 )
