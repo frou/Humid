@@ -134,7 +134,7 @@
     },
     {
       "scope": "invalid.deprecated",
-      "background": "var(orange)",
+      "background": "var(red)",
       "foreground": "var(white_faded)"
     },
     // ~~~~~~~
