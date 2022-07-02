@@ -108,7 +108,7 @@
     // Constant
     // ~~~~~~~~
     {
-      "scope": "constant - ((source.js | source.ts) & (meta.import | meta.export) & constant.other)",
+      "scope": "constant - ((source.js | source.jsx | source.ts) & (meta.import | meta.export) & constant.other)",
       "foreground": "var(red)"
     },
     {
@@ -140,19 +140,19 @@
     // Keyword
     // ~~~~~~~
     {
-      "scope": "keyword - keyword.operator - ((source.js | source.ts) & keyword.declaration.function.arrow , source.python keyword.control.import.relative , source.shell keyword.control.conditional.patterns) , keyword.operator.word , keyword.operator.js, source.python keyword.operator.logical , source.erlang & (keyword.operator.logical | keyword.operator.bitwise) , (source.regexp | source.file-pattern | source.regexp-replacement) & keyword.operator",
+      "scope": "keyword - keyword.operator - ((source.js | source.jsx | source.ts) & keyword.declaration.function.arrow , source.python keyword.control.import.relative , source.shell keyword.control.conditional.patterns) , keyword.operator.word , keyword.operator.js, source.python keyword.operator.logical , source.erlang & (keyword.operator.logical | keyword.operator.bitwise) , (source.regexp | source.file-pattern | source.regexp-replacement) & keyword.operator",
       // NOTE: In Erlang, `div` and `rem` can't be spared because that would also
       // spare - + * / (See https://github.com/sublimehq/Packages/pull/2231)
       "foreground": "var(green)"
     },
     {
       // Stuff I feel should be classified as `keyword` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source.python storage.modifier - storage.modifier.conversion - storage.modifier.debug , (source.js | source.ts) & (variable.language.super | variable.language.this | storage.modifier.extends)",
+      "scope": "source.python storage.modifier - storage.modifier.conversion - storage.modifier.debug , (source.js | source.jsx | source.ts) & (variable.language.super | variable.language.this | storage.modifier.extends)",
       "foreground": "var(green)"
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `keyword`, just because.
-      "scope": "source.css support.constant , source.makefile variable.language.automatic , (source.js | source.ts) & (variable.language.global | variable.language.arguments) , source.python support.variable.magic",
+      "scope": "source.css support.constant , source.makefile variable.language.automatic , (source.js | source.jsx | source.ts) & (variable.language.global | variable.language.arguments)",
       "foreground": "var(green)"
     },
     // ~~~~~~
@@ -169,7 +169,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `markup`, just because.
-      "scope": "source.ocaml & (variable.parameter.label) , (source.clojure | source.edn) & constant.other.keyword , source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) , source.css meta.selector & (entity.other.attribute-name.class | entity.other.pseudo-class) , meta.diff , source.erlang & (constant.other.symbol | constant.language.exception | constant.language.boolean) , (source.js | source.ts) & (entity.other.attribute-name.documentation | keyword.declaration.async.js) , source.shell.bash meta.string meta.interpolation.parameter",
+      "scope": "source.ocaml & (variable.parameter.label) , (source.clojure | source.edn) & constant.other.keyword , source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) , source.css meta.selector & (entity.other.attribute-name.class | entity.other.pseudo-class) , meta.diff , source.erlang & (constant.other.symbol | constant.language.exception | constant.language.boolean) , (source.js | source.jsx | source.ts) & (entity.other.attribute-name.documentation | keyword.declaration.async.js) , source.shell.bash meta.string meta.interpolation.parameter , source.python support.variable.magic",
       "foreground": "var(steel)"
     },
     // ~~~~~~~
@@ -181,12 +181,12 @@
     },
     {
       // Stuff I feel should be classified as `storage` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source.python & ((meta.function.parameters.annotation | meta.function.annotation.return) & (meta.generic-name | support.type) | meta.statement.exception.catch support.type.exception | meta.function.annotation.return constant.language | meta.class.inheritance entity.other.inherited-class | support.type - variable.function) , source.c support.type , source.go meta.type entity.other.inherited-class , (source.js | source.ts) & (variable.type.js | support.type - support.type.object | support.class.builtin | entity.other.inherited-class)",
+      "scope": "source.python & ((meta.function.parameters.annotation | meta.function.annotation.return) & (meta.generic-name | support.type) | meta.statement.exception.catch support.type.exception | meta.function.annotation.return constant.language | meta.class.inheritance entity.other.inherited-class | support.type - variable.function) , source.c support.type , source.go meta.type entity.other.inherited-class , (source.js | source.jsx | source.ts) & (variable.type.js | support.type - support.type.object | support.class.builtin | entity.other.inherited-class)",
       "foreground": "var(gold)"
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `storage`, just because.
-      "scope": "source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , text.git.commit markup.heading.subject , (source.js | source.ts) & entity.name.function.constructor , (text.xml | text.html) & entity.name.tag",
+      "scope": "source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , text.git.commit markup.heading.subject , (source.js | source.jsx | source.ts) & entity.name.function.constructor , (text.xml | text.html | source.jsx) & entity.name.tag",
       "foreground": "var(gold)"
     },
     // ~~~~~~
@@ -205,7 +205,7 @@
     // Support
     // ~~~~~~~
     {
-      "scope": "support - (source.go support.type.builtin , source.python entity.name.function , (source.js | source.ts) & (support - support.function) , source.erlang support.namespace)",
+      "scope": "support - (source.go support.type.builtin , source.python entity.name.function , (source.js | source.jsx | source.ts) & (support - support.function) , source.erlang support.namespace)",
       "foreground": "var(purple)"
     },
     {
@@ -215,7 +215,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `support`, just because.
-      "scope": "(source.json | source.ini) & meta.mapping.key string , source.toml entity.name.tag , (text.xml | text.html) & entity.other.attribute-name , source.clojure keyword.declaration.namespace",
+      "scope": "(source.json | source.ini) & meta.mapping.key string , source.toml entity.name.tag , (text.xml | text.html | source.jsx) & entity.other.attribute-name , source.clojure keyword.declaration.namespace",
       "foreground": "var(purple)"
     },
 
