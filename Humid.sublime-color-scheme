@@ -100,10 +100,9 @@
       "foreground": "var(slate_light)"
     },
     {
-      // Preprocessor Directives (or equivalent comment constructs)
-      "scope": "source.ocaml meta.preprocessor , source.go comment.line meta.annotation",
-      "foreground": "var(slate_light)",
-      "background": "var(black)"
+      // Stuff that isn't misclassified, but I want it to have the same colour as `comment`, just because.
+      "scope": "source.zig string.unquoted punctuation.definition.string.begin",
+      "foreground": "var(slate_light)"
     },
     // ~~~~~~~~
     // Constant
@@ -224,8 +223,17 @@
     // Things that should GLOW
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
-      "scope": "source.erlang & (punctuation.separator.expressions | punctuation.separator.clauses | punctuation.terminator.clause)",
+      "scope": "source.erlang & (punctuation.separator.expressions | punctuation.separator.clauses | punctuation.terminator.clause) , source.zig & (constant.language.undefined | variable.language.ignore)",
       "font_style": "glow"
+    },
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // Preprocessor Directives (or equivalent comment constructs)
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    {
+      "scope": "source.ocaml meta.preprocessor , source.go comment.line meta.annotation",
+      "foreground": "var(slate_light)",
+      "background": "var(black)"
     },
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
