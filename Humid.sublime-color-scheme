@@ -22,12 +22,12 @@
     "white_faded": "#dadada",
     "yellow_punchy": "#eed600",
 
-    // Overrule ST where it picks what I feel is the wrong colour from the
-    // above to be a given `*ish` colour.
+    // Overrule ST where it picks what I feel is the wrong colour from those used in
+    // this colour scheme to be a given *ish colour.
     //
-    // REF: https://www.sublimetext.com/docs/minihtml.html#predefined_variables
+    // REF: https://www.sublimetext.com/docs/minihtml.html#predefined-variables
     "--redish": "var(red)",
-    //"--greenish": "var(green)",
+    //"--greenish": "var()",
     //"--bluish": "var()",
     "--yellowish": "var(gold)",
     //"--pinkish": "var()",
