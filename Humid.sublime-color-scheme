@@ -123,6 +123,11 @@
       "scope": "entity - (source.c++ entity.name.function punctuation.accessor , source.go entity.name.namespace)",
       "foreground": "var(orange)"
     },
+    {
+      // Stuff that isn't misclassified, but I want it to have the same colour as `entity`, just because.
+      "scope": "source.file-pattern punctuation.separator",
+      "foreground": "var(orange)"
+    },
     // ~~~~~~~
     // Invalid
     // ~~~~~~~
@@ -140,7 +145,7 @@
     // Keyword
     // ~~~~~~~
     {
-      "scope": "keyword - keyword.operator - ((source.js | source.jsx | source.ts) & keyword.declaration.function.arrow , source.python keyword.control.import.relative , source.shell keyword.control.conditional.patterns) , keyword.operator.word , keyword.operator.js, source.python keyword.operator.logical , source.erlang & (keyword.operator.logical | keyword.operator.bitwise) , (source.regexp | source.file-pattern | source.regexp-replace) & keyword.operator",
+      "scope": "keyword - keyword.operator - ((source.js | source.jsx | source.ts) & keyword.declaration.function.arrow , source.python keyword.control.import.relative , source.shell keyword.control.conditional.patterns) , keyword.operator.word , keyword.operator.js, source.python keyword.operator.logical , source.erlang & (keyword.operator.logical | keyword.operator.bitwise) , (source.regexp | source.regexp-replace) & keyword.operator , source.file-pattern & (keyword.operator | variable.language.wildcard)",
       // NOTE: In Erlang, `div` and `rem` can't be spared because that would also
       // spare - + * / (See https://github.com/sublimehq/Packages/pull/2231)
       "foreground": "var(green)"
@@ -223,7 +228,7 @@
     // Things that should GLOW
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
-      "scope": "source.erlang & (punctuation.separator.expressions | punctuation.separator.clauses | punctuation.terminator.clause) , source.zig & (constant.language.undefined | variable.language.ignore)",
+      "scope": "source.erlang & (punctuation.separator.expressions | punctuation.separator.clauses | punctuation.terminator.clause) , source.zig & (constant.language.undefined | variable.language.ignore) , source.file-pattern variable.language.wildcard",
       "font_style": "glow"
     },
 
