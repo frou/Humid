@@ -145,9 +145,8 @@
     // Keyword
     // ~~~~~~~
     {
-      "scope": "keyword - keyword.operator - ((source.js | source.jsx | source.ts) & keyword.declaration.function.arrow , source.python keyword.control.import.relative , source.shell keyword.control.conditional.patterns) , keyword.operator.word , keyword.operator.js, source.python keyword.operator.logical , source.erlang & (keyword.operator.logical | keyword.operator.bitwise) , (source.regexp | source.regexp-replace) & keyword.operator , source.file-pattern & (keyword.operator | variable.language.wildcard)",
-      // NOTE: In Erlang, `div` and `rem` can't be spared because that would also
-      // spare - + * / (See https://github.com/sublimehq/Packages/pull/2231)
+      "scope": "keyword - keyword.operator - ((source.js | source.jsx | source.ts) & keyword.declaration.function.arrow , source.python keyword.control.import.relative , source.shell keyword.control.conditional.patterns) , keyword.operator.word , keyword.operator.js, source.python keyword.operator.logical , source.erlang & (keyword.operator.logical | keyword.operator.bitwise) , source.regexp keyword.operator , source.file-pattern keyword.operator , source.regexp-replace keyword.operator",
+      // NOTE: In Erlang, `div` and `rem` can't be spared because that would also spare - + * / (See https://github.com/sublimehq/Packages/pull/2231)
       "foreground": "var(green)"
     },
     {
@@ -157,7 +156,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `keyword`, just because.
-      "scope": "source.css support.constant , source.makefile variable.language.automatic , (source.js | source.jsx | source.ts) & (variable.language.global | variable.language.arguments)",
+      "scope": "source.css support.constant , source.makefile variable.language.automatic , (source.js | source.jsx | source.ts) & (variable.language.global | variable.language.arguments) , source.file-pattern variable.language.wildcard , source.regexp-replace variable.language.backref",
       "foreground": "var(green)"
     },
     // ~~~~~~
@@ -174,7 +173,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `markup`, just because.
-      "scope": "source.ocaml & (variable.parameter.label) , (source.clojure | source.edn) & constant.other.keyword , source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) , source.css meta.selector & (entity.other.attribute-name.class | entity.other.pseudo-class) , meta.diff , source.erlang & (constant.other.symbol | constant.language.exception | constant.language.boolean) , (source.js | source.jsx | source.ts) & (entity.other.attribute-name.documentation | keyword.declaration.async.js) , source.shell.bash meta.string meta.interpolation.parameter , source.python support.variable.magic , source.jsx entity.name.tag - entity.name.tag.native",
+      "scope": "source.ocaml & (variable.parameter.label) , (source.clojure | source.edn) & constant.other.keyword , source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) , source.css meta.selector & (entity.other.attribute-name.class | entity.other.pseudo-class) , meta.diff , source.erlang & (constant.other.symbol | constant.language.exception | constant.language.boolean) , (source.js | source.jsx | source.ts) & (entity.other.attribute-name.documentation | keyword.declaration.async.js) , source.shell.bash meta.string meta.interpolation.parameter , source.python support.variable.magic , source.jsx entity.name.tag - entity.name.tag.native , source.regexp-replace variable.language.match",
       "foreground": "var(steel)"
     },
     // ~~~~~~~
