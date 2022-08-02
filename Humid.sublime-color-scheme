@@ -113,7 +113,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `constant`, just because.
-      "scope": "text.build-results markup.pointing-carets , text.xml.kajiki & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name , source.erlang punctuation.definition.sequence , source.file-pattern keyword.operator.wildcard",
+      "scope": "text.build-results markup.pointing-carets , text.xml.kajiki & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name , source.erlang punctuation.definition.sequence , source.file-pattern keyword.operator.wildcard , (source.js | source.jsx | source.ts) & (support.constant - support.constant.node - support.constant.prototype)",
       "foreground": "var(red)"
     },
     // ~~~~~~
@@ -185,7 +185,7 @@
     },
     {
       // Stuff I feel should be classified as `storage` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source.python & ((meta.function.parameters.annotation | meta.function.annotation.return) & (meta.generic-name | support.type) | meta.statement.exception.catch support.type.exception | meta.function.annotation.return constant.language | meta.class.inheritance entity.other.inherited-class | support.type - variable.function) , source.c support.type , source.go meta.type entity.other.inherited-class , (source.js | source.jsx | source.ts) & (variable.type.js | support.type - support.type.object | support.class.builtin | entity.other.inherited-class)",
+      "scope": "source.python & ((meta.function.parameters.annotation | meta.function.annotation.return) & (meta.generic-name | support.type) | meta.statement.exception.catch support.type.exception | meta.function.annotation.return constant.language | meta.class.inheritance entity.other.inherited-class | support.type - variable.function) , source.c support.type , source.go meta.type entity.other.inherited-class , (source.js | source.jsx | source.ts) & (variable.type.js | support.type - support.type.object | support.class - support.class.node | entity.other.inherited-class)",
       "foreground": "var(gold)"
     },
     {
@@ -209,7 +209,7 @@
     // Support
     // ~~~~~~~
     {
-      "scope": "support - ((source.js | source.jsx | source.ts) , source.go support.type.builtin , source.python entity.name.function , source.erlang support.namespace) , (source.js | source.jsx | source.ts) & (support.function - invalid.deprecated)",
+      "scope": "support - ((source.js | source.jsx | source.ts) , source.go support.type.builtin , source.python entity.name.function , source.erlang support.namespace) , (source.js | source.jsx | source.ts) & (support.function - support.function.node - invalid.deprecated)",
       "foreground": "var(purple)"
     },
     {
