@@ -276,9 +276,9 @@
     // LSP: "Signature Help" popup (distinct from AutoComplete)
     // REF: https://lsp.sublimetext.io/customization/#signature-help
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    {"scope": "entity.name.function.sighelp.lsp", "foreground": "var(steel)"}, // Function name
-    {"scope": "variable.parameter.sighelp.lsp",   "foreground": "var(white_faded)"}, // Inactive parameters
-    {"scope": "variable.parameter.sighelp.active.lsp",   "foreground": "var(white)"}, // Active parameter
+    {"scope": "entity.name.function.sighelp.lsp", "foreground": "var(steel)"}, // Function name, parens, commas, etc.
+    {"scope": "variable.parameter.sighelp.lsp",   "foreground": "var(white_faded)"},
+    {"scope": "variable.parameter.sighelp.active.lsp",   "foreground": "var(white)"},
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // LSP: Other visible occurences of the thing at the caret
