@@ -268,10 +268,17 @@
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {"scope": "markup.error",                    "foreground": "var(red)"},
     {"scope": "markup.warning",                  "foreground": "var(gold)"},
-    {"scope": "markup.info | markup.info.hint",  "foreground": "var(blue)"},
-    {"scope": "markup.note",                     "foreground": "var(white_faded)"},
+    {"scope": "markup.note",                     "foreground": "var(slate_light)"},
+    {"scope": "markup.info",                     "foreground": "var(blue)"},
+    {"scope": "markup.info.hint",                "foreground": "var(green)"},
     {"scope": "meta.error-header.build-results", "background": "var(black)"},
-
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // PackageDev
+    // - Syntax Definition authoring
+    // - Syntax Test authoring
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    {"scope": "markup.info.capture.sublime-syntax", "background": "var(white_faded)"},
+    {"scope": "markup.info.test.sublime-syntax",    "background": "var(white_faded)"},
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // LSP: "Signature Help" popup (distinct from AutoComplete)
     // REF: https://lsp.sublimetext.io/customization/#signature-help
