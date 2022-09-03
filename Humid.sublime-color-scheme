@@ -163,7 +163,7 @@
     // Markup
     // ~~~~~~
     {
-      "scope": "markup",
+      "scope": "markup - markup.underline.link.lsp",
       "foreground": "var(steel)"
     },
     {
