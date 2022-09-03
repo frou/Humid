@@ -163,7 +163,7 @@
     // Markup
     // ~~~~~~
     {
-      "scope": "markup - markup.underline.link.lsp",
+      "scope": "markup",
       "foreground": "var(steel)"
     },
     {
@@ -272,13 +272,17 @@
     {"scope": "markup.info",                     "foreground": "var(blue)"},
     {"scope": "markup.info.hint",                "foreground": "var(green)"},
     {"scope": "meta.error-header.build-results", "background": "var(black)"},
+
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // PackageDev
-    // - Syntax Definition authoring
-    // - Syntax Test authoring
+    // Highlights / Underlines
+    // - LSP hovered range (see LSP "hover_highlight_style" setting)
+    //   - REF: https://lsp.sublimetext.io/customization/#hover-highlights
+    // - LSP server-identified link (see LSP "link_highlight_style" setting)
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    {"scope": "markup.info.capture.sublime-syntax", "background": "var(white_faded)"},
-    {"scope": "markup.info.test.sublime-syntax",    "background": "var(white_faded)"},
+    {"scope": "markup.highlight.hover.lsp",  "background": "var(grey_light)"},
+    {"scope": "markup.underline.link.lsp",  "background": "var(white)"},
+    {"scope": "markup.underline.link",  "background": "var(blue)"},
+
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // LSP: "Signature Help" popup (distinct from AutoComplete)
     // REF: https://lsp.sublimetext.io/customization/#signature-help
@@ -288,11 +292,19 @@
     {"scope": "variable.parameter.sighelp.active.lsp",   "foreground": "var(white)"},
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // LSP: Other visible occurences of the thing at the caret
+    // LSP: Other visible occurences of the thing at the caret (see LSP "document_highlight_style" setting)
     // REF: https://lsp.sublimetext.io/customization/#document-highlights
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {"scope": "markup.highlight.text.lsp",  "foreground": "var(white_faded)"},
     {"scope": "markup.highlight.read.lsp",  "foreground": "var(white_faded)"},
     {"scope": "markup.highlight.write.lsp", "foreground": "var(white_faded)"},
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // PackageDev
+    // - Syntax Definition authoring
+    // - Syntax Test authoring
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    {"scope": "markup.info.capture.sublime-syntax", "background": "var(white_faded)"},
+    {"scope": "markup.info.test.sublime-syntax",    "background": "var(white_faded)"},
   ]
 }
