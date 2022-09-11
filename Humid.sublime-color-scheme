@@ -279,17 +279,17 @@
     //   - REF: https://lsp.sublimetext.io/customization/#hover-highlights
     // - LSP server-identified link (see LSP "link_highlight_style" setting)
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    {"scope": "markup.highlight.hover.lsp",  "background": "var(grey_light)"},
+    {"scope": "markup.highlight.hover.lsp", "background": "var(grey_light)"},
     {"scope": "markup.underline.link.lsp",  "background": "var(white)"},
-    {"scope": "markup.underline.link",  "background": "var(blue)"},
+    {"scope": "markup.underline.link",      "background": "var(blue)"},
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // LSP: "Signature Help" popup (distinct from AutoComplete)
     // REF: https://lsp.sublimetext.io/customization/#signature-help
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    {"scope": "entity.name.function.sighelp.lsp", "foreground": "var(steel)"}, // Function name, parens, commas, etc.
-    {"scope": "variable.parameter.sighelp.lsp",   "foreground": "var(white_faded)"},
-    {"scope": "variable.parameter.sighelp.active.lsp",   "foreground": "var(white)"},
+    {"scope": "entity.name.function.sighelp.lsp",     "foreground": "var(steel)"}, // Function name, parens, commas, etc.
+    {"scope": "variable.parameter.sighelp.lsp",       "foreground": "var(white_faded)"},
+    {"scope": "variable.parameter.sighelp.active.lsp","foreground": "var(white)"},
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // LSP: Other visible occurences of the thing at the caret (see LSP "document_highlight_style" setting)
