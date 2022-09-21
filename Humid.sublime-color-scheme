@@ -293,7 +293,6 @@
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {"scope": "markup.highlight.hover.lsp", "background": "var(grey_light)"},
     {"scope": "markup.underline.link.lsp",  "background": "var(white)"},
-    {"scope": "markup.underline.link",      "background": "var(blue)"},
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // LSP: "Signature Help" popup (distinct from AutoComplete)
