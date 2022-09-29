@@ -239,7 +239,7 @@
     // Things that should GLOW
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
-      "scope": "source.erlang & (punctuation.separator.expressions | punctuation.separator.clauses | punctuation.terminator.clause) , source.zig & (constant.language.undefined | variable.language.ignore)",
+      "scope": "source.erlang & (punctuation.separator.expressions | punctuation.separator.clauses | punctuation.terminator.clause) , source.zig & (constant.language.undefined | variable.language.ignore) , source.sml support.function.toplevel-env.dangerous",
       "font_style": "glow"
     },
 
