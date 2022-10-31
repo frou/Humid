@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+# @todo These shebang'd scripts could instead be `ApplicationCommand`s that run in ST's Python runtime?
+# @body Because this API function: https://www.sublimetext.com/docs/api_reference.html#sublime.decode_value
+# @body ...is capable of handling JSONC (what I'm currently requiring the `json5` library for).
+
 # This script generates a version of the colour scheme intended for use in the diff pane
 # part of Sublime Merge. Why is this necessary when SM can use ST colour schemes as-is?
 # Because I don't want full-on programming language syntax highlighting when looking at
