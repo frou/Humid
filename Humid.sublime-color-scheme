@@ -185,12 +185,12 @@
     },
     {
       // Stuff I feel should be classified as `storage` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source.python & ((meta.function.parameters.annotation | meta.function.annotation.return) & (meta.generic-name | support.type) | meta.statement.exception.catch support.type.exception | meta.function.annotation.return constant.language | meta.class.inheritance entity.other.inherited-class | support.type - variable.function) , source.c support.type , source.go meta.type entity.other.inherited-class , (source.js | source.jsx | source.ts) & (variable.type.js | support.type - support.type.object | support.class.builtin | entity.other.inherited-class) , source.ts meta.type support.class",
+      "scope": "source.python & ((meta.function.parameters.annotation | meta.function.annotation.return) & (meta.generic-name | support.type) | meta.statement.exception.catch support.type.exception | meta.function.annotation.return constant.language | support.type - variable.function) , source.c support.type , (source.js | source.jsx | source.ts) & (variable.type.js | support.type - support.type.object | support.class.builtin) , source.ts meta.type support.class",
       "foreground": "var(gold)"
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `storage`, just because.
-      "scope": "source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , text.git.commit markup.heading.subject , (source.js | source.jsx | source.ts) & (keyword.declaration.async.js | entity.name.function.constructor) , (text.xml | text.html | source.jsx) & entity.name.tag",
+      "scope": "entity.other.inherited-class , source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , text.git.commit markup.heading.subject , (source.js | source.jsx | source.ts) & (keyword.declaration.async.js | entity.name.function.constructor) , (text.xml | text.html | source.jsx) & entity.name.tag",
       "foreground": "var(gold)"
     },
     // ~~~~~~
