@@ -205,6 +205,11 @@
       "scope": "source.shell.bash meta.string & (meta.interpolation.command | meta.interpolation.parameter) & (punctuation.definition.variable | punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , source.python comment.block.documentation",
       "foreground": "var(blue)"
     },
+    {
+      // Nullify the SQL syntax highlighter kicking in inside strings in other languages. That such a feature is possible is a cool technical achievement, but subjectively I don't find it helps overall readability.
+      "scope": "source.python meta.string.python source.sql & (source | comment | constant | entity | keyword | markup | storage | string | support)",
+      "foreground": "var(blue)"
+    },
     // ~~~~~~~
     // Support
     // ~~~~~~~
