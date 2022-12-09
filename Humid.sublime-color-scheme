@@ -248,6 +248,19 @@
       "font_style": "glow"
     },
 
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // Jinja Templating
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    {
+      "scope": "text.jinja & (meta.statement.jinja | comment.block.jinja | comment.line.jinja)",
+      "background": "var(black)"
+    },
+    {
+      "scope": "text.jinja meta.placeholder.jinja",
+      "background": "var(black)",
+      "foreground": "var(steel)"
+    },
+
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // Preprocessor Directives (or equivalent comment constructs)
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
