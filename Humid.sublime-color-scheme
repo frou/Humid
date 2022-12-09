@@ -258,6 +258,7 @@
     {
       "scope": "text.jinja meta.placeholder.jinja",
       "background": "var(black)",
+      // Have a consistent basic foreground colour regardless of whether the Jinja placeholder is itself inside a string.
       "foreground": "var(steel)"
     },
 
