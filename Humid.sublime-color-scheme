@@ -41,6 +41,16 @@
 
   // REF: https://www.sublimetext.com/docs/color_schemes.html#global_settings
   "globals": {
+    // @todo Use "popup_css" to make "Kind" icons in popups (e.g. the hover popup that shows Definition location) use my preferred colouring.
+    // @body REF: discord://discord.com/channels/280102180189634562/280157067396775936/1053270072619180052
+    // @body REF: https://github.com/sublimehq/sublime_text/issues/2935
+    // @body REF: https://github.com/sublimehq/sublime_text/issues/3650
+    // @body REF: https://github.com/sublimehq/sublime_text/issues/3651
+    //
+    // TWIN: User/Adaptive.sublime-theme
+    //
+    //"popup_css": "#show-definitions > span.kind_function { ... } ...",
+
     "foreground": "var(white_faded)",
     "background": "var(slate)",
 
