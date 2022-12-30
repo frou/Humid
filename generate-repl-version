@@ -6,7 +6,7 @@
 import json
 from pathlib import Path
 
-import json5  # REF: https://github.com/spyoungtech/json-five
+import json5
 
 SCHEME_PATH = Path("Humid.sublime-color-scheme")
 REPL_SCHEME_PATH = Path("Humid for REPL.sublime-color-scheme")
