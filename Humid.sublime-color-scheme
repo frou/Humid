@@ -155,8 +155,26 @@
     // Keyword
     // ~~~~~~~
     {
-      "scope": "keyword - keyword.operator - ((source.js | source.jsx | source.ts) & keyword.declaration.function.arrow , source.python keyword.control.import.relative , source.shell keyword.control.conditional.patterns) , keyword.operator.word , keyword.operator.js, source.python keyword.operator.logical , source.erlang & (keyword.operator.logical | keyword.operator.bitwise) , source.regexp keyword.operator , source.file-pattern keyword.operator.logical , source.regexp-replace keyword.operator , source.sql & (keyword.operator.logical | keyword.operator.assignment)",
-      // NOTE: In Erlang, `div` and `rem` can't be spared because that would also spare - + * / (See https://github.com/sublimehq/Packages/pull/2231)
+      "scope": "keyword - keyword.operator - ((source.js | source.jsx | source.ts) & keyword.declaration.function.arrow , source.python keyword.control.import.relative , source.shell keyword.control.conditional.patterns) , source.regexp keyword.operator , source.file-pattern keyword.operator.logical , source.regexp-replace keyword.operator",
+      "foreground": "var(green)"
+    },
+    {
+      // NOTE: For programming languages, this Colour Scheme intends that typical punctuation-like
+      // operators e.g. `+ / && =` should never be coloured (because they already look distinct enough
+      // due to the shapes of the glyphs alone), which is why the scope `keyword.operator` is negated
+      // in the previous rule.
+      //
+      // However, this Colour Scheme does intend that word-like operators e.g. `and not in instanceof`
+      // should be coloured.
+      //
+      // Not all Syntax Definitions establish any distinction in scopes between those two kinds of
+      // operators, and so some .sublime-syntax files additionally need to be Overridden (the
+      // modifications usually being the addition of the scope `keyword.operator.word.*`).
+      // Among ST's stock Syntax Definitions, some that currently need such an override file are:
+      //   - Erlang
+      //   - Ruby
+      // REF: https://github.com/sublimehq/Packages/pull/2090
+      "scope": "keyword.operator.word , keyword.operator.js , source.python keyword.operator.logical , source.sql & (keyword.operator.logical | keyword.operator.assignment)",
       "foreground": "var(green)"
     },
     {
