@@ -252,7 +252,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `support`, just because.
-      "scope": "(source.json | source.ini) & meta.mapping.key string , source.toml entity.name.tag , (text.xml | text.html | source.jsx) & entity.other.attribute-name , source.clojure keyword.declaration.namespace , source.file-pattern & (constant.language | variable.language.wildcard)",
+      "scope": "(source.json | source.yaml | source.ini) & meta.mapping.key string , source.toml entity.name.tag , (text.xml | text.html | source.jsx) & entity.other.attribute-name , source.clojure keyword.declaration.namespace , source.file-pattern & (constant.language | variable.language.wildcard)",
       "foreground": "var(purple)"
     },
 
