@@ -130,7 +130,7 @@
     // Entity
     // ~~~~~~
     {
-      "scope": "entity - (source.c++ entity.name.function punctuation.accessor , source.go entity.name.namespace)",
+      "scope": "entity - (source.c++ entity.name.function punctuation.accessor , source.go entity.name.namespace , source.ruby entity.other.inherited-class punctuation.accessor.double-colon)",
       "foreground": "var(orange)"
     },
     {
@@ -218,7 +218,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `storage`, just because.
-      "scope": "entity.other.inherited-class , source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , text.git.commit markup.heading.subject , (source.js | source.jsx | source.ts) & (keyword.declaration.async.js | entity.name.function.constructor) , (text.xml | text.html | source.jsx) & entity.name.tag",
+      "scope": "entity.other.inherited-class - (source.ruby punctuation.accessor.double-colon) , source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , text.git.commit markup.heading.subject , (source.js | source.jsx | source.ts) & (keyword.declaration.async.js | entity.name.function.constructor) , (text.xml | text.html | source.jsx) & entity.name.tag , source.ruby & (support.other.namespace | support.class)",
       "foreground": "var(gold)"
     },
     // ~~~~~~
