@@ -225,7 +225,7 @@
     // String
     // ~~~~~~
     {
-      "scope": "string - (source.shell.bash meta.function-call.arguments.shell string.unquoted.shell , (source.clojure | source.edn) & string.regexp punctuation.definition.string.begin keyword.operator.macro)",
+      "scope": "string - (source.shell.bash meta.function-call.arguments.shell string.unquoted.shell , source.shell.bash meta.sequence.shell string.unquoted.shell , (source.clojure | source.edn) & string.regexp punctuation.definition.string.begin keyword.operator.macro)",
       "foreground": "var(blue)"
     },
     {
