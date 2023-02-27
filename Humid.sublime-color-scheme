@@ -213,7 +213,7 @@
     },
     {
       // Stuff I feel should be classified as `storage` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source.python & ((meta.function.parameters.annotation | meta.function.annotation.return) & (meta.generic-name | support.type) | meta.statement.exception.catch support.type.exception | meta.function.annotation.return constant.language | support.type - variable.function) , source.c support.type , (source.js | source.jsx | source.ts | source.tsx) & (variable.type.js | support.type - support.type.object | support.class.builtin) , (source.ts | source.tsx) & meta.type support.class",
+      "scope": "source.python & ((meta.function.parameters.annotation | meta.function.annotation.return) & (meta.generic-name | support.type) | meta.statement.exception.catch support.type.exception | meta.function.annotation.return constant.language | support.type - variable.function) , source.c support.type , (source.js | source.jsx | source.ts | source.tsx) & (variable.type | support.type - support.type.object | support.class.builtin) , (source.ts | source.tsx) & (meta.type | meta.generic) & support.class",
       "foreground": "var(gold)"
     },
     {
