@@ -331,7 +331,7 @@
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // Results / Diagnostics
     // - Build Results panel
-    // - LSP Diagnostics
+    // - LSP Diagnostics Panel
     //   - REF: https://lsp.sublimetext.io/customization/#diagnostics
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {"scope": "markup.error",                    "foreground": "var(red)"},
@@ -340,6 +340,17 @@
     {"scope": "markup.info",                     "foreground": "var(blue)"},
     {"scope": "markup.info.hint",                "foreground": "var(green)"},
     {"scope": "meta.error-header.build-results", "background": "var(black)"},
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // Diagnostic
+    // - LSP Diagnostics Highlights (in the view, e.g. squiggles)
+    //   - REF: `DIAGNOSTIC_SEVERITY` in https://github.com/sublimelsp/LSP/blob/main/plugin/core/views.py
+    //   - REF: `_draw_diagnostics` in https://github.com/sublimelsp/LSP/blob/main/plugin/session_view.py
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    {"scope": "region markup.error.lsp",     "foreground": "var(red_punchy)"}, // var(red) is a bit too faint when used for squiggly underlines.
+    {"scope": "region markup.warning.lsp",   "foreground": "var(orange_punchy)"},
+    {"scope": "region markup.info.lsp",      "foreground": "var(yellow_punchy)"},
+    {"scope": "region markup.info.hint.lsp", "foreground": "var(white)"},
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // Highlights / Underlines
