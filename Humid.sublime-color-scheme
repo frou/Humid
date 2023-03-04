@@ -210,7 +210,7 @@
     // Storage
     // ~~~~~~~
     {
-      "scope": "storage - (source.python storage.modifier.debug)",
+      "scope": "storage - (source.python storage.modifier.debug , (source.ts | source.tsx) & storage.modifier.array)",
       "foreground": "var(gold)"
     },
     {
