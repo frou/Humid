@@ -176,7 +176,7 @@
       //   - Ruby
       //   - TypeScript
       // REF: https://github.com/sublimehq/Packages/pull/2090
-      "scope": "keyword.operator.word , keyword.operator.js , (source.ts | source.tsx) & (keyword.operator.type.js | keyword.operator.new) , source.python keyword.operator.logical , source.sql & (keyword.operator.logical | keyword.operator.assignment)",
+      "scope": "keyword.operator.word , keyword.operator.js , source.python keyword.operator.logical , source.sql & (keyword.operator.logical | keyword.operator.assignment)",
       "foreground": "var(green)"
     },
     {
