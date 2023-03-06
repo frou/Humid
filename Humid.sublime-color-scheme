@@ -124,7 +124,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `constant`, just because.
-      "scope": "text.build-results markup.pointing-carets , text.xml.kajiki & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name , source.erlang punctuation.definition.sequence , source.file-pattern keyword.operator.wildcard",
+      "scope": "text.build-results markup.pointing-carets , text.xml.kajiki & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name , source.erlang punctuation.definition.sequence , source.file-pattern keyword.operator.wildcard , (source.ts | source.tsx) & keyword.operator.type.non-null-assertion",
       "foreground": "var(red)"
     },
     // ~~~~~~
@@ -274,7 +274,7 @@
     // Things that should GLOW
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
-      "scope": "source.erlang & (punctuation.separator.expressions | punctuation.separator.clauses | punctuation.terminator.clause) , source.zig & (constant.language.undefined | variable.language.ignore) , source.sml support.function.toplevel-env.dangerous",
+      "scope": "source.erlang & (punctuation.separator.expressions | punctuation.separator.clauses | punctuation.terminator.clause) , source.zig & (constant.language.undefined | variable.language.ignore) , source.sml support.function.toplevel-env.dangerous , (source.ts | source.tsx) & keyword.operator.type.non-null-assertion",
       "font_style": "glow"
     },
 
