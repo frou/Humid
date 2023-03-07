@@ -220,7 +220,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `storage`, just because.
-      "scope": "entity.other.inherited-class - (source.ruby punctuation.accessor.double-colon) , source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , text.git.commit markup.heading.subject , (source.js | source.jsx | source.ts | source.tsx) & (keyword.declaration.async.js | entity.name.function.constructor) , (text.xml | text.html | source.jsx | source.tsx) & entity.name.tag , source.ruby & (support.other.namespace | support.class)",
+      "scope": "entity.other.inherited-class - (source.ruby punctuation.accessor.double-colon) , source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , text.git.commit markup.heading.subject , (source.js | source.jsx | source.ts | source.tsx) & (keyword.declaration.async.js | entity.name.function.constructor) , (text.xml | text.html | source.jsx | source.tsx | source.ts comment.line.triple-slash) & entity.name.tag , source.ruby & (support.other.namespace | support.class)",
       "foreground": "var(gold)"
     },
     // ~~~~~~
@@ -254,7 +254,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `support`, just because.
-      "scope": "(source.json | source.yaml | source.ini) & meta.mapping.key string , source.toml entity.name.tag , (text.xml | text.html | source.jsx | source.tsx) & entity.other.attribute-name , source.clojure keyword.declaration.namespace , source.file-pattern & (constant.language | variable.language.wildcard)",
+      "scope": "(source.json | source.yaml | source.ini) & meta.mapping.key string , source.toml entity.name.tag , (text.xml | text.html | source.jsx | source.tsx | source.ts comment.line.triple-slash) & entity.other.attribute-name , source.clojure keyword.declaration.namespace , source.file-pattern & (constant.language | variable.language.wildcard)",
       "foreground": "var(purple)"
     },
 
@@ -304,7 +304,7 @@
     // Preprocessor Directives (or equivalent comment constructs)
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
-      "scope": "source.ocaml meta.preprocessor , source.go comment.line meta.annotation",
+      "scope": "source.ocaml meta.preprocessor , source.go comment.line meta.annotation , (source.ts | source.tsx) & meta.preprocessor",
       "foreground": "var(slate_light)",
       "background": "var(black)"
     },
