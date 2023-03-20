@@ -80,9 +80,9 @@
     "tags_foreground": "var(yellow_punchy)",
 
     "line_diff_width": "2",
-    "line_diff_added": "color(var(green) lightness(- 25%))",
-    "line_diff_modified": "color(var(slate_light) lightness(- 15%))",
-    "line_diff_deleted": "color(var(red) lightness(- 25%))",
+    "line_diff_added": "color(var(green) lightness(- 20%))",
+    "line_diff_modified": "color(var(blue) lightness(- 20%))",
+    "line_diff_deleted": "color(var(red) lightness(- 20%))",
 
     "misspelling": "var(red_punchy)",
     // "fold_marker": "var(white)",
