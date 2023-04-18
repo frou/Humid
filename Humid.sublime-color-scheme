@@ -282,7 +282,7 @@
     // Jinja Templating
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
-      "scope": "text.jinja & (meta.statement.jinja | comment.block.jinja | comment.line.jinja)",
+      "scope": "text.jinja & (meta.statement.jinja | comment.block.jinja)",
       "background": "var(black)"
     },
     {
