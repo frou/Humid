@@ -232,7 +232,7 @@
     },
     {
       // Stuff I feel should be classified as `string` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source.shell.bash meta.string & (meta.interpolation.command | meta.interpolation.parameter) & (punctuation.definition.variable | punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , source.python comment.block.documentation",
+      "scope": "source.shell.bash meta.string & ((meta.interpolation.command | meta.interpolation.parameter) & (punctuation.definition.variable | punctuation.section.interpolation.begin | punctuation.section.interpolation.end) | meta.function-call.identifier punctuation.definition.string), source.python comment.block.documentation",
       "foreground": "var(blue)"
     },
     {
