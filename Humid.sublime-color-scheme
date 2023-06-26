@@ -102,6 +102,14 @@
   // By convention, use comma (lowest precedence) to separate different
   // languages in a scope selector.
   //
+  // NOTE: When a selector consists of multiple space-separated scopes, it will only
+  //       match something that has those scopes in the same order. Rather than using
+  //       a just a space in the selector, an & can be used to mean order doesn't
+  //       matter, i.e. consider `foo bar` vs `bar foo` vs `foo & bar`.
+  // REF: https://www.sublimetext.com/docs/selectors.html#:~:text=When%20a%20selector%20has%20multiple%20scope%20names
+  // REF: https://www.sublimetext.com/docs/selectors.html#:~:text=The%20logical%20AND%20operator
+  // @todo Was forgetting about the above why I had some issue and had to have the (js|jsx|ts|tsx)&() more than once in a selector to workaround?
+  //
   "rules": [
     // ~~~~~~~
     // Comment
@@ -304,7 +312,7 @@
     // Preprocessor Directives (or equivalent comment constructs)
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
-      "scope": "source.ocaml meta.preprocessor , source.go comment.line meta.annotation , (source.ts | source.tsx) & meta.preprocessor",
+      "scope": "comment & meta.preprocessor , source.go comment.line meta.annotation",
       "foreground": "var(slate_light)",
       "background": "var(black)"
     },
