@@ -144,7 +144,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `entity`, just because.
-      "scope": "source.file-pattern support.constant , source.ocaml & (punctuation.label.parameter.required)",
+      "scope": "source.file-pattern support.constant",
       "foreground": "var(orange)"
     },
     // ~~~~~~~
