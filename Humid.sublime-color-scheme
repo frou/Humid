@@ -372,11 +372,12 @@
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // LSP: "Signature Help" popup (distinct from AutoComplete)
+    // NOTE: Normal language highlighting (Syntax Definition based) is not applied in this popup (unlike in the LSP Hover popup).
     // REF: https://lsp.sublimetext.io/customization/#signature-help
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {"scope": "entity.name.function.sighelp.lsp",     "foreground": "var(steel)"}, // Function name, parens, commas, etc.
     {"scope": "variable.parameter.sighelp.lsp",       "foreground": "var(white_faded)"},
-    {"scope": "variable.parameter.sighelp.active.lsp","foreground": "var(white)"},
+    {"scope": "variable.parameter.sighelp.active.lsp","foreground": "var(white)", "font_style": "bold underline"},
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // LSP: Other visible occurences of the thing at the caret (see LSP "document_highlight_style" setting)
