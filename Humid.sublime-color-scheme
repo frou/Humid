@@ -89,6 +89,9 @@
     "accent": "var(blue)",
   },
 
+  // @todo Update selectors accordingly once using a build with the new wildcard scopes
+  // @body https://github.com/sublimehq/Packages/pull/3803
+
   // NOTE: Operator precedence (descending) in scope selectors:
   //   ( )  Grouping
   //   &    Intersection
