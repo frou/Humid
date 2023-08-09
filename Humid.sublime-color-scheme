@@ -138,7 +138,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `constant`, just because.
-      "scope": "text.build-results markup.pointing-carets , text.xml.kajiki & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name , source.erlang punctuation.definition.sequence , source.file-pattern keyword.operator.wildcard , meta.dangerous - source.sml meta.dangerous.exception-raiser.suffix , source.python meta.statement.conditional.case.patterns meta.path variable.other.constant",
+      "scope": "text.build-results markup.pointing-carets , text.xml.kajiki & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name , source.erlang punctuation.definition.sequence , source.file-pattern keyword.operator.wildcard , meta.dangerous - source.sml meta.dangerous.exception-raiser.suffix",
       "foreground": "var(red)"
     },
     // ~~~~~~
