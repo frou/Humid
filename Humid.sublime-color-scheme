@@ -92,6 +92,9 @@
   // @todo Update selectors accordingly once using a build with the new wildcard scopes
   // @body https://github.com/sublimehq/Packages/pull/3803
 
+  // @todo Use updated selectors for Python type annotations once the following PR is released
+  // @body https://github.com/sublimehq/Packages/pull/3736
+
   // NOTE: Operator precedence (descending) in scope selectors:
   //   ( )  Grouping
   //   &    Intersection
