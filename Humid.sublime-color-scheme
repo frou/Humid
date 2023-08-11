@@ -170,7 +170,7 @@
     // Keyword
     // ~~~~~~~
     {
-      "scope": "keyword - keyword.operator - ((source.js | source.jsx | source.ts | source.tsx) & keyword.declaration.function.arrow , (source.ts | source.tsx) & meta.type keyword.declaration.function , source.python keyword.control.import.relative , source.shell keyword.control.conditional.patterns) , source.regexp keyword.operator , source.file-pattern keyword.operator.logical , source.regexp-replace keyword.operator , (source.js | source.jsx | source.ts | source.tsx) & string.regexp.js & (keyword.operator | punctuation - punctuation.definition.string) ",
+      "scope": "keyword - keyword.operator - ((source.js | source.jsx | source.ts | source.tsx) & keyword.declaration.function.arrow , (source.ts | source.tsx) & meta.type keyword.declaration.function , source.python keyword.control.import.relative , source.shell keyword.control.conditional.patterns) , source.regexp keyword.operator , source.file-pattern keyword.operator.logical , source.regexp-replace keyword.operator , (source.js | source.jsx | source.ts | source.tsx) & string.regexp.js & (keyword.operator | punctuation - punctuation.definition.string) , source.makefile constant.language.makefile",
       "foreground": "var(green)"
     },
     {
