@@ -195,7 +195,7 @@
     },
     {
       // Stuff I feel should be classified as `keyword` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source.python storage.modifier - storage.modifier.conversion - storage.modifier.debug - source.sql, (source.js | source.jsx | source.ts | source.tsx) & (variable.language.super | variable.language.this | storage.modifier - (meta.type | storage.modifier.array | storage.modifier.optional | storage.modifier.definite)) , source.ruby entity.name.function.prepocessor",
+      "scope": "source.python storage.modifier - storage.modifier.conversion - storage.modifier.debug - source.sql, (source.js | source.jsx | source.ts | source.tsx) & (variable.language.super | variable.language.this | storage.modifier - (meta.type | storage.modifier.array | storage.modifier.optional | storage.modifier.definite)) , source.ruby entity.name.function.prepocessor , (source.c | source.c++) & (storage.modifier)",
       "foreground": "var(green)"
     },
     {
