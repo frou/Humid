@@ -145,7 +145,7 @@
     // Entity
     // ~~~~~~
     {
-      "scope": "entity - (source.c++ entity.name.function punctuation.accessor , source.go entity.name.namespace , source.ruby entity.other.inherited-class punctuation.accessor.double-colon)",
+      "scope": "entity - (source.c++ entity.name.function punctuation.accessor , source.go entity.name.namespace , source.ruby & (entity.other.inherited-class | entity.name.namespace) & punctuation.accessor.double-colon)",
       "foreground": "var(orange)"
     },
     {
