@@ -79,7 +79,7 @@
     "tags_options": "glow",
     "tags_foreground": "var(yellow_punchy)",
 
-    "line_diff_width": "2",
+    "line_diff_width": "4",
     "line_diff_added": "color(var(green) lightness(- 20%))",
     "line_diff_modified": "color(var(blue) lightness(- 20%))",
     "line_diff_deleted": "color(var(red) lightness(- 20%))",
