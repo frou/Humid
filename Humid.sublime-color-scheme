@@ -157,12 +157,12 @@
     // Invalid
     // ~~~~~~~
     {
-      "scope": "invalid",
+      "scope": "invalid - source.python.lenient",
       "background": "var(red_punchy)",
       "foreground": "var(white_faded)"
     },
     {
-      "scope": "invalid.deprecated",
+      "scope": "invalid.deprecated - source.python.lenient",
       "background": "var(red)",
       "foreground": "var(white_faded)"
     },

@@ -1,0 +1,8 @@
+%YAML 1.2
+---
+name: Python (Lenient)
+scope: source.python.lenient
+version: 2
+
+extends: Packages/Python/Python.sublime-syntax
+hidden: true
