@@ -234,7 +234,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `storage`, just because.
-      "scope": "entity.other.inherited-class - (source.ruby punctuation.accessor.double-colon) , source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , text.git.commit markup.heading.subject , (source.js | source.jsx | source.ts | source.tsx) & (keyword.declaration.async.js | entity.name.function.constructor | keyword.declaration.generator | keyword.generator.asterisk) , (text.xml | text.html | source.jsx | source.tsx | source.ts comment.line.triple-slash) & entity.name.tag , source.ruby & (support.other.namespace | support.class) , source.ruby string.quoted.other.literal punctuation.definition.string",
+      "scope": "entity.other.inherited-class - (source.ruby punctuation.accessor.double-colon) , source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , text.git.commit markup.heading.subject , (source.js | source.jsx | source.ts | source.tsx) & (keyword.declaration.async.js | entity.name.function.constructor | keyword.declaration.generator | keyword.generator.asterisk) , (text.xml | text.html | source.jsx | source.tsx | source.ts comment.line.triple-slash) & entity.name.tag , source.ruby & (support.other.namespace | support.class) , source.ruby string.quoted.other.literal punctuation.definition.string , source.python meta.function.parameters keyword.operator.unpacking",
       "foreground": "var(gold)"
     },
     // ~~~~~~
