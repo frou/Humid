@@ -133,7 +133,7 @@
     // Constant
     // ~~~~~~~~
     {
-      "scope": "constant - ((source.js | source.jsx | source.ts | source.tsx) & (meta.import | meta.export) & constant.other)",
+      "scope": "constant - (constant.language.shebang | (source.js | source.jsx | source.ts | source.tsx) & (meta.import | meta.export) & constant.other)",
       "foreground": "var(red)"
     },
     {
@@ -263,7 +263,7 @@
     },
     {
       // Stuff I feel should be classified as `support` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source variable.function - ((source.clojure | source.edn) & (meta.namespace | punctuation.accessor)) , constant.language.shebang , source.python variable.annotation",
+      "scope": "source variable.function - ((source.clojure | source.edn) & (meta.namespace | punctuation.accessor)) , source.python variable.annotation",
       "foreground": "var(purple)"
     },
     {
