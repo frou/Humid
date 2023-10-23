@@ -96,14 +96,14 @@
   // @body https://github.com/sublimehq/Packages/pull/3736
 
   // NOTE: Operator precedence (descending) in scope selectors:
-  //   ( )  Grouping
-  //   &    Intersection
-  //   -    Asymmetric Difference (Relative Complement)
-  //   |    Union
-  //   ,    Comma
-  //
+  // REF: https://www.sublimetext.com/docs/selectors.html#order-of-operations
   // REF: https://stackoverflow.com/questions/33562253/sublime-text-scope-selector-operators
-  // REF: https://www.sublimetext.com/docs/selectors.html
+  //
+  //   ( )   Grouping
+  //    -    Logical NOT
+  //    &    Logical AND
+  //    |    Logical OR
+  //    ,    Logical OR
   //
   // By convention, use comma (lowest precedence) to separate different
   // languages in a scope selector.
@@ -366,7 +366,7 @@
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // Diagnostic
-    // - LSP Diagnostics Highlights (in the view, e.g. squiggles)
+    // - LSP Diagnostics Highlights (in the view, e.g. squiggles and gutter icons)
     //   - REF: `DIAGNOSTIC_SEVERITY` in https://github.com/sublimelsp/LSP/blob/main/plugin/core/views.py
     //   - REF: `_draw_diagnostics` in https://github.com/sublimelsp/LSP/blob/main/plugin/session_view.py
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
