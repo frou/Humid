@@ -326,7 +326,7 @@
     // Preprocessor Directives (or equivalent comment constructs)
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
-      "scope": "comment & meta.preprocessor , source.go comment.line meta.annotation",
+      "scope": "comment & meta.preprocessor , source.go comment.line meta.annotation , source.haskell meta.preprocessor",
       "foreground": "var(slate_light)",
       "background": "var(black)"
     },
