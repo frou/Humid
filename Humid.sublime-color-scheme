@@ -250,6 +250,11 @@
       "foreground": "var(blue)"
     },
     {
+      // Stuff that isn't misclassified, but I want it to have the same colour as `string`, just because.
+      "scope": "source.ruby meta.constant meta.interpolation punctuation.section.interpolation",
+      "foreground": "var(blue)"
+    },
+    {
       // Nullify the SQL syntax highlighter kicking in inside strings in other languages. That such a feature is possible is a cool technical achievement, but subjectively I don't find it helps overall readability.
       "scope": "source.python meta.string.python source.sql & (source | comment | constant | entity | keyword | markup | storage | string | support)",
       "foreground": "var(blue)"
