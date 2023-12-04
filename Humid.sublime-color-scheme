@@ -241,7 +241,7 @@
     // String
     // ~~~~~~
     {
-      "scope": "string - (source.shell.bash meta.function-call.arguments.shell string.unquoted.shell , source.shell.bash meta.sequence.shell string.unquoted.shell , (source.clojure | source.edn) & string.regexp punctuation.definition.string.begin keyword.operator.macro , source.ruby string.interpolated punctuation.definition.string)",
+      "scope": "string - ((source.shell.bash | source.shell.embedded.makefile) & meta.function-call.arguments.shell string.unquoted.shell , source.shell.bash meta.sequence.shell string.unquoted.shell , (source.clojure | source.edn) & string.regexp punctuation.definition.string.begin keyword.operator.macro , source.ruby string.interpolated punctuation.definition.string)",
       "foreground": "var(blue)"
     },
     {
