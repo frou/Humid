@@ -92,9 +92,6 @@
   // @todo Update selectors accordingly once using a build with the new wildcard scopes
   // @body https://github.com/sublimehq/Packages/pull/3803
 
-  // @todo Use updated selectors for Python type annotations once the following PR is released
-  // @body https://github.com/sublimehq/Packages/pull/3736
-
   // NOTE: Operator precedence (descending) in scope selectors:
   // REF: https://www.sublimetext.com/docs/selectors.html#order-of-operations
   // REF: https://stackoverflow.com/questions/33562253/sublime-text-scope-selector-operators
@@ -229,12 +226,12 @@
     },
     {
       // Stuff I feel should be classified as `storage` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source.python & ((meta.function.parameters.annotation | meta.function.annotation.return | meta.variable.annotation.python) & (meta.generic-name | support.type) | meta.statement.exception.catch support.type.exception | meta.function.annotation.return constant.language | support.type - (variable.function | meta.function-call.identifier)) , source.c support.type , (source.js | source.jsx | source.ts | source.tsx) & (variable.type | variable.parameter.generic | support.type - support.type.object | support.class.builtin) , (source.ts | source.tsx) & (meta.type | meta.type-alias | meta.generic) & support.class",
+      "scope": "source.python & (meta.type & (support.class.typing | meta.generic-name | constant.language) | meta.statement.exception.catch & (support.class.exception | meta.generic-name) | support.type - (variable.function | meta.function-call.identifier) | variable.parameter.type) , source.c support.type , (source.js | source.jsx | source.ts | source.tsx) & (variable.type | variable.parameter.generic | support.type - support.type.object | support.class.builtin) , (source.ts | source.tsx) & (meta.type | meta.type-alias | meta.generic) & support.class",
       "foreground": "var(gold)"
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `storage`, just because.
-      "scope": "entity.other.inherited-class - (source.ruby punctuation.accessor.double-colon) , source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , text.git.commit markup.heading.subject , (source.js | source.jsx | source.ts | source.tsx) & (keyword.declaration.async.js | entity.name.function.constructor | keyword.declaration.generator | keyword.generator.asterisk) , (text.xml | text.html | source.jsx | source.tsx | source.ts comment.line.triple-slash) & entity.name.tag , source.ruby & (support.other.namespace | support.class) , source.ruby string.quoted.other.literal punctuation.definition.string , source.python meta.function.parameters keyword.operator.unpacking , source.shell.bash variable.parameter.option - punctuation.definition.parameter.shell , source.sml & (constant.other | entity.name.function.constructor) , source.makefile meta.function.arguments.makefile string.unquoted.makefile",
+      "scope": "entity.other.inherited-class - (source.ruby punctuation.accessor.double-colon) , source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , text.git.commit markup.heading.subject , (source.js | source.jsx | source.ts | source.tsx) & (keyword.declaration.async.js | entity.name.function.constructor | keyword.declaration.generator | keyword.generator.asterisk) , (text.xml | text.html | source.jsx | source.tsx | source.ts comment.line.triple-slash) & entity.name.tag , source.ruby & (support.other.namespace | support.class) , source.ruby string.quoted.other.literal punctuation.definition.string , source.python & (meta.function.parameters | meta.generic) & keyword.operator.unpacking , source.shell.bash variable.parameter.option - punctuation.definition.parameter.shell , source.sml & (constant.other | entity.name.function.constructor) , source.makefile meta.function.arguments.makefile string.unquoted.makefile",
       "foreground": "var(gold)"
     },
     // ~~~~~~
