@@ -260,7 +260,7 @@
     // Support
     // ~~~~~~~
     {
-      "scope": "support - ((source.js | source.jsx | source.ts | source.tsx) , source.go support.type.builtin , source.python entity.name.function , source.erlang support.namespace) , (source.js | source.jsx | source.ts | source.tsx) & (support.function - support.function.node - invalid.deprecated)",
+      "scope": "support - ((source.js | source.jsx | source.ts | source.tsx) , source.go support.type.builtin , source.python & (entity.name.function | meta.statement.import) , source.erlang support.namespace) , (source.js | source.jsx | source.ts | source.tsx) & (support.function - support.function.node - invalid.deprecated)",
       "foreground": "var(purple)"
     },
     {
