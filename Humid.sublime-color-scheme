@@ -130,7 +130,7 @@
     // Constant
     // ~~~~~~~~
     {
-      "scope": "constant - (constant.language.shebang | (source.js | source.jsx | source.ts | source.tsx) & (meta.import | meta.export) & constant.other)",
+      "scope": "constant - (constant.language.shebang | (source.js | source.jsx | source.ts | source.tsx) & (meta.import | meta.export) & constant.other , source.python comment meta.type)",
       "foreground": "var(red)"
     },
     {
@@ -167,7 +167,7 @@
     // Keyword
     // ~~~~~~~
     {
-      "scope": "keyword - keyword.operator - ((source.js | source.jsx | source.ts | source.tsx) & keyword.declaration.function.arrow , (source.ts | source.tsx) & meta.type keyword.declaration.function , source.python keyword.control.import.relative , source.shell keyword.control.conditional.patterns) , source.regexp keyword.operator , source.file-pattern keyword.operator.logical , source.regexp-replace keyword.operator , (source.js | source.jsx | source.ts | source.tsx) & string.regexp.js & (keyword.operator | punctuation - punctuation.definition.string) , source.makefile constant.language.makefile",
+      "scope": "keyword - keyword.operator - ((source.js | source.jsx | source.ts | source.tsx) & keyword.declaration.function.arrow , (source.ts | source.tsx) & meta.type keyword.declaration.function , source.python keyword.control.import.relative , source.python comment meta.type , source.shell keyword.control.conditional.patterns) , source.regexp keyword.operator , source.file-pattern keyword.operator.logical , source.regexp-replace keyword.operator , (source.js | source.jsx | source.ts | source.tsx) & string.regexp.js & (keyword.operator | punctuation - punctuation.definition.string) , source.makefile constant.language.makefile",
       "foreground": "var(green)"
     },
     {
@@ -238,7 +238,7 @@
     // String
     // ~~~~~~
     {
-      "scope": "string - ((source.shell.bash | source.shell.embedded.makefile) & meta.function-call.arguments.shell string.unquoted.shell , source.shell.bash meta.sequence.shell string.unquoted.shell , (source.clojure | source.edn) & string.regexp punctuation.definition.string.begin keyword.operator.macro , source.ruby string.interpolated punctuation.definition.string)",
+      "scope": "string - ((source.shell.bash | source.shell.embedded.makefile) & meta.function-call.arguments.shell string.unquoted.shell , source.shell.bash meta.sequence.shell string.unquoted.shell , (source.clojure | source.edn) & string.regexp punctuation.definition.string.begin keyword.operator.macro , source.ruby string.interpolated punctuation.definition.string , source.python comment meta.type)",
       "foreground": "var(blue)"
     },
     {
