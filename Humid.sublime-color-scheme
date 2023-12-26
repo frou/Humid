@@ -251,11 +251,6 @@
       "scope": "source.ruby meta.constant meta.interpolation punctuation.section.interpolation",
       "foreground": "var(blue)"
     },
-    {
-      // Nullify the SQL syntax highlighter kicking in inside strings in other languages. That such a feature is possible is a cool technical achievement, but subjectively I don't find it helps overall readability.
-      "scope": "source.python meta.string.python source.sql & (source | comment | constant | entity | keyword | markup | storage | string | support)",
-      "foreground": "var(blue)"
-    },
     // ~~~~~~~
     // Support
     // ~~~~~~~
@@ -272,6 +267,24 @@
       // Stuff that isn't misclassified, but I want it to have the same colour as `support`, just because.
       "scope": "(source.json | source.yaml | source.ini) & meta.mapping.key string , source.toml entity.name.tag , (text.xml | text.html | source.ts comment.line.triple-slash) & entity.other.attribute-name , source.clojure keyword.declaration.namespace , source.file-pattern & (constant.language | variable.language.wildcard) , (source.jsx | source.tsx) & meta.tag.name entity.name.tag - entity.name.tag.native",
       "foreground": "var(purple)"
+    },
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // Nullify the SQL syntax highlighter kicking in inside strings in other
+    // languages. That such a feature is possible is a cool technical achievement
+    // of ST, but subjectively I don't find that it helps overall readability.
+    //
+    // NOTE: The following is not in the "String" section above, because it seems like
+    // it needs to be after the "Support" section to win against it when both the
+    // selectors score the same. e.g. `COUNT` in
+    //     "SELECT COUNT(*) FROM ..."
+    // ...would still be purple even though `SELECT` and `FROM` wouldn't be green.
+    // Though, would scores be the same if the following issue was fixed?
+    //     https://github.com/sublimehq/sublime_text/issues/2152
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    {
+      "scope": "source.python meta.string.python source.sql & (source | comment | constant | entity | keyword | markup | storage | string | support)",
+      "foreground": "var(blue)"
     },
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
