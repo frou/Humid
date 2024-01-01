@@ -167,7 +167,7 @@
     // Keyword
     // ~~~~~~~
     {
-      "scope": "keyword - keyword.operator - ((source.js | source.jsx | source.ts | source.tsx) & keyword.declaration.function.arrow , (source.ts | source.tsx) & meta.type keyword.declaration.function , source.python keyword.control.import.relative , source.python comment meta.type , source.shell keyword.control.conditional.patterns) , source.regexp keyword.operator , source.file-pattern keyword.operator.logical , source.regexp-replace keyword.operator , (source.js | source.jsx | source.ts | source.tsx) & string.regexp.js & (keyword.operator | punctuation - punctuation.definition.string) , source.makefile constant.language.makefile",
+      "scope": "keyword - keyword.operator - ((source.js | source.jsx | source.ts | source.tsx) & keyword.declaration.function.arrow , (source.ts | source.tsx) & meta.type keyword.declaration.function , source.python keyword.control.import.relative , source.python comment meta.type , source.shell keyword.control.conditional.patterns , source.ruby keyword.declaration.function.anonymous) , source.regexp keyword.operator , source.file-pattern keyword.operator.logical , source.regexp-replace keyword.operator , (source.js | source.jsx | source.ts | source.tsx) & string.regexp.js & (keyword.operator | punctuation - punctuation.definition.string) , source.makefile constant.language.makefile",
       "foreground": "var(green)"
     },
     {
@@ -255,7 +255,7 @@
     // Support
     // ~~~~~~~
     {
-      "scope": "support - ((source.js | source.jsx | source.ts | source.tsx) , source.go support.type.builtin , source.python entity.name.function , source.python meta.statement.import , source.erlang support.namespace) , (source.js | source.jsx | source.ts | source.tsx) & (support.function - support.function.node - invalid.deprecated)",
+      "scope": "support - ((source.js | source.jsx | source.ts | source.tsx) , source.go support.type.builtin , source.python entity.name.function , source.python meta.statement.import , source.erlang support.namespace , source.ruby support.function.builtin) , (source.js | source.jsx | source.ts | source.tsx) & (support.function - support.function.node - invalid.deprecated)",
       "foreground": "var(purple)"
     },
     {
@@ -292,7 +292,7 @@
     // REF: https://www.sublimetext.com/docs/scope_naming.html#markup
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {"name": "markup bold",                  "scope": "markup.bold", "font_style": "bold"},
-    {"name": "markup italic",                "scope": "markup.italic", "font_style": "italic"},
+    {"name": "markup italic",                "scope": "markup.italic , source.ruby support.function.builtin", "font_style": "italic"},
     {"name": "markup underline",             "scope": "markup.underline", "font_style": "underline"},
     {"name": "markup bold/italic",           "scope": "markup.italic markup.bold | markup.bold markup.italic", "font_style": "bold italic"},
     {"name": "markup bold/underline",        "scope": "markup.underline markup.bold | markup.bold markup.underline", "font_style": "bold underline"},
