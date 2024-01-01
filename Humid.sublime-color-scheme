@@ -423,5 +423,12 @@
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {"scope": "markup.info.capture.sublime-syntax", "background": "var(white_faded)"},
     {"scope": "markup.info.test.sublime-syntax",    "background": "var(white_faded)"},
+
+    // REF: https://lsp.sublimetext.io/customization/#semantic-highlighting
+    {
+      "scope": "meta.semantic-token",
+      "background": "color(var(slate) alpha(0.1))",
+      // "background": "color(var(red) alpha(0.1))"
+    },
   ]
 }
