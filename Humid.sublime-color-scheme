@@ -135,7 +135,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `constant`, just because.
-      "scope": "text.build-results markup.pointing-carets , text.xml.kajiki & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name , source.erlang punctuation.definition.sequence , source.file-pattern keyword.operator.wildcard , meta.dangerous - source.sml meta.dangerous.exception-raiser.suffix",
+      "scope": "text.build-results markup.pointing-carets , text.xml.kajiki & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name , source.erlang punctuation.definition.sequence , meta.dangerous - source.sml meta.dangerous.exception-raiser.suffix",
       "foreground": "var(red)"
     },
     // ~~~~~~
@@ -265,7 +265,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `support`, just because.
-      "scope": "(source.json | source.yaml | source.ini) & meta.mapping.key string , source.toml entity.name.tag , (text.xml | text.html | source.ts comment.line.triple-slash) & entity.other.attribute-name , source.clojure keyword.declaration.namespace , source.file-pattern & (constant.language | variable.language.wildcard) , (source.jsx | source.tsx) & meta.tag.name entity.name.tag - entity.name.tag.native",
+      "scope": "(source.json | source.yaml | source.ini) & meta.mapping.key string , source.toml entity.name.tag , (text.xml | text.html | source.ts comment.line.triple-slash) & entity.other.attribute-name , source.clojure keyword.declaration.namespace , source.file-pattern & (constant.language | constant.other.wildcard) , (source.jsx | source.tsx) & meta.tag.name entity.name.tag - entity.name.tag.native",
       "foreground": "var(purple)"
     },
 
