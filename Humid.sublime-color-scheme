@@ -130,7 +130,7 @@
     // Constant
     // ~~~~~~~~
     {
-      "scope": "constant - (constant.language.shebang | (source.js | source.jsx | source.ts | source.tsx) & (meta.import | meta.export) & constant.other , source.python comment meta.type , source.shell.bash constant.other.wildcard)",
+      "scope": "constant - ((source.js | source.jsx | source.ts | source.tsx) & meta.import constant.other , (source.js | source.jsx | source.ts | source.tsx) & meta.export constant.other , source.python comment meta.type , source.shell.bash constant.other.wildcard , constant.language.shebang)",
       "foreground": "var(red)"
     },
     {
