@@ -238,7 +238,7 @@
     // String
     // ~~~~~~
     {
-      "scope": "string - ((source.shell.bash | source.shell.embedded.makefile) & meta.function-call.arguments.shell string.unquoted.shell , source.shell.bash string.unquoted.shell , (source.clojure | source.edn) & string.regexp punctuation.definition.string.begin keyword.operator.macro , source.ruby string.interpolated punctuation.definition.string , source.python comment meta.type)",
+      "scope": "string - ((source.shell.bash | source.shell.embedded.makefile) & meta.function-call.arguments.shell string.unquoted.shell , source.shell.bash string.unquoted.shell , (source.clojure | source.edn) & string.regexp punctuation.definition.string.begin keyword.operator.macro , source.ruby string.interpolated punctuation.definition.string , source.python comment meta.type , (source.js | source.jsx | source.ts | source.tsx) & string.regexp - punctuation.definition.string)",
       "foreground": "var(blue)"
     },
     {
@@ -347,6 +347,14 @@
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
       "scope": "text.html.rails meta.embedded",
+      "background": "var(black)"
+    },
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // JavaScript Regexp Literals
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    {
+      "scope": "(source.js | source.jsx | source.ts | source.tsx) & string.regexp",
       "background": "var(black)"
     },
 
