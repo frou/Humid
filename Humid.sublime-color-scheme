@@ -7,6 +7,7 @@
     "blue": "#5a70a9",
     "gold": "#ad9361",
     "green": "#6a8856",
+    "green_light": "#889a7c",
     "grey": "#3f3938",
     "grey_light": "#4f4d4d",
     "orange": "#ae7337",
@@ -197,7 +198,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `keyword`, just because.
-      "scope": "source.css support.constant , source.makefile variable.language.automatic , (source.js | source.jsx | source.ts | source.tsx) & (variable.language.global | variable.language.arguments) , source.file-pattern punctuation.separator , source.regexp-replace variable.language.backref , source.python support.variable.magic , source.ocaml & punctuation.label.argument",
+      "scope": "source.css support.constant , source.makefile variable.language.automatic , (source.js | source.jsx | source.ts | source.tsx) & (variable.language.global | variable.language.arguments) , source.file-pattern punctuation.separator , source.regexp-replace variable.language.backref , source.python support.variable.magic",
       "foreground": "var(green)"
     },
     // ~~~~~~
@@ -365,6 +366,14 @@
       "scope": "comment & meta.preprocessor , source.go comment.line meta.annotation , source.haskell meta.preprocessor",
       "foreground": "var(slate_light)",
       "background": "var(black)"
+    },
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // Argument labels in languages where we're using the 'Markup' colour for some other significant syntactic construct (e.g. symbol literals, module paths)
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    {
+      "scope": "source.ocaml punctuation.label.argument , source.ruby constant.other.symbol.hash-key-sugar",
+      "foreground": "var(green_light)",
     },
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
