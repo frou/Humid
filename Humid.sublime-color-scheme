@@ -205,7 +205,7 @@
     // Markup
     // ~~~~~~
     {
-      "scope": "markup",
+      "scope": "markup - (text.html.markdown & (markup.raw.code-fence | markup.raw.inline)) , text.html.markdown punctuation.definition.raw",
       "foreground": "var(steel)"
     },
     {
@@ -348,6 +348,14 @@
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
       "scope": "text.html.rails meta.embedded",
+      "background": "var(black)"
+    },
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // Markdown Code Spans and Fenced Code Blocks (Indented Code Blocks omitted)
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    {
+      "scope": "text.html.markdown & (markup.raw.code-fence | markup.raw.inline)",
       "background": "var(black)"
     },
 
