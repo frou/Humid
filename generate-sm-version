@@ -1,4 +1,7 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S pipx run
+# /// script
+# dependencies = ["json-five"]
+# ///
 
 # @todo These shebang'd scripts could instead be `ApplicationCommand`s that run in ST's Python runtime?
 # @body Because this API function: https://www.sublimetext.com/docs/api_reference.html#sublime.decode_value
@@ -32,6 +35,7 @@ st_foreground = scheme["globals"]["foreground"]
 
 # Wholly unchanged lines.
 scheme["globals"]["foreground"] = f"color({st_foreground} lightness(- 40%))"
+
 
 # For the parts of changed lines that didn't change.
 def changed_line_foreground(blend_colour):
