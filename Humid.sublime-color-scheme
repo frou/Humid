@@ -20,8 +20,8 @@
     "slate": "#211e1e",
     "slate_light": "#60605a", // TWIN: "kind_namespace_color" in Adaptive theme customisation
     "steel": "#8c8c99",
-    "white": "#ffffff",
-    "white_faded": "#dadada",
+    "white": "#dadada",
+    "white_light": "#ffffff",
     "yellow_punchy": "#eed600",
 
     // Overrule ST where it picks what I feel is the wrong colour from those used in
@@ -53,10 +53,10 @@
     //
     //"popup_css": "#show-definitions > span.kind_function { ... } ...",
 
-    "foreground": "var(white_faded)",
+    "foreground": "var(white)",
     "background": "var(slate)",
 
-    "caret": "var(white)",
+    "caret": "var(white_light)",
 
     "invisibles": "var(grey_light)",
 
@@ -92,7 +92,7 @@
     "line_diff_deleted": "color(var(red) lightness(- 20%))",
 
     "misspelling": "var(red_punchy)",
-    // "fold_marker": "var(white)",
+    //"fold_marker": "var(white_light)",
     "accent": "var(blue)",
   },
 
@@ -163,12 +163,12 @@
     {
       "scope": "invalid - source.python.lenient",
       "background": "var(red_punchy)",
-      "foreground": "var(white_faded)"
+      "foreground": "var(white)"
     },
     {
       "scope": "invalid.deprecated - source.python.lenient",
       "background": "var(red)",
-      "foreground": "var(white_faded)"
+      "foreground": "var(white)"
     },
     // ~~~~~~~
     // Keyword
@@ -433,7 +433,7 @@
     {"scope": "region markup.error.lsp",     "foreground": "var(red_punchy)"}, // var(red) is a bit too faint when used for squiggly underlines.
     {"scope": "region markup.warning.lsp",   "foreground": "var(orange_punchy)"},
     {"scope": "region markup.info.lsp",      "foreground": "var(yellow_punchy)"},
-    {"scope": "region markup.info.hint.lsp", "foreground": "var(white)"},
+    {"scope": "region markup.info.hint.lsp", "foreground": "var(white_light)"},
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // Highlights / Underlines
@@ -442,7 +442,7 @@
     // - LSP server-identified link (see LSP "link_highlight_style" setting)
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {"scope": "markup.highlight.hover.lsp", "background": "var(grey_light)"},
-    {"scope": "markup.underline.link.lsp",  "background": "var(white)"},
+    {"scope": "markup.underline.link.lsp",  "background": "var(white_light)"},
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // LSP: "Signature Help" popup (distinct from AutoComplete)
@@ -450,24 +450,24 @@
     // REF: https://lsp.sublimetext.io/customization/#signature-help
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {"scope": "entity.name.function.sighelp.lsp",     "foreground": "var(steel)"}, // Function name, parens, commas, etc.
-    {"scope": "variable.parameter.sighelp.lsp",       "foreground": "var(white_faded)"},
-    {"scope": "variable.parameter.sighelp.active.lsp","foreground": "var(white)", "font_style": "bold underline"},
+    {"scope": "variable.parameter.sighelp.lsp",       "foreground": "var(white)"},
+    {"scope": "variable.parameter.sighelp.active.lsp","foreground": "var(white_light)", "font_style": "bold underline"},
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // LSP: Other visible occurences of the thing at the caret (see LSP "document_highlight_style" setting)
     // REF: https://lsp.sublimetext.io/customization/#document-highlights
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    {"scope": "markup.highlight.text.lsp",  "foreground": "var(white_faded)"},
-    {"scope": "markup.highlight.read.lsp",  "foreground": "var(white_faded)"},
-    {"scope": "markup.highlight.write.lsp", "foreground": "var(white_faded)"},
+    {"scope": "markup.highlight.text.lsp",  "foreground": "var(white)"},
+    {"scope": "markup.highlight.read.lsp",  "foreground": "var(white)"},
+    {"scope": "markup.highlight.write.lsp", "foreground": "var(white)"},
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // PackageDev
     // - Syntax Definition authoring
     // - Syntax Test authoring
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    {"scope": "markup.info.capture.sublime-syntax", "background": "var(white_faded)"},
-    {"scope": "markup.info.test.sublime-syntax",    "background": "var(white_faded)"},
+    {"scope": "markup.info.capture.sublime-syntax", "background": "var(white)"},
+    {"scope": "markup.info.test.sublime-syntax",    "background": "var(white)"},
 
     // REF: https://lsp.sublimetext.io/customization/#semantic-highlighting
     {
