@@ -4,10 +4,11 @@
 
   "variables": {
     "black": "#000000",
+    "black_light": "#141212",
     "blue": "#5a70a9",
     "gold": "#ad9361",
     "green": "#6a8856",
-    "green_light": "#889a7c",
+    "green_light": "#8c998c",
     "grey": "#3f3938",
     "grey_light": "#4f4d4d",
     "orange": "#ae7337",
