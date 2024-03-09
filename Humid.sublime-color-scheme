@@ -315,14 +315,6 @@
     },
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // JSX Templating
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    {
-      "scope": "(source.jsx | source.tsx) & meta.jsx meta.interpolation",
-      "background": "var(black)"
-    },
-
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // Embedded programming languages in otherwise freeform text templates:
     //   - ERB (Though ERB is not Rails-specific, the ST stock packages call it "Rails")
     //   - EEx
@@ -334,18 +326,18 @@
     },
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // Markdown Code Spans and Fenced Code Blocks (Indented Code Blocks omitted)
+    // JSX Templating
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
-      "scope": "text.html.markdown & (markup.raw.code-fence | markup.raw.inline)",
+      "scope": "(source.jsx | source.tsx) & meta.jsx meta.interpolation",
       "background": "var(black)"
     },
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // JavaScript Regexp Literals
+    // Markdown Code Spans and Fenced Code Blocks (Indented Code Blocks omitted)
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
-      "scope": "(source.js | source.jsx | source.ts | source.tsx) & string.regexp",
+      "scope": "text.html.markdown & (markup.raw.code-fence | markup.raw.inline)",
       "background": "var(black)"
     },
 
@@ -355,6 +347,14 @@
     {
       "scope": "comment & meta.preprocessor , source.go comment.line meta.annotation , source.haskell meta.preprocessor",
       "foreground": "var(slate_light)",
+      "background": "var(black)"
+    },
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // JavaScript Regexp Literals
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    {
+      "scope": "(source.js | source.jsx | source.ts | source.tsx) & string.regexp",
       "background": "var(black)"
     },
 
