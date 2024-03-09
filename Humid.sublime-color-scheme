@@ -245,7 +245,7 @@
     // String
     // ~~~~~~
     {
-      "scope": "string - ((source.shell.bash | source.shell.embedded.makefile) & meta.function-call.arguments.shell string.unquoted.shell , source.shell.bash string.unquoted.shell , (source.clojure | source.edn) & string.regexp punctuation.definition.string.begin keyword.operator.macro , source.ruby string.interpolated punctuation.definition.string , source.python comment meta.type , (source.js | source.jsx | source.ts | source.tsx) & string.regexp - punctuation.definition.string)",
+      "scope": "string - ((source.shell.bash | source.shell.embedded.makefile) & meta.function-call.arguments.shell string.unquoted.shell , source.shell.bash string.unquoted.shell , (source.clojure | source.edn) & string.regexp punctuation.definition.string.begin keyword.operator.macro , source.ruby string.interpolated punctuation.definition.string , source.python comment meta.type , (source.js | source.jsx | source.ts | source.tsx) & string.regexp - punctuation.definition.string , text.jinja string meta.placeholder)",
       "foreground": "var(blue)"
     },
     {
@@ -315,20 +315,6 @@
     },
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // Jinja Templating
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    {
-      "scope": "text.jinja & (meta.statement.jinja | comment.block.jinja)",
-      "background": "var(black)"
-    },
-    {
-      "scope": "text.jinja meta.placeholder.jinja",
-      "background": "var(black)",
-      // Have a consistent basic foreground colour regardless of whether the Jinja placeholder is itself inside a string.
-      "foreground": "var(steel)"
-    },
-
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // Twirl Templating
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
@@ -350,10 +336,13 @@
     },
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // ERB/EEX Templating
+    // Embedded programming languages in otherwise freeform text templates:
+    //   - ERB (Though ERB is not Rails-specific, the ST stock packages call it "Rails")
+    //   - EEx
+    //   - Jinja2
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
-      "scope": "text.html.rails meta.embedded , meta.embedded.eex",
+      "scope": "meta.embedded.rails , meta.embedded.eex , text.jinja & (meta.statement.jinja | meta.placeholder.jinja | comment.block.jinja)",
       "background": "var(black)"
     },
 
