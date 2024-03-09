@@ -221,7 +221,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `markup`, just because.
-      "scope": "source.ocaml meta.path , (source.clojure | source.edn) & constant.other.keyword , source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) , source.css meta.selector & (entity.other.attribute-name.class | entity.other.pseudo-class) , meta.diff , source.erlang & (constant.other.symbol | constant.language.exception | constant.language.boolean) , (source.js | source.jsx | source.ts | source.tsx) & (entity.other.attribute-name.documentation | meta.string meta.interpolation punctuation.section.interpolation | meta.mapping.key - variable.parameter.function) , (source.jsx | source.tsx) & entity.other.attribute-name , source.shell.bash & (meta.string meta.interpolation.parameter | meta.interpolation.parameter - punctuation) , source.python & (meta.function-call.arguments.python variable.parameter - meta.function.inline.parameters) , source.regexp-replace variable.language.match , source.sml meta.path variable.namespace , source.yaml.sublime.syntax punctuation.definition.variable , source.ruby constant.other.symbol , source.ruby meta.string meta.interpolation punctuation.section.interpolation , source.ruby meta.string meta.interpolation punctuation.definition.variable - source.ruby.embedded , source.sbnf string.quoted variable.parameter.sbnf , source.raku punctuation.definition.variable , source.yaml.sublime.syntax meta.include string.unquoted.plain variable.other",
+      "scope": "source.ocaml meta.path , (source.clojure | source.edn) & constant.other.keyword , source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) , source.css meta.selector & (entity.other.attribute-name.class | entity.other.pseudo-class) , meta.diff , source.erlang & (constant.other.symbol | constant.language.exception | constant.language.boolean) , (source.js | source.jsx | source.ts | source.tsx) & (entity.other.attribute-name.documentation | meta.string meta.interpolation punctuation.section.interpolation | meta.mapping.key - variable.parameter.function) , (source.jsx | source.tsx) & entity.other.attribute-name , source.shell.bash & (meta.string meta.interpolation.parameter | meta.interpolation.parameter - punctuation) , source.python & (meta.function-call.arguments.python variable.parameter - meta.function.inline.parameters) , source.regexp-replace variable.language.match , source.sml meta.path variable.namespace , source.yaml.sublime.syntax punctuation.definition.variable , source.ruby constant.other.symbol , source.ruby meta.string meta.interpolation punctuation.section.interpolation , source.ruby meta.string meta.interpolation punctuation.definition.variable - source.ruby.embedded , source.sbnf string.quoted variable.parameter.sbnf , source.raku punctuation.definition.variable , source.yaml.sublime.syntax meta.include string.unquoted.plain variable.other , source.elixir constant.other.symbol , source.elixir meta.string meta.interpolation punctuation.section.interpolation",
       "foreground": "var(steel)"
     },
     // ~~~~~~~
@@ -238,7 +238,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `storage`, just because.
-      "scope": "entity.other.inherited-class - (source.ruby punctuation.accessor.double-colon) , source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , text.git.commit markup.heading.subject , (source.js | source.jsx | source.ts | source.tsx) & (keyword.declaration.async.js | entity.name.function.constructor | keyword.declaration.generator | keyword.generator.asterisk) , (text.xml | text.html | source.jsx | source.tsx | source.ts comment.line.triple-slash) & entity.name.tag , source.ruby & (support.other.namespace | support.class) , source.ruby string.quoted.other.literal punctuation.definition.string , source.python & (meta.function.parameters | meta.generic) & keyword.operator.unpacking , source.shell.bash variable.parameter.option - punctuation.definition.parameter.shell , source.sml & (constant.other | entity.name.function.constructor) , source.makefile meta.function.arguments.makefile string.unquoted.makefile",
+      "scope": "entity.other.inherited-class - (source.ruby punctuation.accessor.double-colon) , source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , text.git.commit markup.heading.subject , (source.js | source.jsx | source.ts | source.tsx) & (keyword.declaration.async.js | entity.name.function.constructor | keyword.declaration.generator | keyword.generator.asterisk) , (text.xml | text.html | source.jsx | source.tsx | source.ts comment.line.triple-slash) & entity.name.tag , source.ruby & (support.other.namespace | support.class) , source.ruby string.quoted.other.literal punctuation.definition.string , source.python & (meta.function.parameters | meta.generic) & keyword.operator.unpacking , source.shell.bash variable.parameter.option - punctuation.definition.parameter.shell , source.sml & (constant.other | entity.name.function.constructor) , source.makefile meta.function.arguments.makefile string.unquoted.makefile , source.elixir constant.other.module",
       "foreground": "var(gold)"
     },
     // ~~~~~~
@@ -350,10 +350,10 @@
     },
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // ERB Templating
+    // ERB/EEX Templating
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
-      "scope": "text.html.rails meta.embedded",
+      "scope": "text.html.rails meta.embedded , meta.embedded.eex",
       "background": "var(black)"
     },
 
@@ -382,11 +382,12 @@
       "background": "var(black)"
     },
 
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // Argument labels in languages where we're using the 'Markup' colour for some other significant syntactic construct (e.g. symbol literals, module paths)
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // Argument labels in languages where we're using the 'Markup' colour for some
+    // other significant syntactic construct (e.g. symbol literals, module paths)
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
-      "scope": "source.ocaml punctuation.label.argument , source.ruby constant.other.symbol.hash-key-sugar",
+      "scope": "source.ocaml punctuation.label.argument , source.ruby constant.other.symbol.hash-key-sugar , source.elixir constant.other.keyword",
       "foreground": "var(green_light)",
     },
 
