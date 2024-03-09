@@ -4,7 +4,7 @@
 
   "variables": {
     "black": "#000000",
-    "black_light": "#141212",
+    "black_light": "#141212", // TWIN: What the Adaptive theme derives for the Side Bar background
     "blue": "#5a70a9",
     "gold": "#ad9361",
     "gold_punchy": "#eed600",
