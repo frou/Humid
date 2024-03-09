@@ -7,6 +7,7 @@
     "black_light": "#141212",
     "blue": "#5a70a9",
     "gold": "#ad9361",
+    "gold_punchy": "#eed600",
     "green": "#6a8856",
     "green_light": "#8c998c",
     "grey": "#3f3938",
@@ -22,7 +23,6 @@
     "steel": "#8c8c99",
     "white": "#dadada",
     "white_light": "#ffffff",
-    "yellow_punchy": "#eed600",
 
     // Overrule ST where it picks what I feel is the wrong colour from those used in
     // this colour scheme to be a given *ish colour.
@@ -75,7 +75,7 @@
     //"stack_guide": "",
 
     "find_highlight_foreground": "var(black)",
-    "find_highlight": "var(yellow_punchy)",
+    "find_highlight": "var(gold_punchy)",
 
     "brackets_options": "glow",
     "brackets_foreground": "var(orange_punchy)",
@@ -84,7 +84,7 @@
     "bracket_contents_foreground": "var(orange_punchy)",
 
     "tags_options": "glow",
-    "tags_foreground": "var(yellow_punchy)",
+    "tags_foreground": "var(gold_punchy)",
 
     "line_diff_width": "4",
     "line_diff_added": "color(var(green) lightness(- 20%))",
@@ -399,7 +399,7 @@
     //     - References
     //   - Build Results panel
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    {"scope": "text.find-in-files & (entity.name.filename | constant.numeric.line-number.match) , output.lsp & (entity.name.filename | constant.numeric.line-number | constant.numeric.col-number) , text.build-results markup.location.build-results", "foreground": "var(steel)", "selection_foreground": "var(yellow_punchy)"},
+    {"scope": "text.find-in-files & (entity.name.filename | constant.numeric.line-number.match) , output.lsp & (entity.name.filename | constant.numeric.line-number | constant.numeric.col-number) , text.build-results markup.location.build-results", "foreground": "var(steel)", "selection_foreground": "var(gold_punchy)"},
     {"scope": "text.find-in-files constant.numeric.line-number", "foreground": "var(grey)"}, // "Context" lines
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -432,7 +432,7 @@
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {"scope": "region markup.error.lsp",     "foreground": "var(red_punchy)"}, // var(red) is a bit too faint when used for squiggly underlines.
     {"scope": "region markup.warning.lsp",   "foreground": "var(orange_punchy)"},
-    {"scope": "region markup.info.lsp",      "foreground": "var(yellow_punchy)"},
+    {"scope": "region markup.info.lsp",      "foreground": "var(gold_punchy)"},
     {"scope": "region markup.info.hint.lsp", "foreground": "var(white_light)"},
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
