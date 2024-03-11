@@ -130,7 +130,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `comment`, just because.
-      "scope": "source.zig string.unquoted punctuation.definition.string.begin",
+      "scope": "source.zig string.unquoted punctuation.definition.string.begin , source.elixir & (variable.parameter.unused | variable.other.unused)",
       "foreground": "var(slate_light)"
     },
     // ~~~~~~~~
