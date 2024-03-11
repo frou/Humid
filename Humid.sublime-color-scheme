@@ -204,7 +204,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `keyword`, just because.
-      "scope": "source.css support.constant , source.makefile variable.language.automatic , (source.js | source.jsx | source.ts | source.tsx) & (variable.language.global | variable.language.arguments) , source.file-pattern punctuation.separator , source.regexp-replace variable.language.backref , source.python support.variable.magic",
+      "scope": "source.css support.constant , source.makefile variable.language.automatic , (source.js | source.jsx | source.ts | source.tsx) & (variable.language.global | variable.language.arguments) , source.file-pattern punctuation.separator , source.regexp-replace variable.language.backref",
       "foreground": "var(green)"
     },
     // ~~~~~~
@@ -364,6 +364,10 @@
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
       "scope": "source.ocaml punctuation.label.argument , source.ruby constant.other.symbol.hash-key-sugar , source.elixir constant.other.keyword",
+      "foreground": "var(green_light)",
+    },
+    { // In languages that don't have the above circumstances, instead make use of the colour in miscellaneous ways.
+      "scope": "source.python support.variable.magic",
       "foreground": "var(green_light)",
     },
 
