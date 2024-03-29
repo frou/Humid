@@ -66,7 +66,8 @@
     "selection_corner_style": "square",
 
     "gutter": "var(slate)",
-    "gutter_foreground": "var(slate_light)",
+    "gutter_foreground": "var(grey)",
+    "gutter_foreground_highlight": "var(slate_light)",
 
     "find_highlight_foreground": "var(black)",
     "find_highlight": "var(yellow_punchy)",
