@@ -298,7 +298,7 @@
     // REF: https://www.sublimetext.com/docs/scope_naming.html#markup
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {"name": "markup bold",                  "scope": "markup.bold", "font_style": "bold"},
-    {"name": "markup italic",                "scope": "markup.italic , source.ruby support.function.builtin", "font_style": "italic"},
+    {"name": "markup italic",                "scope": "markup.italic", "font_style": "italic"},
     {"name": "markup underline",             "scope": "markup.underline", "font_style": "underline"},
     {"name": "markup bold/italic",           "scope": "markup.italic markup.bold | markup.bold markup.italic", "font_style": "bold italic"},
     {"name": "markup bold/underline",        "scope": "markup.underline markup.bold | markup.bold markup.underline", "font_style": "bold underline"},
