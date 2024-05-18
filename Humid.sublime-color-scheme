@@ -354,7 +354,7 @@
     // JavaScript Regexp Literals
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
-      "scope": "(source.js | source.jsx | source.ts | source.tsx) & string.regexp",
+      "scope": "(source.js | source.jsx | source.ts | source.tsx) & string.regexp - punctuation.definition.string",
       "background": "var(black)"
     },
 
