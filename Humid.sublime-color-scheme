@@ -245,7 +245,7 @@
     // String
     // ~~~~~~
     {
-      "scope": "string - ((source.shell.bash | source.shell.embedded.makefile) & meta.function-call.arguments.shell string.unquoted.shell , source.shell.bash string.unquoted.shell , (source.clojure | source.edn) & string.regexp punctuation.definition.string.begin keyword.operator.macro , source.ruby string.interpolated punctuation.definition.string , source.python comment meta.type , (source.js | source.jsx | source.ts | source.tsx) & string.regexp - punctuation.definition.string , text.jinja string meta.placeholder)",
+      "scope": "string - ((source.shell.bash | source.shell.embedded.makefile) & meta.function-call.arguments.shell string.unquoted.shell , source.shell.bash string.unquoted.shell , (source.clojure | source.edn) & string.regexp punctuation.definition.string.begin keyword.operator.macro , source.ruby string.interpolated punctuation.definition.string , source.python comment meta.type , (source.js | source.jsx | source.ts | source.tsx) & string.regexp - punctuation.definition.string)",
       "foreground": "var(blue)"
     },
     {
@@ -321,7 +321,7 @@
     //   - Jinja2
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
-      "scope": "meta.embedded.rails , meta.embedded.eex , text.jinja & (meta.statement.jinja | meta.placeholder.jinja | comment.block.jinja)",
+      "scope": "meta.embedded.rails , meta.embedded.eex , meta.template.jinja & (meta.embedded.comment | meta.embedded.statement | meta.embedded.expression)",
       "background": "var(black)"
     },
 
