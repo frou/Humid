@@ -142,7 +142,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `constant`, just because.
-      "scope": "text.build-results markup.pointing-carets , text.xml.kajiki & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name , source.erlang punctuation.definition.sequence , meta.dangerous - source.sml meta.dangerous.exception-raiser.suffix , source.elixir variable.language.special-form",
+      "scope": "text.build-results markup.pointing-carets , text.xml.kajiki & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name , source.erlang punctuation.definition.sequence , source.elixir variable.language.special-form",
       "foreground": "var(red)"
     },
     // ~~~~~~
@@ -369,6 +369,19 @@
     { // In languages that don't have the above circumstances, instead make use of the colour in miscellaneous ways.
       "scope": "source.python support.variable.magic",
       "foreground": "var(green_light)",
+    },
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // Dangerous Language-Constructs/Functions/etc
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    {
+      "scope": "meta.dangerous - source.sml meta.dangerous.exception-raiser.suffix",
+      "foreground": "var(red)"
+    },
+    {
+      "scope": "meta.dangerous keyword.operator - keyword.operator.word",
+      // Operators that aren't words are generally 1-2 punctuation characters, which need extra help to visually stand out.
+      "foreground": "var(red_punchy)"
     },
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
