@@ -321,7 +321,7 @@
     //   - Jinja2
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
-      "scope": "meta.embedded.rails , meta.embedded.eex , meta.template.jinja & (meta.embedded.comment | meta.embedded.statement | meta.embedded.expression)",
+      "scope": "meta.embedded.rails , meta.embedded.eex , meta.template.jinja & (meta.embedded.statement | meta.embedded.expression)",
       "background": "var(black)"
     },
 
