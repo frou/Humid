@@ -60,6 +60,9 @@
 
     "invisibles": "var(grey_light)",
 
+    // NOTE: For lines with carets, this colour is used for line backgrounds if the
+    //       "highlight_line" Preference is enabled, and for gutter backgrounds
+    //       if the "highlight_gutter" Preference is enabled.
     "line_highlight": "var(grey)",
 
     "selection": "var(grey)",
@@ -68,6 +71,8 @@
 
     "gutter": "var(slate)",
     "gutter_foreground": "var(grey)",
+    // NOTE: For lines with carets, this colour is used for line numbers if the
+    //       "highlight_line_number" Preference is enabled.
     "gutter_foreground_highlight": "var(slate_light)",
 
     "guide": "var(grey)",
