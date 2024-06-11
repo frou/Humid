@@ -468,10 +468,10 @@
     {"scope": "markup.info.test.sublime-syntax",    "background": "var(white)"},
 
     // REF: https://lsp.sublimetext.io/customization/#semantic-highlighting
-    {
-      "scope": "meta.semantic-token",
-      "background": "color(var(slate) alpha(0.1))",
-      // "background": "color(var(red) alpha(0.1))"
-    },
+    //{
+    //  "scope": "meta.semantic-token",
+    //  "background": "color(var(slate) alpha(0.1))",
+    //  //"background": "color(var(red) alpha(0.1))"
+    //},
   ]
 }
