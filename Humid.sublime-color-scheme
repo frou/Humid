@@ -367,6 +367,14 @@
       "background": "var(black)"
     },
 
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // Shell Arithmetic Expansion
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    {
+      "scope": "source.shell.bash meta.interpolation.arithmetic",
+      "background": "var(black)"
+    },
+
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // Argument labels in languages where we're using the 'Markup' colour for some
     // other significant syntactic construct (e.g. symbol literals, module paths)
