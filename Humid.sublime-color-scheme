@@ -179,10 +179,13 @@
     // Keyword
     // ~~~~~~~
     {
-      "scope": "keyword - keyword.operator - ((source.js | source.jsx | source.ts | source.tsx) & keyword.declaration.function.arrow , (source.ts | source.tsx) & meta.type keyword.declaration.function , source.python keyword.control.import.relative , source.python comment meta.type , source.ruby keyword.declaration.function.anonymous) , source.regexp keyword.operator , source.file-pattern keyword.operator.logical , source.regexp-replace keyword.operator , (source.js | source.jsx | source.ts | source.tsx) & string.regexp.js & (keyword.operator | punctuation - punctuation.definition.string) , source.makefile constant.language.makefile",
+      // PL word-like keywords.
+      "scope": "keyword - keyword.operator - ((source.js | source.jsx | source.ts | source.tsx) & keyword.declaration.function.arrow , (source.ts | source.tsx) & meta.type keyword.declaration.function , source.python keyword.control.import.relative , source.python comment meta.type , source.ruby keyword.declaration.function.anonymous)",
       "foreground": "var(green)"
     },
     {
+      // PL word-like operators.
+      //
       // NOTE: For programming languages, this Colour Scheme intends that typical punctuation-like
       // operators e.g. `+ / && =` should never be coloured (because they already look distinct enough
       // due to the shapes of the glyphs alone), which is why the scope `keyword.operator` is negated
@@ -199,17 +202,21 @@
       //   - Ruby
       //   - TypeScript
       // REF: https://github.com/sublimehq/Packages/pull/2090
-      "scope": "keyword.operator.word - keyword.operator.type.assertion.dh.js , keyword.operator.js , source.python keyword.operator.logical.python , source.sql & (keyword.operator.logical | keyword.operator.assignment) - meta.string.python , source.yaml.sublime.syntax keyword.operator.include , source.elixir & (keyword.operator.when | keyword.operator.logical) , source.go keyword.operator.type , (source.clojure | source.edn) & string.regexp.edn keyword.operator - keyword.operator.macro",
+      "scope": "keyword.operator.word - keyword.operator.type.assertion.dh.js , keyword.operator.js , source.python keyword.operator.logical.python , source.sql & (keyword.operator.logical | keyword.operator.assignment) - meta.string.python , source.yaml.sublime.syntax keyword.operator.include , source.elixir & (keyword.operator.when | keyword.operator.logical) , source.go keyword.operator.type",
+      "foreground": "var(green)"
+    },
+    { // 'File Pattern' operators (ST UI); Regexp operators (ST UI); Regexp Literal internal operators (PLs with Regexp Literals).
+      "scope": "source.file-pattern & (keyword.operator.logical | punctuation.separator - punctuation.separator.path) , source.regexp keyword.operator , source.regexp-replace & (keyword.operator | variable.language.backref) , (source.js | source.jsx | source.ts | source.tsx) & string.regexp.js & (keyword.operator | punctuation - punctuation.definition.string) , (source.clojure | source.edn) & string.regexp.edn keyword.operator - keyword.operator.macro",
       "foreground": "var(green)"
     },
     {
       // Stuff I feel should be classified as `keyword` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source.python & (storage.modifier - storage.modifier.conversion - storage.modifier.debug - storage.modifier.named-args-only - storage.modifier.positional-args-only) - source.sql , (source.js | source.jsx | source.ts | source.tsx) & (variable.language.super | variable.language.this | storage.modifier - (meta.type | storage.modifier.array | storage.modifier.optional | storage.modifier.definite)) , (source.c | source.c++) & storage.modifier , source.ruby entity.name.function.preprocessor , source.ruby variable.language",
+      "scope": "source.python & (storage.modifier - storage.modifier.conversion - storage.modifier.debug - storage.modifier.named-args-only - storage.modifier.positional-args-only) - source.sql , (source.js | source.jsx | source.ts | source.tsx) & (variable.language.super | variable.language.this | storage.modifier - (meta.type | storage.modifier.array | storage.modifier.optional | storage.modifier.definite)) , (source.c | source.c++) & storage.modifier , source.ruby entity.name.function.preprocessor , source.ruby variable.language , source.makefile constant.language.makefile",
       "foreground": "var(green)"
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `keyword`, just because.
-      "scope": "source.css support.constant , source.makefile variable.language.automatic , (source.js | source.jsx | source.ts | source.tsx) & (variable.language.global | variable.language.arguments) , source.file-pattern punctuation.separator , source.regexp-replace variable.language.backref",
+      "scope": "source.css support.constant , source.makefile variable.language.automatic , (source.js | source.jsx | source.ts | source.tsx) & (variable.language.global | variable.language.arguments)",
       "foreground": "var(green)"
     },
     // ~~~~~~
