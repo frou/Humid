@@ -216,7 +216,7 @@
     // Markup
     // ~~~~~~
     {
-      "scope": "markup - (text.html.markdown & (markup.raw.code-fence | markup.raw.inline)) , text.html.markdown punctuation.definition.raw",
+      "scope": "markup - (text.html.markdown & (markup.raw.code-fence | markup.raw.inline | meta.paragraph.list )) , text.html.markdown punctuation.definition.raw",
       "foreground": "var(steel)"
     },
     {
