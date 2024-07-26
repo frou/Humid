@@ -230,7 +230,7 @@
       "foreground": "var(steel)"
     },
     { // NOTE: For an unclear reason, this needed to be split out from the above to work. Was the total selector complexity tripping some limit?
-      "scope": "source.shell.bash & (meta.string.shell | meta.string.heredoc.shell) & (punctuation.definition.variable | punctuation.section.interpolation | variable.other.readwrite)",
+      "scope": "source.shell.bash & (meta.string.shell | meta.string.heredoc.shell | meta.conditional.shell) & (punctuation.definition.variable | punctuation.section.interpolation | variable.other.readwrite)",
       "foreground": "var(steel)"
     },
     // ~~~~~~~
