@@ -205,8 +205,8 @@
       "scope": "keyword.operator.word - keyword.operator.type.assertion.dh.js , keyword.operator.js , source.python keyword.operator.logical.python , source.sql & (keyword.operator.logical | keyword.operator.assignment) - meta.string.python , source.yaml.sublime.syntax keyword.operator.include , source.elixir & (keyword.operator.when | keyword.operator.logical) , source.go keyword.operator.type",
       "foreground": "var(green)"
     },
-    { // 'File Pattern' operators (ST UI); Regexp operators (ST UI & .sublime-syntax Syntax Definitions); Regexp Literal internal operators (PLs with Regexp Literals).
-      "scope": "source.file-pattern & (keyword.operator.logical | punctuation.separator - punctuation.separator.path) , (source.regexp.basic | source.regexp.oniguruma) & keyword.operator , source.regexp-replace & (keyword.operator | variable.language.backref) , (source.js | source.jsx | source.ts | source.tsx) & string.regexp.js & (keyword.operator | punctuation - punctuation.definition.string) , (source.clojure | source.edn) & string.regexp.edn keyword.operator - keyword.operator.macro",
+    { // 'File Pattern' operators (ST UI); Regexp operators (ST UI & Some other Syntaxes); Regexp Literal internal operators (PLs with Regexp Literals).
+      "scope": "source.file-pattern & (keyword.operator.logical | punctuation.separator - punctuation.separator.path) , source.regexp keyword.operator , source.regexp-replace & (keyword.operator | variable.language.backref) , (source.js | source.jsx | source.ts | source.tsx) & string.regexp.js & (keyword.operator | punctuation - punctuation.definition.string) , (source.clojure | source.edn) & string.regexp.edn keyword.operator - keyword.operator.macro",
       "foreground": "var(green)"
     },
     {
