@@ -391,7 +391,7 @@
       "foreground": "var(green_light)",
     },
     { // In languages that don't have the above circumstances, instead make use of the colour in miscellaneous ways.
-      "scope": "source.python support.variable.magic , source.yaml.sublime.syntax entity.name.section , source.clojure constant.other.keyword.auto-qualified",
+      "scope": "source.python support.variable.magic , source.yaml.sublime.syntax entity.name.section , source.clojure constant.other.keyword.auto-qualified , source.sml variable.other.member",
       "foreground": "var(green_light)",
     },
 
