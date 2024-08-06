@@ -142,7 +142,7 @@
     // Constant
     // ~~~~~~~~
     {
-      "scope": "constant - ((source.js | source.jsx | source.ts | source.tsx) & meta.import constant.other , (source.js | source.jsx | source.ts | source.tsx) & meta.export constant.other , source.python comment meta.type , source.shell.bash constant.other.wildcard , constant.language.shebang , source.go string.quoted.single constant.character.literal)",
+      "scope": "constant - ((source.js | source.jsx | source.ts | source.tsx) & meta.import constant.other , (source.js | source.jsx | source.ts | source.tsx) & meta.export constant.other , source.python comment meta.type , source.shell.bash constant.other.wildcard , constant.language.shebang , source.go string.quoted.single constant.character.literal , source.rust constant.other.rust)",
       "foreground": "var(red)"
     },
     {
@@ -254,7 +254,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `storage`, just because.
-      "scope": "entity.other.inherited-class - (source.ruby punctuation.accessor.double-colon) , source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , text.git.commit markup.heading.subject , (source.js | source.jsx | source.ts | source.tsx) & (keyword.declaration.async.js | entity.name.function.constructor | keyword.declaration.generator | keyword.generator.asterisk) , (text.xml | text.html | text.build-results.html-validate | source.jsx | source.tsx | source.ts comment.line.triple-slash) & entity.name.tag , source.ruby & (support.other.namespace | support.class) , source.ruby string.quoted.other.literal punctuation.definition.string , source.python & (meta.function.parameters | meta.generic) & keyword.operator.unpacking , source.shell.bash meta.interpolation.parameter & (keyword.operator | meta.item-access variable.language.array) , source.sml & (constant.other | entity.name.function.constructor) , source.makefile meta.function.arguments.makefile string.unquoted.makefile - punctuation.separator.continuation.line , source.elixir constant.other.module",
+      "scope": "entity.other.inherited-class - (source.ruby punctuation.accessor.double-colon) , source.css meta.selector & (entity.name.tag | entity.other.pseudo-element) , text.git.commit markup.heading.subject , (source.js | source.jsx | source.ts | source.tsx) & (keyword.declaration.async.js | entity.name.function.constructor | keyword.declaration.generator | keyword.generator.asterisk) , (text.xml | text.html | text.build-results.html-validate | source.jsx | source.tsx | source.ts comment.line.triple-slash) & entity.name.tag , source.ruby & (support.other.namespace | support.class) , source.ruby string.quoted.other.literal punctuation.definition.string , source.python & (meta.function.parameters | meta.generic) & keyword.operator.unpacking , source.shell.bash meta.interpolation.parameter & (keyword.operator | meta.item-access variable.language.array) , source.sml & (constant.other | entity.name.function.constructor) , source.makefile meta.function.arguments.makefile string.unquoted.makefile - punctuation.separator.continuation.line , source.elixir constant.other.module , source.rust support.type",
       "foreground": "var(gold)"
     },
     // ~~~~~~
