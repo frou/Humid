@@ -357,13 +357,17 @@
       "background": "var(black)"
     },
 
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // Preprocessor Directives (or equivalent comment constructs)
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    {
-      "scope": "comment & meta.preprocessor , source.go comment.line meta.annotation , source.haskell meta.preprocessor",
-      "foreground": "var(slate_light)",
-      "background": "var(black)"
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // Preprocessor Directives, and certain Annotations
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    { // Repurposed comments according to the respective Syntax Definitions.
+      "scope": "comment & (meta.preprocessor | meta.annotation)",
+      "background": "var(black)",
+    },
+    { // Non-comments according to the respective Syntax Definitions.
+      "scope": "source.haskell meta.preprocessor , source.ocaml meta.preprocessor , source.rust meta.annotation",
+      "background": "var(black)",
+      "foreground": "var(slate_light)"
     },
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
