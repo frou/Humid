@@ -1,9 +1,4 @@
-#!/usr/bin/env -S pipx run
-# -*- mode: Python -*-
-
-# /// script
-# dependencies = ["json-five"]
-# ///
+#!/usr/bin/env python3
 
 # This script generates a version of the colour scheme intended for use in REPLs running
 # inside Sublime Text (e.g. Tutkain's)
