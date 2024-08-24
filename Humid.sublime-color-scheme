@@ -142,7 +142,7 @@
     // Constant
     // ~~~~~~~~
     {
-      "scope": "constant - ((source.js | source.jsx | source.ts | source.tsx) & meta.import constant.other , (source.js | source.jsx | source.ts | source.tsx) & meta.export constant.other , source.python comment meta.type , source.shell.bash constant.other.wildcard , constant.language.shebang , source.go string.quoted.single constant.character.literal , source.rust constant.other.rust)",
+      "scope": "constant - ((source.js | source.jsx | source.ts | source.tsx) & meta.import constant.other , (source.js | source.jsx | source.ts | source.tsx) & meta.export constant.other , source.python comment meta.type , source.shell.bash constant.other.wildcard , constant.language.shebang , source.go string.quoted.single constant.character.literal , source.rust constant.other.rust , source.python comment meta.type constant.other.error-code)",
       "foreground": "var(red)"
     },
     {
