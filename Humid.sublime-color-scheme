@@ -9,7 +9,6 @@
     "gold": "#ad9361",
     "gold_punchy": "#eed600",
     "green": "#6a8856",
-    "green_light": "#8c998c",
     "grey": "#3f3938",
     "grey_light": "#4f4d4d",
     "orange": "#ae7337",
@@ -21,6 +20,8 @@
     "slate": "#211e1e",
     "slate_light": "#60605a", // TWIN: "kind_namespace_color" in Adaptive theme customisation
     "steel": "#8c8c99",
+    "steel_green": "#8c998c",
+    "steel_red": "#998c8c",
     //"white": "#cccccc", // Emacs version uses this variable name and value. Have it here for consistency.
     "white_light": "#dadada",
     "white_punchy": "#ffffff",
@@ -393,11 +394,11 @@
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
       "scope": "source.ocaml punctuation.label.argument , source.ruby constant.other.symbol.hash-key-sugar , source.elixir constant.other.keyword",
-      "foreground": "var(green_light)",
+      "foreground": "var(steel_green)",
     },
     { // In languages that don't have the above circumstances, instead make use of the colour in miscellaneous ways.
       "scope": "source.python support.variable.magic , source.yaml.sublime.syntax meta.include string.unquoted.plain variable.other , source.clojure constant.other.keyword.auto-qualified , source.sml variable.other.member",
-      "foreground": "var(green_light)",
+      "foreground": "var(steel_green)",
     },
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
