@@ -22,7 +22,7 @@
     "steel": "#8c8c99",
     "steel_green": "#8c998c",
     "steel_red": "#998c8c",
-    //"white": "#cccccc", // Emacs version uses this variable name and value. Have it here for consistency.
+    "white": "#cccccc", // NOTE: Use this white for foreground when using black or black_light as background.
     "white_light": "#dadada",
     "white_punchy": "#ffffff",
 
@@ -356,6 +356,15 @@
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
       "scope": "text.html.markdown & (markup.raw.code-fence | markup.raw.inline)",
+      "background": "var(black)"
+    },
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // Excerpts of one's own code in sometimes many-line warning/error messages
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    {
+      "scope": "text.build-results.mlton source.sml.embedded",
+      "foreground": "var(white)",
       "background": "var(black)"
     },
 
