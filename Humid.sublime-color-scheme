@@ -421,7 +421,7 @@
       "foreground": "var(steel_green)",
     },
     { // In languages that don't have the above circumstances, instead make use of the colour in miscellaneous ways.
-      "scope": "source.python support.variable.magic , source.yaml.sublime.syntax meta.include string.unquoted.plain variable.other , source.clojure constant.other.keyword.auto-qualified , source.sml variable.other.member",
+      "scope": "source.python & (keyword.declaration.async | storage.modifier.async | keyword.control.flow.await) , source.yaml.sublime.syntax meta.include string.unquoted.plain variable.other , source.clojure constant.other.keyword.auto-qualified , source.sml variable.other.member",
       "foreground": "var(steel_green)",
     },
 
