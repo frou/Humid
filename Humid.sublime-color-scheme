@@ -144,13 +144,18 @@
     // Constant
     // ~~~~~~~~
     {
-      "scope": "constant - ((source.js | source.jsx | source.ts | source.tsx) & meta.import constant.other , (source.js | source.jsx | source.ts | source.tsx) & meta.export constant.other , source.python comment meta.type , source.shell.bash constant.other.wildcard , constant.language.shebang , source.go string.quoted.single constant.character.literal , source.rust constant.other.rust , source.python comment meta.type constant.other.error-code)",
+      "scope": "constant - ((source.js | source.jsx | source.ts | source.tsx) & meta.import constant.other , (source.js | source.jsx | source.ts | source.tsx) & meta.export constant.other , source.python comment meta.type , source.shell.bash constant.other.wildcard , constant.language.shebang , source.rust constant.other.rust , source.python comment meta.type constant.other.error-code) , source.go string.quoted.single punctuation.definition.string",
       "foreground": "var(red)"
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `constant`, just because.
       "scope": "text.build-results markup.pointing-carets , text.xml.kajiki & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name , source.erlang punctuation.definition.sequence , source.elixir variable.language.special-form , source.ruby meta.tag.heredoc entity.name.tag",
       "foreground": "var(red)"
+    },
+    {
+      // Despite the conventional scope name used for them, Escape Sequences (like `\n`) are in a sense the opposite of constant characters (like `a`). So use something other than the normal `constant` colour.
+      "scope": "constant.character.escape",
+      "foreground": "var(steel_red)"
     },
     // ~~~~~~
     // Entity
