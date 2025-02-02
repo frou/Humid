@@ -287,7 +287,7 @@
     // Support
     // ~~~~~~~
     {
-      "scope": "support - ((source.js | source.jsx | source.ts | source.tsx) , source.go support.type , source.python entity.name.function , source.python meta.statement.import , source.erlang support.namespace , source.ruby support.function.builtin) , (source.js | source.jsx | source.ts | source.tsx) & (support.function - support.function.node - invalid.deprecated)",
+      "scope": "support - ((source.js | source.jsx | source.ts | source.tsx) , source.go support.type , source.python entity.name.function , source.python meta.statement.import , source.python support.variable.magic , source.erlang support.namespace , source.ruby support.function.builtin) , (source.js | source.jsx | source.ts | source.tsx) & (support.function - support.function.node - invalid.deprecated)",
       "foreground": "var(purple)"
     },
     {
