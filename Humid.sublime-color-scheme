@@ -144,7 +144,7 @@
     // Constant
     // ~~~~~~~~
     {
-      "scope": "constant - ((source.js | source.jsx | source.ts | source.tsx) & meta.import constant.other , (source.js | source.jsx | source.ts | source.tsx) & meta.export constant.other , source.python comment meta.type , source.shell.bash constant.other.wildcard , constant.language.shebang , source.rust constant.other.rust , source.python comment meta.type constant.other.error-code) , source.go string.quoted.single punctuation.definition.string",
+      "scope": "constant - ((source.js | source.jsx | source.ts | source.tsx) & meta.import constant.other , (source.js | source.jsx | source.ts | source.tsx) & meta.export constant.other , source.python comment meta.type , source.shell.bash constant.other.wildcard , constant.language.shebang , source.rust constant.other.rust , source.python comment meta.type constant.other.error-code , text.syntax-tests meta.summary.success message.info constant.numeric) , source.go string.quoted.single punctuation.definition.string",
       "foreground": "var(red)"
     },
     {
@@ -173,7 +173,7 @@
     // Invalid
     // ~~~~~~~
     {
-      "scope": "invalid - source.python.lenient",
+      "scope": "invalid - source.python.lenient , text.syntax-tests meta.summary.failure message.error constant.numeric",
       "background": "var(red_punchy)",
       "foreground": "var(white_light)"
     },
