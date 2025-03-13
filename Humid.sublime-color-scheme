@@ -4,7 +4,9 @@
 
   "variables": {
     "black": "#000000",
-    "black_light": "#141212", // TWIN: What the Adaptive theme derives for the Side Bar background
+    // TWIN: What the Adaptive theme automatically derives for the Side Bar background colour.
+    // TWIN: What I set `--mdpopups-hl-bg` to in User/mdpopups.css
+    "black_light": "#141212",
     "blue": "#5a70a9",
     "gold": "#ad9361",
     "gold_punchy": "#eed600",
@@ -19,6 +21,8 @@
     "red_punchy": "#bb0000",
     "slate": "#211e1e",
     "slate_light": "#60605a", // TWIN: "kind_namespace_color" in Adaptive theme customisation
+    "slate_green": "#1e211e",
+    "slate_blue": "#1e1e21",
     "steel": "#8c8c99",
     "steel_green": "#8c998c",
     "steel_red": "#998c8c",
