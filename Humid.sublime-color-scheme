@@ -158,7 +158,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `constant`, just because.
-      "scope": "text.build-results markup.pointing-carets , text.xml.kajiki & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name , source.erlang punctuation.definition.sequence , source.elixir variable.language.special-form , source.ruby meta.tag.heredoc entity.name.tag , (source.ts | source.tsx) & meta.type & (support.type.primitive.undefined | support.type.primitive.null | support.type.primitive.boolean)",
+      "scope": "text.build-results markup.pointing-carets , text.xml.kajiki & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name , source.erlang punctuation.definition.sequence , source.elixir variable.language.special-form , source.ruby meta.tag.heredoc entity.name.tag , (source.ts | source.tsx) & meta.type & (support.type.primitive.undefined | support.type.primitive.null | support.type.primitive.boolean.true | support.type.primitive.boolean.false)",
       "foreground": "var(red)"
     },
     {
