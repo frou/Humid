@@ -8,6 +8,7 @@
     // TWIN: What I set `--mdpopups-hl-bg` to in User/mdpopups.css
     "black_light": "#141212",
     "blue": "#5a70a9",
+    "blue_light": "#65a8ff",
     "gold": "#ad9361",
     "gold_punchy": "#eed600",
     "green": "#6a8856",
@@ -162,9 +163,9 @@
       "foreground": "var(red)"
     },
     {
-      // Despite the conventional scope name used for them, Escape Sequences (like `\n`) are in a sense the opposite of constant characters (like `a`). So use something other than the normal `constant` colour.
+      // Despite the conventional scope name used for them, Escape Sequences (like `\n`) are conceptually the opposite of constant characters (like `a`). So use something other than the normal `constant` colour.
       "scope": "constant.character.escape",
-      "foreground": "var(steel_red)"
+      "foreground": "var(blue_light)"
     },
     // ~~~~~~
     // Entity
