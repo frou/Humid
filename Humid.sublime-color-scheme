@@ -154,7 +154,7 @@
     // Constant
     // ~~~~~~~~
     {
-      "scope": "constant - ((source.js | source.jsx | source.ts | source.tsx) & meta.import constant.other , (source.js | source.jsx | source.ts | source.tsx) & meta.export constant.other , source.python comment meta.type , source.shell.bash constant.other.wildcard , constant.language.shebang , source.rust constant.other.rust , source.python comment meta.type constant.other.error-code , text.syntax-tests meta.summary.success message.info constant.numeric) , source.go string.quoted.single punctuation.definition.string",
+      "scope": "constant - ((source.js | source.jsx | source.ts | source.tsx) & meta.import constant.other , (source.js | source.jsx | source.ts | source.tsx) & meta.export constant.other , source.python comment meta.type , source.shell.bash constant.other.wildcard , constant.language.shebang , source.rust constant.other.rust , source.python comment meta.type constant.other.error-code , text.syntax-tests meta.summary.success message.info constant.numeric)",
       "foreground": "var(red)"
     },
     {
@@ -285,7 +285,7 @@
     },
     {
       // Stuff I feel should be classified as `string` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source.shell.bash meta.function-call.identifier meta.string.shell punctuation.definition.string , source.python comment.block.documentation",
+      "scope": "source.shell.bash meta.function-call.identifier meta.string.shell punctuation.definition.string , source.python comment.block.documentation , source.go string.quoted.single constant.character.literal",
       "foreground": "var(blue)"
     },
     {
