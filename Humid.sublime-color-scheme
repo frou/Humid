@@ -176,7 +176,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `entity`, just because.
-      "scope": "source.file-pattern support.constant",
+      "scope": "source.file-pattern support.constant , source.ts meta.interface variable.other.readwrite",
       "foreground": "var(orange)"
     },
     // ~~~~~~~
