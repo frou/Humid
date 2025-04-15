@@ -167,10 +167,12 @@
       "scope": "constant.character.escape",
       "foreground": "var(blue_light)"
     },
-    /*{
+    {
+      // Constant literals used to refer to a namespace.
+      // REF: https://www.erlang.org/doc/system/expressions.html#function-calls
       "scope": "source.erlang meta.path & (variable.namespace | punctuation.accessor.double-colon.erlang)",
       "foreground": "var(steel_red)"
-    },*/
+    },
     // ~~~~~~
     // Entity
     // ~~~~~~
