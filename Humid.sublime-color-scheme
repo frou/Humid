@@ -167,6 +167,10 @@
       "scope": "constant.character.escape",
       "foreground": "var(blue_light)"
     },
+    /*{
+      "scope": "source.erlang meta.path & (variable.namespace | punctuation.accessor.double-colon.erlang)",
+      "foreground": "var(steel_red)"
+    },*/
     // ~~~~~~
     // Entity
     // ~~~~~~
@@ -427,7 +431,7 @@
     // other significant syntactic construct (e.g. symbol literals, module paths)
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
-      "scope": "source.ocaml punctuation.label.argument , source.ruby constant.other.symbol.hash-key-sugar , source.elixir constant.other.keyword , source.scala3 variable.parameter , source.sml meta.mapping.key",
+      "scope": "source.ocaml punctuation.label.argument , source.ruby constant.other.symbol.hash-key-sugar , source.elixir constant.other.keyword , source.scala3 variable.parameter , source.sml meta.mapping.key , source.erlang meta.mapping.key meta.atom constant.other.symbol",
       "foreground": "var(steel_green)",
     },
     { // In languages that don't have the above circumstances, instead make use of the colour in miscellaneous ways.
