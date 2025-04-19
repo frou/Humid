@@ -141,14 +141,14 @@
       "foreground": "var(slate_light)"
     },
     {
-      // Structured comment formats like JSDoc contain tags like @foo
-      "scope": "(source.js | source.jsx | source.ts | source.tsx) & comment.block.documentation entity.other.attribute-name.documentation",
-      "foreground": "var(steel_red)"
-    },
-    {
       // Stuff that isn't misclassified, but I want it to have the same colour as `comment`, just because.
       "scope": "source.zig string.unquoted punctuation.definition.string.begin , source.elixir & (variable.parameter.unused | variable.other.unused)",
       "foreground": "var(slate_light)"
+    },
+    {
+      // Structured comment formats like JSDoc contain tags like @param. Make those look distinct from the rest of the comment.
+      "scope": "(source.js | source.jsx | source.ts | source.tsx) & comment.block.documentation entity.other.attribute-name.documentation",
+      "foreground": "var(steel_red)"
     },
     // ~~~~~~~~
     // Constant
@@ -251,11 +251,11 @@
       "scope": "markup - (text.html.markdown & (markup.raw.code-fence | markup.raw.inline | meta.paragraph.list )) , text.html.markdown punctuation.definition.raw",
       "foreground": "var(steel)"
     },
-    {
+    /*{
       // Stuff I feel should be classified as `markup` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source string constant.other.placeholder",
+      "scope": "",
       "foreground": "var(steel)"
-    },
+    },*/
     // Stuff that isn't misclassified, but I want it to have the same colour as `markup`, just because.
     {
       "scope": "source.ocaml meta.path , (source.clojure | source.edn) & constant.other.keyword , source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) , source.css meta.selector & (entity.other.attribute-name.class | entity.other.pseudo-class) , meta.diff , source.erlang & (constant.other.symbol | constant.language.exception | constant.language.boolean) , (source.js | source.jsx | source.ts | source.tsx) & (meta.string meta.interpolation punctuation.section.interpolation | meta.mapping.key - variable.parameter.function) , (source.jsx | source.tsx) & entity.other.attribute-name , source.python & (meta.function-call.arguments.python variable.parameter - meta.function.inline.parameters) , source.regexp-replace variable.language.match , source.sml meta.path variable.namespace , source.yaml.sublime.syntax meta.variable & (punctuation.definition.variable | variable.other) , source.ruby constant.other.symbol , source.ruby meta.string meta.interpolation punctuation.section.interpolation , source.ruby meta.string meta.interpolation punctuation.definition.variable - source.ruby.embedded , source.sbnf string.quoted variable.parameter.sbnf , source.raku variable.parameter , source.elixir constant.other.symbol , source.elixir meta.string meta.interpolation punctuation.section.interpolation , source.elixir support.attr , source.makefile meta.interpolation variable.parameter , source.swift variable.parameter.external-parameter-name",
@@ -353,6 +353,14 @@
     {
       "scope": "source.erlang & (punctuation.separator.expressions | punctuation.separator.clauses | punctuation.terminator.clause) , meta.dangerous , source.zig & (constant.language.undefined | variable.language.ignore)",
       "font_style": "glow"
+    },
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // Placeholders in strings, usually for formatted printing purposes
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    {
+      "scope": "source string constant.other.placeholder",
+      "foreground": "var(steel_red)"
     },
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
