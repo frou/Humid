@@ -403,7 +403,7 @@
     // Preprocessor Directives, and certain Annotations
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     { // Repurposed comments according to the respective Syntax Definitions.
-      "scope": "comment & (meta.preprocessor | meta.annotation)",
+      "scope": "comment & (meta.preprocessor | meta.annotation) - source.erlang",
       "background": "var(black)",
     },
     { // Non-comments according to the respective Syntax Definitions.
