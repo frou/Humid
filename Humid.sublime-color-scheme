@@ -154,7 +154,7 @@
     // Constant
     // ~~~~~~~~
     {
-      "scope": "constant - ((source.js | source.jsx | source.ts | source.tsx) & meta.import constant.other , (source.js | source.jsx | source.ts | source.tsx) & meta.export constant.other , source.python comment meta.type , source.shell.bash constant.other.wildcard , constant.language.shebang , source.rust constant.other.rust , source.python comment meta.type constant.other.error-code , text.syntax-tests meta.summary.success message.info constant.numeric)",
+      "scope": "constant - ((source.js | source.jsx | source.ts | source.tsx) & meta.import constant.other , (source.js | source.jsx | source.ts | source.tsx) & meta.export constant.other , source.python comment meta.type , source.shell.bash constant.other.wildcard , constant.language.shebang , source.rust constant.other.rust , source.python comment meta.type constant.other.error-code , text.syntax-tests meta.summary.success message.info constant.numeric , source.erlang constant.other.macro)",
       "foreground": "var(red)"
     },
     {
@@ -313,7 +313,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `support`, just because.
-      "scope": "(source.json | source.yaml | source.ini) & meta.mapping.key string , source.toml meta.tag.key & (entity.name.tag | string.quoted) , (text.xml | text.html | source.ts comment.line.triple-slash) & entity.other.attribute-name , source.clojure keyword.declaration.namespace , source.file-pattern & (constant.language | constant.other.wildcard) , (source.jsx | source.tsx) & meta.tag.name & (entity.name.tag - entity.name.tag.native | punctuation.accessor)",
+      "scope": "(source.json | source.yaml | source.ini) & meta.mapping.key string , source.toml meta.tag.key & (entity.name.tag | string.quoted) , (text.xml | text.html | source.ts comment.line.triple-slash) & entity.other.attribute-name , source.clojure keyword.declaration.namespace , source.file-pattern & (constant.language | constant.other.wildcard) , (source.jsx | source.tsx) & meta.tag.name & (entity.name.tag - entity.name.tag.native | punctuation.accessor) , source.erlang & (meta.function.identifier | meta.function-call.identifier) & meta.atom constant.other.macro",
       "foreground": "var(purple)"
     },
 
