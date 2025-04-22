@@ -268,7 +268,7 @@
     },
     {
       // Stuff I feel should be classified as `storage` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source.python & (meta.type & (support.class.typing | meta.generic-name | constant.language) | meta.statement.exception.catch meta.path & (support.class.exception | meta.generic-name) | support.type - (variable.function | meta.function-call.identifier) | variable.parameter.type) , source.c support.type , (source.js | source.jsx | source.ts | source.tsx) & (variable.type | variable.parameter.generic | support.type - support.type.object | support.class.builtin) , (source.ts | source.tsx) & (meta.type | meta.type-alias | meta.generic) & support.class , source.swift & (support.type | support.class)",
+      "scope": "source.python & (meta.type & (support.class.typing | meta.generic-name | constant.language) | meta.statement.exception.catch meta.path & (support.class.exception | meta.generic-name) | support.type - (variable.function | meta.function-call.identifier) | variable.parameter.type) , source.c support.type , (source.js | source.jsx | source.ts | source.tsx) & (variable.type | variable.parameter.generic | support.type - support.type.object | support.class.builtin) , (source.ts | source.tsx) & (meta.type | meta.type-alias | meta.generic) & support.class , source.swift & (support.type | support.class) , source.erlang meta.preprocessor.spec meta.atom support.type",
       "foreground": "var(gold)"
     },
     {
