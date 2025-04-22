@@ -159,19 +159,13 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `constant`, just because.
-      "scope": "text.build-results markup.pointing-carets , text.xml.kajiki & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name , source.erlang punctuation.definition.sequence , source.elixir variable.language.special-form , source.ruby meta.tag.heredoc entity.name.tag , (source.ts | source.tsx) & meta.type & (support.type.primitive.undefined | support.type.primitive.null | support.type.primitive.boolean.true | support.type.primitive.boolean.false)",
+      "scope": "text.build-results markup.pointing-carets , text.xml.kajiki & (punctuation.section.interpolation.begin | punctuation.section.interpolation.end) , text.build-results.go keyword.pseudo-linter-name , source.elixir variable.language.special-form , source.ruby meta.tag.heredoc entity.name.tag , (source.ts | source.tsx) & meta.type & (support.type.primitive.undefined | support.type.primitive.null | support.type.primitive.boolean.true | support.type.primitive.boolean.false)",
       "foreground": "var(red)"
     },
     {
       // Despite the conventional scope name used for them, Escape Sequences (like `\n`) are conceptually the opposite of constant characters (like `a`). So use something other than the normal `constant` colour.
       "scope": "constant.character.escape",
       "foreground": "var(blue_light)"
-    },
-    {
-      // Constant literals used to refer to a namespace.
-      // REF: https://www.erlang.org/doc/system/expressions.html#function-calls
-      "scope": "source.erlang meta.path & (variable.namespace | punctuation.accessor.double-colon.erlang)",
-      "foreground": "var(steel_red)"
     },
     // ~~~~~~
     // Entity
@@ -251,11 +245,11 @@
       "scope": "markup - (text.html.markdown & (markup.raw.code-fence | markup.raw.inline | meta.paragraph.list )) , text.html.markdown punctuation.definition.raw",
       "foreground": "var(steel)"
     },
-    /*{
+    {
       // Stuff I feel should be classified as `markup` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "",
+      "scope": "source string constant.other.placeholder",
       "foreground": "var(steel)"
-    },*/
+    },
     // Stuff that isn't misclassified, but I want it to have the same colour as `markup`, just because.
     {
       "scope": "source.ocaml meta.path , (source.clojure | source.edn) & constant.other.keyword , source.json.sublime.color-scheme meta.scope-selector.sublime & (keyword.operator | punctuation.section.group) , source.css meta.selector & (entity.other.attribute-name.class | entity.other.pseudo-class) , meta.diff , source.erlang & (constant.other.symbol | constant.language.exception | constant.language.boolean) , (source.js | source.jsx | source.ts | source.tsx) & (meta.string meta.interpolation punctuation.section.interpolation | meta.mapping.key - variable.parameter.function) , (source.jsx | source.tsx) & entity.other.attribute-name , source.python & (meta.function-call.arguments.python variable.parameter - meta.function.inline.parameters) , source.regexp-replace variable.language.match , source.sml meta.path variable.namespace , source.yaml.sublime.syntax meta.variable & (punctuation.definition.variable | variable.other) , source.ruby constant.other.symbol , source.ruby meta.string meta.interpolation punctuation.section.interpolation , source.ruby meta.string meta.interpolation punctuation.definition.variable - source.ruby.embedded , source.sbnf string.quoted variable.parameter.sbnf , source.raku variable.parameter , source.elixir constant.other.symbol , source.elixir meta.string meta.interpolation punctuation.section.interpolation , source.elixir support.attr , source.makefile meta.interpolation variable.parameter , source.swift variable.parameter.external-parameter-name",
@@ -356,10 +350,10 @@
     },
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // Placeholders in strings, usually for formatted printing purposes
+    // Exotic Strings
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
-      "scope": "source string constant.other.placeholder",
+      "scope": "source.erlang meta.sequence.binary & (string.quoted.double)", // punctuation.definition.sequence |
       "foreground": "var(steel_red)"
     },
 
