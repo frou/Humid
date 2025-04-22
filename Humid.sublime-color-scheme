@@ -27,7 +27,7 @@
     "steel": "#8c8c99",
     "steel_green": "#8c998c",
     "steel_red": "#998c8c",
-    "white": "#cccccc", // NOTE: Use this white for foreground when using black or black_light as background.
+    "white": "#cccccc", // NOTE: Use this for foreground when using `black` or `black_light` as background.
     "white_light": "#dadada",
     "white_punchy": "#ffffff",
 
@@ -37,7 +37,7 @@
     // REF: https://www.sublimetext.com/docs/minihtml.html#predefined-variables
     "--redish": "var(red)",
     //"--greenish": "var()",
-    //"--bluish": "var()",
+    "--bluish": "var(blue)",
     "--yellowish": "var(gold)",
     //"--pinkish": "var()",
     "--cyanish": "var(steel)",
@@ -497,8 +497,8 @@
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {"scope": "region markup.error.lsp",     "foreground": "var(red_punchy)"}, // var(red) is a bit too faint when used for squiggly underlines.
     {"scope": "region markup.warning.lsp",   "foreground": "var(orange_punchy)"},
-    {"scope": "region markup.info.lsp",      "foreground": "var(gold_punchy)"},
-    {"scope": "region markup.info.hint.lsp", "foreground": "var(white_punchy)"},
+    {"scope": "region markup.info.lsp",      "foreground": "var(white)"},
+    {"scope": "region markup.info.hint.lsp", "foreground": "var(steel)"},
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // Highlights / Underlines
