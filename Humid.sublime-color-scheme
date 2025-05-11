@@ -232,7 +232,7 @@
     },
     {
       // Stuff I feel should be classified as `keyword` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source.python & (storage.modifier - storage.modifier.conversion - storage.modifier.debug - storage.modifier.named-args-only - storage.modifier.positional-args-only) - source.sql , (source.js | source.jsx | source.ts | source.tsx) & (variable.language.super | variable.language.this | storage.modifier - (meta.type | storage.modifier.array | storage.modifier.optional | storage.modifier.definite)) , (source.c | source.c++) & storage.modifier , source.ruby entity.name.function.preprocessor , source.ruby variable.language , source.makefile constant.language.makefile",
+      "scope": "source.python & (storage.modifier - storage.modifier.conversion - storage.modifier.debug - storage.modifier.named-args-only - storage.modifier.positional-args-only) - source.sql , (source.js | source.jsx | source.ts | source.tsx) & (variable.language.super | variable.language.this | storage.modifier - (meta.type | storage.modifier.array | storage.modifier.optional | storage.modifier.definite)) , (source.c | source.c++) & storage.modifier , source.ruby entity.name.function.preprocessor , source.ruby variable.language , source.makefile constant.language.makefile , text.xml.sublime.snippet meta.tag.cdata entity.name.tag.cdata",
       "foreground": "var(green)"
     },
     {
@@ -429,6 +429,14 @@
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
       "scope": "source.python meta.string meta.interpolation & (source.python.embedded | storage.modifier.debug)", // punctuation.section.interpolation
+      "background": "var(black)"
+    },
+
+    // ~~~~~~~~~~~~
+    // CDATA in XML
+    // ~~~~~~~~~~~~
+    {
+      "scope": "(text.xml meta.tag.sgml.cdata | text.xml.sublime.snippet meta.tag.cdata) & string.unquoted.cdata",
       "background": "var(black)"
     },
 
