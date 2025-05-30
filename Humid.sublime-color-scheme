@@ -10,6 +10,7 @@
     "blue": "#5a70a9",
     "blue_light": "#65a8ff",
     "gold": "#ad9361",
+    "gold_light": "#a98500", // a.k.a. "tawny" from GNU Nano.
     "gold_punchy": "#eed600",
     "green": "#6a8856",
     "grey": "#3f3938",
@@ -359,6 +360,8 @@
       "foreground": "var(green)"
     },
 
+    // @todo How about also doing it for the selector `source source`. Quite an interesting concept.
+    // @→    discord://discord.com/channels/280102180189634562/280157121897562114/1365006560459489382
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // Embedded programming languages in otherwise freeform text templates:
     //   - ERB (Though ERB is not Rails-specific, the ST stock packages call it "Rails")
