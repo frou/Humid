@@ -310,7 +310,7 @@
     },
     {
       // Stuff that isn't misclassified, but I want it to have the same colour as `support`, just because.
-      "scope": "(source.json | source.yaml | source.ini) & meta.mapping.key string , source.toml meta.tag.key & (entity.name.tag | string.quoted) , (text.xml | text.html | source.ts comment.line.triple-slash) & entity.other.attribute-name , source.clojure keyword.declaration.namespace , source.file-pattern & (constant.language | constant.other.wildcard) , (source.jsx | source.tsx) & meta.tag.name & (entity.name.tag - entity.name.tag.native | punctuation.accessor) , source.erlang & (meta.function.identifier | meta.function-call.identifier) & meta.atom constant.other.macro , source.shell.bash meta.compound.conditional punctuation.section.compound",
+      "scope": "(source.json | source.yaml | source.ini | source.toml) & meta.mapping.key string , (text.xml | text.html | source.ts comment.line.triple-slash) & entity.other.attribute-name , source.clojure keyword.declaration.namespace , source.file-pattern & (constant.language | constant.other.wildcard) , (source.jsx | source.tsx) & meta.tag.name & (entity.name.tag - entity.name.tag.native | punctuation.accessor) , source.erlang & (meta.function.identifier | meta.function-call.identifier) & meta.atom constant.other.macro , source.shell.bash meta.compound.conditional punctuation.section.compound",
       "foreground": "var(purple)"
     },
 
