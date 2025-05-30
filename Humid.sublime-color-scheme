@@ -347,16 +347,16 @@
     // Things that should GLOW
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
-      "scope": "source.erlang & (punctuation.separator.expressions | punctuation.separator.clauses | punctuation.terminator.clause) , meta.dangerous , source.zig & (constant.language.undefined | variable.language.ignore)",
+      "scope": "meta.dangerous , source.zig & (constant.language.undefined | variable.language.ignore)",
       "font_style": "glow"
     },
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // Exotic Strings
+    // String-literal type/syntax-modifying sigils
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
-      "scope": "source.erlang meta.sequence.binary & (string.quoted.double)", // punctuation.definition.sequence |
-      "foreground": "var(steel_red)"
+      "scope": "source.erlang meta.sequence.binary & (punctuation.definition.sequence)",
+      "foreground": "var(green)"
     },
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
