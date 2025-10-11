@@ -34,7 +34,7 @@
     "white_punchy": "#ffffff",
 
     // Overrule ST where it picks what I feel is the wrong colour from those used in
-    // this colour scheme to be a given *ish colour.
+    // this colour scheme, to be a given *ish colour.
     //
     // REF: https://www.sublimetext.com/docs/minihtml.html#predefined-variables
     "--redish": "var(red)",
@@ -370,8 +370,12 @@
     //   - Jinja2
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
-      "scope": "meta.embedded.rails , meta.embedded.eex , meta.template.jinja & (meta.embedded.statement | meta.embedded.expression)",
+      "scope": "meta.embedded.rails , comment.block.rails , meta.embedded.eex , meta.template.jinja & (meta.embedded.statement | meta.embedded.expression)",
       "background": "var(black)"
+    },
+    { // ERB delimiters
+      "scope": "meta.embedded.rails punctuation.section.embedded",
+      "foreground": "var(steel_red)"
     },
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
