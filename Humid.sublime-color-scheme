@@ -329,7 +329,7 @@
     //     https://github.com/sublimehq/sublime_text/issues/2152
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     {
-      "scope": "source.python meta.string.python source.sql & (source | comment | constant | entity | keyword | markup | storage | string | support)",
+      "scope": "source.python meta.string.python source.sql & (source | comment | constant | entity | keyword | markup | punctuation | storage | string | support | variable)",
       "foreground": "var(blue)"
     },
 
