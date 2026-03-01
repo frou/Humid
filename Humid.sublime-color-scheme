@@ -306,7 +306,7 @@
     },
     {
       // Stuff I feel should be classified as `support` but I don't control the syntax definitions. Make them look like it at least.
-      "scope": "source variable.function - ((source.clojure | source.edn) & (meta.namespace | punctuation.accessor)) , source.python variable.annotation",
+      "scope": "source variable.function - ((source.clojure | source.edn) & (meta.namespace | punctuation.accessor) , source.makefile source.shell.embedded meta.function-call.identifier.shell meta.function-call.arguments.shell) , source.python variable.annotation",
       "foreground": "var(purple)"
     },
     {
